@@ -1,6 +1,6 @@
 /* CY */
 .nav > li {
-	display: inline;
+	display: inline-block;
 }
 .wrap {
 	margin: 0 auto;
