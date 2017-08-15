@@ -1,4 +1,7 @@
 /* CY */
+.nav > li {
+	display: inline;
+}
 .wrap {
 	margin: 0 auto;
 	text-align: center;
