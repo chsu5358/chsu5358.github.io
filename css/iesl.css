@@ -4,7 +4,7 @@
 	display: inline-block;
 }
 
-.nav-collapse.collapse .nav > ul {
+.nav-collapse.collapse .nav {
 	/*display: inline-block;*/
 	text-align: center; 
 	float:none; 
