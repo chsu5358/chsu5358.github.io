@@ -1,4 +1,6 @@
 /* CY */
+
+
 .nav-collapse.collapse .nav > li {
 	float:none; 
 	display: inline-block;
@@ -65,7 +67,9 @@ footer a {
 	*/
 	background: #881c1c;
 	color: #fff;
-	margin-bottom: 5px;
+	/*margin: 5px;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .jumbotron h1
@@ -73,53 +77,15 @@ footer a {
 	text-align: center;
 	font-size: 3em;
 	font-weight: 400;
-	color: black5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*color: black5;*/
 }
 
-.jumbotron .leadspace-buttons {
-	text-align: center;
-}
 
-.jumbotron .leadspace-buttons a p {
-	font-family:'Helvetica Neue';
-	margin: 15px;
-}
-
-.jumbotron .leadspace-buttons a p b {
-	color: #fff;
-	font-family: 'Lubalin';
-	display: block;
-	font-weight: normal;
-	padding-top: .25em;
-}
-
-.jumbotron .leadspace-buttons a p b::after {
-	content: ' »';
-}
-
-.btn-custom-jazz
-{
-	background-color: #1cba11;
-	/*width: 350px;*/
-	border: 0;
-}
-
-.btn-custom-bm
-{
-	background-color: #00aed1;
-	/*width: 350px;*/
-	border: 0;
-}
-.btn-custom-dw
-{
-	background-color: #eb7508;
-	/*width: 350px;*/
-	border: 0;
-}
 
 /* CY */
 
-.people-row {
+/*.people-row {
 
     margin-top:20px;
 
@@ -145,7 +111,7 @@ footer a {
 .people-list .media-body {
 	padding-right:20px;
 
-}
+}*/
 
 .crop{
 	float:left;
@@ -164,10 +130,10 @@ footer a {
 	left:-0px;
 }
 
-#logo {
+/*#logo {
     //float:right;
     margin-top: -20px;
     width:100px;
     //vertical-align:baseline;
 }
-
+*/
