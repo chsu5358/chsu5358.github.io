@@ -1,5 +1,5 @@
 /* CY */
-.nav-collapse.collapse .nav li {
+.nav-collapse.collapse .nav > li {
 	float:none; 
 	display: inline-block;
 }
