@@ -70,9 +70,9 @@ footer a {
 	/*margin: 5px;*/
 	margin-top: 15px;
 	margin-bottom: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .jumbotron h1
@@ -80,7 +80,7 @@ footer a {
 	text-align: center;
 	font-size: 3em;
 	font-weight: 400;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
 	text-shadow: 2px 2px 3px #440e0e;
 	/*color: black5;*/
 }
