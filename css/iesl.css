@@ -1,6 +1,14 @@
 /* CY */
-.nav > ul {
+.nav-collapse.collapse .nav li {
+	float:none; 
 	display: inline-block;
+}
+
+.nav > ul {
+	/*display: inline-block;*/
+	text-align: center; 
+	float:none; 
+	margin: auto
 }
 .wrap {
 	margin: 0 auto;
