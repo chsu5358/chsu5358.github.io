@@ -964,12 +964,13 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  /* CY: customize fonts & color */
+  /* CY: customize font, font-size, & color */
   /*font-family: Monaco, Menlo, Consolas, "Courier New", monospace;*/
   font-family: "Courier New", Monaco, Menlo, Consolas, monospace;
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size: 14px;
   /*color: #333333;*/
-  color: #339900;
+  color: #006400;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
