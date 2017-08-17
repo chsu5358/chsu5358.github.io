@@ -141,7 +141,7 @@
                 <div><code>      year      = "2012"</code></div>
                 <div><code>}</code></div>
             </div> -->
-            <div class="sites-codeblock sites-codesnippet-block">
+            <!-- <div class="sites-codeblock sites-codesnippet-block"> -->
                 <code class="sites-codeblock">@techreport{singh12:wiki-links,<br />
                       author    = "Sameer Singh and Amarnag Subramanya and Fernando Pereira and Andrew McCallum",<br />
                       title     = "Wikilinks: A Large-scale Cross-Document Coreference Corpus Labeled via Links to {Wikipedia}",<br />
@@ -149,7 +149,7 @@
                       number    = "UM-CS-2012-015",<br />
                       year      = "2012"<br />
                 }</code>
-            </div>
+            <!-- </div> -->
 
             <div>
                 <h3 style="color:grey">Original Dataset</h3>
@@ -170,7 +170,20 @@
                 <h3 style="color:grey">Expanded Dataset</h3>
             </div>
             <p class="desc">
-                
+                UMass has created expanded versions of the dataset containing the following extra features:
+                <ul style="padding-left: 15px">
+                    <li>Complete webpage content (with cleaned DOM structure)</li>
+                    <li>Extracted context for the mentions</li>
+                    <li>Alignment to <a href="http://freebase.com/">Freebase</a> entities</li>
+                    <li>and more...</li>
+                </ul>
+                For description of the data format, and instructions on how to use it in any language (Scala code included), see the documentation available <a href="https://code.google.com/archive/p/wiki-link/wikis/ExpandedDataset.wiki">here</a>.
+            </p>
+            <p class="desc">
+                We also describe the steps used to create the dataset <a href="https://code.google.com/archive/p/wiki-link/">here</a>.
+            </p>
+            <p class="desc">
+                The expanded dataset is available in different versions. 
             </p>
 
             <div>
