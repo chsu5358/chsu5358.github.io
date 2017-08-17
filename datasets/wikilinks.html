@@ -183,6 +183,25 @@
             <p class="desc">
                 The expanded dataset is available in different versions. 
             </p>
+            
+            <div>
+                <h4 style="color:silver">Dataset with Context</h4>
+            </div>
+            <p class="desc">
+                The smallest version that contains the context and the freebase id is ~5GB in size. You can directly download the files from <a href="http://iesl.cs.umass.edu/downloads/wiki-link/context-only/">http://iesl.cs.umass.edu/downloads/wiki-link/context-only/</a> or use the following script (run in an empty directory):
+                <pre><code>for (( i=1; i<110; i++)) do echo "Downloading file $i of 109"; f=`printf "%03d" $i` ; wget http://iesl.cs.umass.edu/downloads/wiki-link/context-only/$f.gz ; done ; echo "Downloaded all files, verifying MD5 checksums (might take some time)" ; diff --brief <(wget -q -O - http://iesl.cs.umass.edu/downloads/wiki-link/context-only/md5sum) <(md5sum *.gz) ; if [ $? -eq 1 ] ; then echo "ERROR: Download incorrect\!" ; else echo "Download correct" ; fi</code></pre>
+                These data files follow the thrift format for the expanded dataset, with PageContentItem fields emptied out.
+            </p>
+
+            <div>
+                <h4 style="color:silver">Dataset with Complete Webpages</h4>
+            </div>
+            <p class="desc">
+                This version of the dataset contains the context, freebase ids, raw file, cleaned DOM structure, and the full article text. Hence, the overall size of this dataset is ~180GB.
+            </p>
+            <p class="desc">
+                The dataset is available here: <a href="http://iesl.cs.umass.edu/downloads/wiki-link/full-content/part1/">http://iesl.cs.umass.edu/downloads/wiki-link/full-content/part1/</a> and <a href="http://iesl.cs.umass.edu/downloads/wiki-link/full-content/part2/">http://iesl.cs.umass.edu/downloads/wiki-link/full-content/part2/</a>. It is in the same format as above, with accompanying md5sum files.
+            </p>
 
             <div>
                 <h3 style="color:grey">People</h3>
