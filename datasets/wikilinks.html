@@ -60,7 +60,7 @@
                     <!-- <li class="active"><a href="https://chsu5358.github.io/datasets.html">Datasets</a></li> -->
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="https://chsu5358.github.io/datasets.html">Datasets
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="https://chsu5358.github.io/datasets">Datasets
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -94,10 +94,23 @@
             <p class="desc">
                 Cross-document coreference resolution is the task of grouping the entity mentions in a collection of documents into sets that each represent a distinct entity. It is central to knowledge base construction and also useful for joint inference with other NLP components. Obtaining large, organic labeled datasets for training and testing cross-document coreference has previously been difficult. We use a method for automatically gathering massive amounts of naturally-occurring cross-document reference data to create the Wikilinks dataset comprising of 40 million mentions over 3 million entities. Our method is based on finding hyperlinks to Wikipedia from a web crawl and using anchor text as mentions. In addition to providing large-scale labeled data without human effort, we are able to include many styles of text beyond newswire and many entity types beyond people.
             </p>
+        </div>
+    </section>
 
+    <section class="row">
+        <div class="span4 offset1">
+                <p style="text-align:center;"><img src="./datasets/wikilinks-figure.jpg" style="margin-top: 20px; width:100%;"/></p>
+        </div>
+
+        <div class="span6">
             <p class="desc">
                 Manually labeling mentions with the entities they refer to is time-consuming and expensive annotation task. However, page authors often use hyperlinks to annotate some of the mentions in their texts with extra information. If these links are to Wikipedia pages, then the link targets can be used to disambiguate the mentions from each other. For example, consider the two mentions of "Banksy" from different webpages (as shown in the figure). Since both links point to the same Wikipedia entity, it is likely that the two mentions refer to the same entity. Using this approach, we are able to construct an automatically annotated dataset of containing the mentions extracted from the web and the entities in Wikipedia that they refer to.
             </p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="span10 offset1">
 
             <div>
                 <h3 style="color:grey">Statistics</h3>
