@@ -150,7 +150,11 @@
             </p>
 
             <p class="desc">
-                <strong>Download the dataset here:</strong> <a href="http://code.google.com/p/wiki-links/downloads/list">http://code.google.com/p/wiki-links/downloads/list</a>
+                <strong>Download the dataset here:</strong> <a href="http://code.google.com/p/wiki-links/downloads/list">http://code.google.com/p/wiki-links/downloads/list</a><br />
+                You can directly download all the files using the following command (bash):
+                <div class="sites-codeblock sites-codesnippet-block">
+                    <code>for (( i=0; i<10; i++ )) do echo "Downloading file $i of 10"; wget https://wiki-links.googlecode.com/files/data-0000$i-of-00010.gz ; done</code>
+                </div>
             </p>
 
             <div>
