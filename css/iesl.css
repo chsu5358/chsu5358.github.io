@@ -99,16 +99,26 @@ footer a {
 }
 
 .polaroid {
-    width: 100%;
+    /*width: 100%;*/
+     width: 380px;
+    height: 380px;
+    overflow: hidden;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .polaroid img {
-	width: 100%;
+	/*width: 100%;*/
+	position: relative;
+    float: left;
+    width: 380px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.polaroid .imgcap{
+.polaroid .imgcap {
     text-align: center;
     padding: 10px 20px;
     /*padding: 10px 20px 0px;*/
