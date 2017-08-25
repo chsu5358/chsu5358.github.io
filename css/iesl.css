@@ -98,6 +98,20 @@ footer a {
 	/*color: black5;*/
 }
 
+.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid img {
+	width: 100%
+}
+
+.polaroid .container {
+    text-align: center;
+    padding: 10px 20px;
+}
 
 
 /* CY */
@@ -147,10 +161,4 @@ footer a {
 	left:-0px;
 }
 
-/*#logo {
-    //float:right;
-    margin-top: -20px;
-    width:100px;
-    //vertical-align:baseline;
-}
-*/
+
