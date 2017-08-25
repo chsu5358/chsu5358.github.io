@@ -108,9 +108,15 @@ footer a {
 	width: 100%;
 }
 
-.polaroid .imgcap {
+.polaroid .imgcap: first-child {
     text-align: center;
     padding: 10px 20px;
+}
+
+.polaroid .imgcap: nth-child(2) {
+    text-align: right;
+    padding: 10px 20px;
+    color: grey;
 }
 
 
