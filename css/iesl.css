@@ -125,9 +125,9 @@ footer a {
 
 /* Modal Content (image) */
 .im-modal-content {
-    margin: auto;
+    margin: 0 auto; /*auto;*/
     display: block;
-    width: 80%;/*80%;*/
+    width: 80%;
     max-width: 700px;
 }
 
