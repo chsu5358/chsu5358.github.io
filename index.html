@@ -153,7 +153,15 @@
     </div>
 	
     <div class="span4">
-        <p style="text-align:center;"><img id="home-group-photo" src="./images/iesl-group-photo.JPG" alt="IESL Group Photo, 2016 Retreat" style="margin-top: 20px; width:100%; border-radius:5px;"/></p>
+        <p style="text-align:center;">
+        <img id="home-group-photo" src="./images/iesl-group-photo.JPG" alt="IESL Group Photo, 2016 Retreat" style="margin-top: 20px; width:100%; border-radius:5px;"/>
+        </p>
+    </div>
+    <!-- The Modal -->
+    <div id="modal-home-group-photo" class="im-modal">
+      <span class="im-close">×</span>
+      <img class="im-modal-content" id="im-modal-01">
+      <div id="im-caption"></div>
     </div>
     
 
@@ -212,6 +220,27 @@
       $(this).addClass("active");
     });
 
+
+    // Get the modal
+    var modal = document.getElementById('modal-home-group-photo');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('home-group-photo');
+    var modalImg = document.getElementById("im-modal-01");
+    var captionText = document.getElementById("im-caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("im-close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
 </script>
 
 <!-- CY: not used?
