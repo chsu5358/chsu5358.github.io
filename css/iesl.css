@@ -100,6 +100,9 @@ footer a {
 
 /* Home: Group photo as modal/dialog box */
 #home-group-photo {
+	margin: 20px auto; 
+	width:100%; 
+	border-radius:5px;
 	cursor: pointer;
     transition: 0.3s;
     opacity: 0.7;
