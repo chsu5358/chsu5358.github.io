@@ -99,14 +99,18 @@ footer a {
 }
 
 /* Home: Group photo as modal/dialog box */
-/*#home-group-photo {
+#home-group-photo {
 	cursor: pointer;
     transition: 0.3s;
-}*/
+}
 
-#home-group-photo: hover {
+#p-home-group-photo: hover {
 	opacity: 0.7;
 }
+
+/*#home-group-photo: hover {
+	opacity: 0.7;
+}*/
 
 /* The Modal (background) */
 .im-modal {
