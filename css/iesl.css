@@ -127,7 +127,7 @@ footer a {
 .im-modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 90%;/*80%;*/
     max-width: 700px;
 }
 
