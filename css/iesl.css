@@ -104,7 +104,7 @@ footer a {
     transition: 0.3s;
 }
 
-#div-home-group-photo: hover {
+.div-home-group-photo: hover {
 	opacity: 0.7;
 }
 
