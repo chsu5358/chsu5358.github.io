@@ -99,7 +99,7 @@ footer a {
 }
 
 /* Home: Group photo as modal/dialog box */
-#home-group-photo {
+.home-group-photo {
 	cursor: pointer;
     transition: 0.3s;
 }
