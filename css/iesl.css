@@ -107,12 +107,13 @@ footer a {
     transition: 0.3s;
 }
 
-#div-home-group-photo > #home-group-photo:hover {
-	opacity: 0.7;
+#div-home-group-photo:hover > #home-group-photo {
 	transform: scale(1.5,1.5);
 	transition: .3s transform;
 	/*z-index: 1;*/
 }
+
+
 
 /*#home-group-photo: hover {
 	opacity: 0.7;
