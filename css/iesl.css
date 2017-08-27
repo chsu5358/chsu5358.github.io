@@ -109,7 +109,7 @@ footer a {
 
 #div-home-group-photo > #home-group-photo:hover {
 	opacity: 0.7;
-	transform: scale(1.2,1.2);
+	transform: scale(1.1,1.1);
 	transition: .3s transform;
 	/*z-index: 1;*/
 }
