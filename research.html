@@ -168,71 +168,79 @@
             </div>
 
             <p class="desc">
-                
+                The only way to put natural language learning into the hands of the people is to reduce the burden of labeling training data. Over the years we have worked on various methods of semi-supervised learning that combines small amounts of labeled data with large amounts of unlabeled data. Our most recent work is in Generalized Expectation (GE) criteria, one form of which can be understood as enabling "feature labeling" as opposed to the traditional "instance labeling".
             </p>
 
             <p class="desc">
-                
-            </p>
-        </div>
-
-        <div class="span10 offset1">
-            <div>
-                <h3></h3>
-            </div>
-
-            <p class="desc">
-                
+                We have also removed the need for human labeled data entirely by leveraging information already in relevant databases, and learning information extractors by discovering CRF-based alignments between database records and unstructured text.
             </p>
         </div>
 
         <div class="span10 offset1">
             <div>
-                <h3></h3>
+                <h3>Joint Inference for NLP, Dialog Pragmatics, Perception and Action</h3>
             </div>
 
             <p class="desc">
-                
+                As part of a MURI project joint with UPenn, we have begun work on probabilistic modeling of natural language dialog, designing methods that will do joint, unified inference all the way from natural language understanding, through dialog pragmatics, to perception and action in a shared world. This work will leverage our research in large-scale joint inference in CRFs.
             </p>
         </div>
 
         <div class="span10 offset1">
             <div>
-                <h3></h3>
+                <h3>Intelligent Understanding of our Email World</h3>
             </div>
 
             <p class="desc">
-                
+                As part of the CALO project, we extracted information about people and other entities appearing in email streams, performed large-scale entity resolution, and discovered topics and expertise.
             </p>
         </div>
 
         <div class="span10 offset1">
             <div>
-                <h3></h3>
+                <h3>Conditional Probability Models for Sequences and other Relational Data</h3>
             </div>
 
             <p class="desc">
-                
+                Back in the 1990's, after having some success using hidden Markov models for information extraction, we found ourselves frustrated by their lack of ability to incorporate many arbitrary, overlapping features of the input sequence, such as capitalization, lexicon memberships, spelling features, and conjunctions of such features in a large window of past and future observations. The same difficulties with non-independent features exist in many generatively-trained models historically used in NLP. We have begun work with conditionally-trained probability models that address these problems. Maximum entropy Markov models are locally-normalized conditional sequence models. Finite-state Conditional Random Fields (CRFs) are globally-normalized models. We have also been working with CRFs for coreference and multi-sequence labeling, analogous to conditionally-trained Dynamic Bayesian Networks (DBNs). We now work with even more complex CRFs, that integrate logic and probability, as described above.
             </p>
         </div>
 
         <div class="span10 offset1">
             <div>
-                <h3></h3>
+                <h3>WhizBang Labs</h3>
             </div>
 
             <p class="desc">
-                
+                From 2000 through 2002 I was Vice President of Research and Development at WhizBang Labs, a start-up company focusing on information extraction from the Web. We developed sophisticated machine learning extraction systems for numerous application domains---among them FlipDog.com, a database of job openings extracted directly from company Web sites (now owned by Monster.com), corporate information for Dun & Bradstreet and Lexis Nexis, and course syllabi for the U.S. Department of Labor.
             </p>
         </div>
 
         <div class="span10 offset1">
             <div>
-                <h3></h3>
+                <h3>WebKB</h3>
             </div>
 
             <p class="desc">
-                
+                In 1996 and 1997 I was part of Tom Mitchell's WebKB project and the CMU Text Learning group.
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3>Reinforcement Learning</h3>
+            </div>
+
+            <p class="desc">
+                In what now seems like a lifetime ago, I was interested in reinforcement learning---especially with hidden state and factored representations. My thesis uses memory-based learning and a robust statistical test on reward in order to learn a structured policy representation that makes perceptual and memory distinctions only where needed for the task at hand. It can also be understood as a method of Value Function Approximation. The model learned is an order-n partially observable Markov decision process. It handles noisy observation, action and reward.
+            </p>
+
+            <p class="desc">
+                It is related to Ron, Singer and Tishby's Probabilistic Suffix Trees, Leslie Kaelbling's G-algorithm and Andrew Moore's Parti-game. It is distinguished from similar-era work by Michael Littman, Craig Boutilier and others in that it learns both a model and a policy, and is quite practical with infinite-horizon tasks and large state and observation spaces. Follow-on or comparison work has been done by Anders Jonsson, Andy Barto, Will Uther, Natalia Hernandez, Leslie Kaelbling, and Sridhar Mahadevan.
+            </p>
+
+            <p class="desc">
+                The algorithm, called U-Tree, was demonstrated solving a highway driving task using simulated eye-movements and deictic representations. The simulated environment has about 21000 states, 2500 observations, noise and much hidden state. After about 2 1/2 hours of simulated experience, U-Tree learns a task-specific model of the environment that has only 143 states. It's learned behavior included lane changes to avoid slow vehicles in front, and checking the rear-view mirror to avoid faster vehicles from behind.
             </p>
         </div>
 
