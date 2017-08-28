@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <link href="./css/iesl.css" rel="stylesheet">
-    <link href="./css/pub.css" rel="stylesheet">
+    <!-- <link href="./css/pub.css" rel="stylesheet"> -->
     <link href="./css/bootstrap.css" rel="stylesheet">
     <style>
         body {
@@ -90,27 +90,152 @@
     <section class="row">
         <h2 id="research-header" class="page-header span10 offset1">Research</h2>
 
-        <div class="span6 offset1">
-            <ul>
-            <li><a href="https://arxiv.org/abs/1511.06350">Structured Prediction Energy Networks</a> [Belanger, McCallum ICML 2016] are an alternative to graphical models, leveraging deep learning to discover rich dependencies among output variables.</li>
-            <li><a href="http://OpenReview.net">OpenReview.net</a> is hosting reviewing for ICLR 2017, as well as the upcoming UAI 2017.</li>
-            <li><span><a href="http://factorie.cs.umass.edu">FACTORIE</a></span> is a toolkit for deployable probabilistic modeling, implemented as a software library in <a href="http://www.scala-lang.org/"><span>Scala</span></a>. It provides its users with a succinct language for creating relational factor graphs, estimating parameters and performing inference.</li>
-            <li><a href="http://www.cs.umass.edu/%7Emccallum/papers/ge08note.pdf">Generalized Expectation</a><span> is an accurate way to train models by <a href="http://www.cs.umass.edu/%7Emccallum/papers/druck08sigir.pdf">labeling features</a>.</span></li>
-            <li>We have publicly launched <a href="http://rexa.info/"><span>Rexa</span></a>, a research paper search engine. It provides search and browsing over multiple "object types", including not only papers, but also people, grants and topics.  In current work we are leveraging our new research in probabilistic databases to create Rexa 2.0.</li>
-            <li>Charles Sutton and I have a comprehensive <a href="http://www.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf"><span>introduction to conditional random fields</span></a>, a book chapter in Lise Getoor and Ben Taskar's book on statistical relational learning.</li>
-            <li>McCallum has written an introduction to information extraction by machine learning, intended for an audience that doesn't know machine learning. <a href="http://www.cs.umass.edu/~mccallum/papers/acm-queue-ie.pdf"><span>Information Extraction: Distilling Structured Data from Unstructured Text </span></a>. Andrew McCallum. <i>ACM Queue</i>, Volume 3, Number 9, November 2005.</li>
-            <li><span><a href="http://mallet.cs.umass.edu/">MALLET</a></span> is a Java toolkit for machine learning applied to natural language. It provides facilities for document classification, information extraction, part-of-speech tagging, noun phrase segmentation, general finite state transducers and classification, and much more---all designed to be extremely efficient for large data and feature sets.</li>
-    	    
-            </ul>
+        <div class="span10 offset1">
+            <div>
+                <h3>Unified Information Extraction and Data Mining</h3>
+            </div>
+
+            <p class="desc">
+                Although information extraction and data mining appear together in many applications, their interface in most current deployments would better be described as serial juxtaposition than as tight integration. Information extraction populates slots in a database by identifying relevant subsequences of text, but is usually not aware of the emerging patterns and regularities in the database. Data mining methods begin from a populated database, and are often unaware of where the data came from, or its inherent uncertainties. The result is that the accuracy of both suffers, and significant mining of complex text sources is beyond reach.
+            </p>
+
+            <p class="desc">
+                We have been researching relational probabilistic models that unify extraction and mining, so that by sharing common inference procedures, they can each overcome the weaknesses of the other. For example, data mining run on a partially-filled database can find patterns that provide "top-down" accuracy-improving constraints to information extraction. Information extraction can provide a much richer set of "bottom-up" hypotheses to data mining if the mining is able to handle additional uncertainty information from extraction.
+            </p>
         </div>
 
-        <!-- Twitter-->
+        <div class="span10 offset1">
+            <div>
+                <h3>Conditional Random Fields for Relational Data, Approximate Inference and Learning</h3>
+            </div>
 
-        <div class="span4" style="padding-top:0px">
-
-    	<a class="twitter-timeline" data-lang="en" data-width="520" data-height="400" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/UMassAmherst">Tweets by UMassAmherst</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <a class="twitter-timeline" data-width="400" data-height="200" href="https://twitter.com/NipsConference">Tweets by NipsConference</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p class="desc">
+                The above unified processing requires large-scala joint inference that cannot be performed exactly. We have been developing various methods of MCMC inference methods and corresponding learning approaches aimed specifically at extremely large relational-data domains. Our approach based on Metropolis-Hastings inference and learning by ranking, achieved best-in-the-world coreference resolution on a standard newswire dataset. This work is also quite relevant to recent interest in "combining logic and probability".
+            </p>
         </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3>Automatic Knowledge Base Construction, with Probabilistic Databases & Human Cooperation</h3>
+            </div>
+
+            <p class="desc">
+                Incorporating uncertainty and probabilistic inference into databases has posed many challenges, often leading to systems that sacrifice modeling power, scalability, or restrict the class of relational algebra formulae under which they are closed.  We have proposed [Wick et al, VLDB, 2009] an alternative approach in which the underlying relational database always represents a single possible world, and an external, unrestricted factor graph encodes a distribution over the set of possible worlds; Markov chain Monte Carlo (MCMC) inference is then used to recover this uncertainty to a desired level of fidelity.  Our approach allows the efficient evaluation of arbitrary SQL queries over probabilistic databases with dependencies expressed by unrestricted graphical models, (including graphical model structure that changes during inference).
+            </p>
+
+            <p class="desc">
+                As a result, state-of-the-art, machine-learning-based information extraction, entity resolution, schema-aligment can then be efficiently run "inside" the database.  Furthermore, rather than running in pipeline fashion, they can all interoperate in the same scalable infrastructure, imparting the increased accuracy of joint inference. This also provides a convenient any-time functionality to KB construction and query processing.
+
+            </p>
+
+            <p class="desc">
+                In addition, we advocate an approach to information integration (including knowledge-base construction by human-machine cooperation) in which the the canonical "true" entities and relations in the database are always inferred from integrated or human-entered data, never injected directly.  Even human "corrections" to the KB are merely additional pieces of evidence input as probabilistic evidence---allowing our system to reason probabilistically about provenance and trust.
+            </p>
+
+            <p class="desc">
+                MCMC sampling provides efficiency by hypothesizing modifications to possible worlds rather than generating entire worlds from scratch.  Queries are then run over the portions of the world that change, avoiding the onerous cost of running full queries over each sampled world.  We leverage materialzed view maintenance techniques to dramatically speed query processing.  We demonstrate system’s ability to answer relational queries with aggregation over one million tuples, and show additional scalability through use of parallelization.
+            </p>
+
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3>Extraction, Integration and Mining of Bibliographic Data</h3>
+            </div>
+
+            <p class="desc">
+                Back in the 1997 I conceived of and lead a project at JustResearch that created Cora, one of the first domain-specific search engines over computer science research papers. You can read more about our research on Cora in our IRJ journal paper or a paper presented at the AAAI'99 Spring Symposium. The Cora team also included Kamal Nigam, Kristie Seymore, Jason Rennie, Huan Chang and Jason Reed.
+            </p>
+
+            <p class="desc">
+                More recently we have been working on an enhanced alternative to Google Scholar, CiteSeer, and other digital libraries of the research literature. Our system, called Rexa, automatically extracts a de-duplicated cross-referenced database of not just papers (and references), but also people, grants, publication venues and institutions. We also perform various kinds of topic and bibliometric impact analysis on this data.
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3>Social Network Analysis with Structured Topic Models</h3>
+            </div>
+
+            <p class="desc">
+                Traditional social network analysis examines the connectivity of entities in a graph. However, in many cases we have data not just about the existence of a graph-edge, but also various properties of the nodes and edges---including large quantities of corresponding textual data. We have used Bayesian latent variable models, variants of "topic models" augmented with non-textual variables to (a) discover roles of people in the sender-receiver structure of a large email collection, (b) discover groups (coalitions) of U.S. senators or U.N. countries from their voting records and the topics of the bills, (c) discover communities of academic researchers from their papers and the venues in which they publish.
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3>Semi-supervised Learning & Alignment Learning in Natural Language</h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3></h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3></h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3></h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3></h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3></h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
+        <div class="span10 offset1">
+            <div>
+                <h3></h3>
+            </div>
+
+            <p class="desc">
+                
+            </p>
+        </div>
+
     </section>
     
 
