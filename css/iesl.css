@@ -55,6 +55,7 @@
   content: " ";
   width: 100%;
   padding-top: calc((9 / 16) * 100%);
+  max-height: calc((9 / 16) * 100%);
 }
 .sixteen-nine > .content {
   position: absolute;
