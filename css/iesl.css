@@ -45,7 +45,12 @@
 	font-style: italic;
 }
 
-
+/* mainly: social*/
+.im-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 .desc {
 	text-align: justify;
