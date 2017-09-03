@@ -70,8 +70,13 @@ footer a {
 
 /* mainly: index/home header */
 .lab-header {
-	color: #881c1c;
-	text-shadow: 0.5px 0.5px 0.5px #440e0e;/*1px 1px 1px #440e0e;*/
+	/*color: #881c1c;*/
+	/*text-shadow: 0.5px 0.5px 0.5px #440e0e;*/ /*1px 1px 1px #440e0e;*/
+	
+	color: black;
+	text-shadow: 0.5px 0.5px 0.5px #881c1c;
+	border-bottom: 1px solid #a8431e;
+
 	/*padding-top: 10px;
 	padding-bottom: 10px;*/
 	padding: 20px 0 30px;
