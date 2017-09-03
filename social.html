@@ -247,7 +247,6 @@
 <!-- CY: slideshow + carousel-->
 <script>
     var slideIndex = 1;
-    showDivs(slideIndex);
     // add carousel
     // carousel();
     var timer = null;
@@ -257,16 +256,18 @@
             timer = null;
         }
     }
+    showDivs(slideIndex);
+    
 
     function plusDivs(n) {
         // // reset timer
-        // resetTimer(timer);
+        resetTimer(timer);
         showDivs(slideIndex += n);
     }
 
     function currentDiv(n) {
         // reset timer
-        // resetTimer(timer);
+        resetTimer(timer);
         showDivs(slideIndex = n);
     }
 
@@ -288,8 +289,7 @@
         }
         x[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " w3-white";
-        // reset timer
-        resetTimer(timer);
+        
         // add carousel
         // slideIndex += 1;
         timer = setTimeout(showDivs(slideIndex += 1), 9000);
