@@ -286,8 +286,8 @@ function showDivs(n) {
     dots[slideIndex-1].className += " w3-white";
 
     // add carousel
-    
-    setTimeout(showDivs(slideIndex+1), 9000);
+    slideIndex += 1;
+    setTimeout(showDivs.bind(null, slideIndex), 9000);
 }
 
 // function carousel() {
