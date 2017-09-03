@@ -246,7 +246,7 @@
 
 <!-- CY: slideshow + carousel-->
 <script>
-    var slideIndex = 1;
+    var slideIndex = 0; //1;
     // add carousel
     // carousel();
     var timer = null;
@@ -256,8 +256,8 @@
             timer = null;
         }
     }
-    showDivs(slideIndex);
-    timer = setTimeout(function(){slideIndex += 1; }, 9000);
+    // showDivs(slideIndex);
+    timer = setTimeout(showDivs(slideIndex += 1), 9000);
 
     function plusDivs(n) {
         // // reset timer
