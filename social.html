@@ -246,49 +246,50 @@
 
 <!-- CY: slideshow + carousel-->
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-// add carousel
-// carousel();
-var timer = null;
-function resetTimer(timer) {
-    if (timer) {
-        clearTimeout(timer);
-        timer = null;
-    }
-}
-
-function plusDivs(n) {
-    // reset timer
-    resetTimer(timer);
-    showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-    // reset timer
-    resetTimer(timer);
-    showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " w3-white";
-
+    var slideIndex = 1;
+    showDivs(slideIndex);
     // add carousel
-    n = slideIndex+1;
-    setTimeout(showDivs.bind(null, n), 9000);
-}
+    // carousel();
+    var timer = null;
+    function resetTimer(timer) {
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
+    }
+
+    function plusDivs(n) {
+        // reset timer
+        resetTimer(timer);
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        // reset timer
+        resetTimer(timer);
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+
+        // add carousel
+        slideIndex += 1;
+        n = slideIndex;
+        setTimeout(showDivs.bind(null, n), 9000);
+    }
 
 // function carousel() {
 //     var i;
