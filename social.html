@@ -257,7 +257,7 @@
         }
     }
     showDivs(slideIndex);
-    
+    timer = setTimeout(showDivs(slideIndex += 1), 9000);
 
     function plusDivs(n) {
         // // reset timer
@@ -292,7 +292,7 @@
         
         // add carousel
         // slideIndex += 1;
-        timer = setTimeout(showDivs(slideIndex += 1), 9000);
+        // timer = setTimeout(showDivs(slideIndex += 1), 9000);
     }
 
 // function carousel() {
