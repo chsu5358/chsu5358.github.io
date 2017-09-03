@@ -125,7 +125,7 @@
                 <div class="w3-display-container mySlides w3-animmate-fading">
                     <img src="./images/iesl-group-photo-Cropped-16-9.jpg" alt="UMass IESL Group" />
                     <div class="w3-display-bottomright w3-tiny w3-container w3-padding-small w3-black" style="opacity:0.7; font-style: italic;">
-                        <p>IESL Group Photo, 2016 Retreat</p>
+                        <p>IESL Group, 2016 Retreat</p>
                     </div>
                 </div>
 
@@ -249,57 +249,68 @@
 var slideIndex = 1;
 showDivs(slideIndex);
 // add carousel
-carousel();
+// carousel();
+var timer = null;
+function resetTimer(timer) {
+    if (timer) {
+        clearTimeout(timer);
+        timer = null;
+    }
+}
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+    // reset timer
+    resetTimer(timer);
+    showDivs(slideIndex += n);
 }
 
 function currentDiv(n) {
-  showDivs(slideIndex = n);
+    // reset timer
+    resetTimer(timer);
+    showDivs(slideIndex = n);
 }
 
 function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-
-  // add carousel
-  // setTimeout(carousel, 9000);
-}
-
-function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    // add dots control
     var dots = document.getElementsByClassName("demo");
-
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+        x[i].style.display = "none";  
     }
-    slideIndex++;
-    if (slideIndex > x.length) {
-        slideIndex = 1;
-    }
-    x[slideIndex-1].style.display = "block";
-    // add dots control
     for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
+        dots[i].className = dots[i].className.replace(" w3-white", "");
     }
+    x[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " w3-white";
 
-    setTimeout(carousel, 9000);    
+    // add carousel
+    setTimeout(showDivs, 9000);
 }
+
+// function carousel() {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     // add dots control
+//     var dots = document.getElementsByClassName("demo");
+
+//     for (i = 0; i < x.length; i++) {
+//        x[i].style.display = "none";  
+//     }
+//     slideIndex++;
+//     if (slideIndex > x.length) {
+//         slideIndex = 1;
+//     }
+//     x[slideIndex-1].style.display = "block";
+//     // add dots control
+//     for (i = 0; i < dots.length; i++) {
+//      dots[i].className = dots[i].className.replace(" w3-white", "");
+//     }
+//     dots[slideIndex-1].className += " w3-white";
+
+//     setTimeout(carousel, 9000);    
+// }
 
 </script>
 
