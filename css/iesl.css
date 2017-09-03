@@ -72,8 +72,9 @@ footer a {
 .lab-header {
 	color: #881c1c;
 	text-shadow: 1px 1px 1px #440e0e;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	/*padding-top: 10px;
+	padding-bottom: 10px;*/
+	padding: 20px 0 30px;
 	text-align: center;
 	margin: auto;
 
