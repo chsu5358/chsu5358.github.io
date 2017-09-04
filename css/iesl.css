@@ -229,11 +229,12 @@ footer a {
 .polaroid {
     /*width: 100%;*/
     width: 380px;
-    height: 380px;
+    /*height: 380px;*/
+    max-height: 380px;
     overflow: hidden;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 0 10px;
+    margin: 10px 10px 10px;
 }
 
 .polaroid img {
@@ -249,7 +250,7 @@ footer a {
 
 .polaroid .imgcap {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 0px 10px;
     /*padding: 10px 20px 0px;*/
 }
 
