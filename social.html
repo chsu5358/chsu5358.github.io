@@ -247,7 +247,8 @@
 <!-- CY: slideshow + carousel-->
 <script>
     var init = true;
-    var slideIndex = 1; //1;
+    var slideIndex = 1;
+    showDivs(slideIndex);
     // add carousel
     // carousel();
     var timer = null;
@@ -257,18 +258,17 @@
             timer = null;
         }
     }
-    showDivs(slideIndex);
 
     function plusDivs(n) {
         // reset timer
-        resetTimer(timer);
+        // resetTimer(timer);
         init = true;
         showDivs(slideIndex += n);
     }
 
     function currentDiv(n) {
         // reset timer
-        resetTimer(timer);
+        // resetTimer(timer);
         init = true;
         showDivs(slideIndex = n);
     }
