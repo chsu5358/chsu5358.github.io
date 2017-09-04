@@ -52,8 +52,8 @@
 	height: auto;
 }
 
-.my-animate-fading {animation:fading 10s infinite}
-@keyframes fading {0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.my-animate-fading {animation:fading 6s infinite}
+@keyframes fading {0%{opacity:0}25%{opacity:1}75%{opacity:1}100%{opacity:0}}
 /*@keyframes fading {from{opacity:0.4} to{opacity:1}}*/
 /*.my-animate-fading {}*/
 
@@ -244,7 +244,7 @@ footer a {
     float: left;
     /*width: 380px;*/
     width: 100%;
-    
+
     height: auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
