@@ -246,7 +246,7 @@
 
 <!-- CY: slideshow + carousel-->
 <script>
-    var init = true;
+    var varInit = true;
     var slideIndex = 1;
     showDivs(slideIndex);
     // add carousel
@@ -262,14 +262,14 @@
     function plusDivs(n) {
         // reset timer
         // resetTimer(timer);
-        init = true;
+        varInit = true;
         showDivs(slideIndex += n);
     }
 
     function currentDiv(n) {
         // reset timer
         // resetTimer(timer);
-        init = true;
+        varInit = true;
         showDivs(slideIndex = n);
     }
 
@@ -279,8 +279,8 @@
         var dots = document.getElementsByClassName("demo");
 
         // update or re-shift back slideIndex
-        if (init) { 
-            init = false;
+        if (varInit) { 
+            varInit = false;
         } else {
             slideIndex++;
             n++;
