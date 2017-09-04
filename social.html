@@ -122,36 +122,36 @@
         <div class="span8 offset2" "> <!-- style="width: 100%; max-height: 270px; overflow: hidden; position: relative;"> -->
             <div class="w3-content w3-display-container" > <!-- style="width:100%;" --> <!-- style="max-width:800px; max-height: 450px"> -->
                 
-                <div class="w3-display-container mySlides my-animate-fading">
+                <div class="w3-display-container mySlides fade">
                     <img src="./images/iesl-group-photo-Cropped-16-9.jpg" alt="UMass IESL Group" />
                     <div class="w3-display-bottomright w3-tiny w3-container w3-padding-small w3-black" style="opacity:0.7; font-style: italic;">
                         <p>IESL Group, 2016 Retreat</p>
                     </div>
                 </div>
 
-                <div class="w3-display-container mySlides my-animate-fading">
+                <div class="w3-display-container mySlides fade">
                     <img src="./images/photo-campus-pc-chsu.jpg" alt="UMass CICS building" />
                     <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-small w3-black" style="opacity:0.7; font-style: italic;">
                         <p>UMass CICS building, Fall 2016 <br /> Photo by Chih-Yu Hsu</p>
                     </div>
                 </div>
                 
-                <div class="w3-display-container mySlides my-animate-fading">
+                <div class="w3-display-container mySlides fade">
                     <img src="./images/photo-csbuilding1-pc-chsu-Cropped-16-9.jpg" alt="UMass CICS building"/>
                     <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-small w3-black" style="opacity:0.7; font-style: italic;">
                         <p>UMass CICS building, Fall 2016 <br /> Photo by Chih-Yu Hsu</p>
                     </div>
                 </div>
 
-                <div class="w3-display-container mySlides my-animate-fading">
+                <div class="w3-display-container mySlides fade">
                     <img src="./images/photo-csbuilding-pc-chsu-Cropped-16-9.jpg" alt="UMass CICS building" />
                     <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-small w3-black" style="opacity:0.7; font-style: italic;">
                         <p>UMass CICS building, Fall 2016 <br /> Photo by Chih-Yu Hsu</p>
                     </div>
                 </div>
 
-                <div class="w3-button w3-grey w3-display-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-button w3-grey w3-display-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <!-- <div class="w3-button w3-grey w3-display-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-button w3-grey w3-display-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div> -->
 
                 <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                     <!-- <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div> -->
@@ -246,90 +246,90 @@
 
 <!-- CY: slideshow + carousel-->
 <script>
-    var varInit = true;
+    // var varInit = true;
     var slideIndex = 1;
-    showDivs(slideIndex);
+    // showDivs(slideIndex);
     // add carousel
-    // carousel();
-    var timer = null;
-    function resetTimer(timer) {
-        if (timer) {
-            clearTimeout(timer);
-            timer = null;
-        }
-    }
+    carousel();
+    // var timer = null;
+    // function resetTimer(timer) {
+    //     if (timer) {
+    //         clearTimeout(timer);
+    //         timer = null;
+    //     }
+    // }
 
-    function plusDivs(n) {
-        // reset timer
-        resetTimer(timer);
-        varInit = true;
-        showDivs(slideIndex += n);
-    }
+    // function plusDivs(n) {
+    //     // reset timer
+    //     resetTimer(timer);
+    //     varInit = true;
+    //     showDivs(slideIndex += n);
+    // }
 
-    function currentDiv(n) {
-        // reset timer
-        resetTimer(timer);
-        varInit = true;
-        showDivs(slideIndex = n);
-    }
+    // function currentDiv(n) {
+    //     // reset timer
+    //     resetTimer(timer);
+    //     varInit = true;
+    //     showDivs(slideIndex = n);
+    // }
 
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
+    // function showDivs(n) {
+    //     var i;
+    //     var x = document.getElementsByClassName("mySlides");
+    //     var dots = document.getElementsByClassName("demo");
 
-        // update or re-shift back slideIndex
-        if (varInit == false) {
-            slideIndex += 1;
-            n += 1;
-        }
-        if (varInit == true) { 
-            varInit = false;
-        }
+    //     // update or re-shift back slideIndex
+    //     if (varInit == false) {
+    //         slideIndex += 1;
+    //         n += 1;
+    //     }
+    //     if (varInit == true) { 
+    //         varInit = false;
+    //     }
 
-        if (n > x.length) {
-            slideIndex = 1;
-        }
-        if (n < 1) {
-            slideIndex = x.length;
-        }
+    //     if (n > x.length) {
+    //         slideIndex = 1;
+    //     }
+    //     if (n < 1) {
+    //         slideIndex = x.length;
+    //     }
 
 
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " w3-white";
+    //     for (i = 0; i < x.length; i++) {
+    //         x[i].style.display = "none";  
+    //     }
+    //     for (i = 0; i < dots.length; i++) {
+    //         dots[i].className = dots[i].className.replace(" w3-white", "");
+    //     }
+    //     x[slideIndex-1].style.display = "block";  
+    //     dots[slideIndex-1].className += " w3-white";
         
-        // add carousel
-        timer = setTimeout(showDivs(slideIndex), 3000);
+    //     // add carousel
+    //     timer = setTimeout(showDivs(slideIndex), 3000);
+    // }
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    // add dots control
+    var dots = document.getElementsByClassName("demo");
+
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
     }
+    slideIndex++;
+    if (slideIndex > x.length) {
+        slideIndex = 1;
+    }
+    x[slideIndex-1].style.display = "block";
+    // add dots control
+    for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    dots[slideIndex-1].className += " w3-white";
 
-// function carousel() {
-//     var i;
-//     var x = document.getElementsByClassName("mySlides");
-//     // add dots control
-//     var dots = document.getElementsByClassName("demo");
-
-//     for (i = 0; i < x.length; i++) {
-//        x[i].style.display = "none";  
-//     }
-//     slideIndex++;
-//     if (slideIndex > x.length) {
-//         slideIndex = 1;
-//     }
-//     x[slideIndex-1].style.display = "block";
-//     // add dots control
-//     for (i = 0; i < dots.length; i++) {
-//      dots[i].className = dots[i].className.replace(" w3-white", "");
-//     }
-//     dots[slideIndex-1].className += " w3-white";
-
-//     setTimeout(carousel, 9000);    
-// }
+    setTimeout(carousel, 5000);    
+}
 
 </script>
 
