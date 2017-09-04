@@ -52,9 +52,9 @@
 	height: auto;
 }
 
-/*.my-animate-fading {animation:fading 2s infinite}*/
-/*@keyframes fading {0%{opacity:0}50%{opacity:1}100%{opacity:0}}*/
-.my-animate-fading {}
+.my-animate-fading {animation:fading 2s infinite}
+@keyframes fading {0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+/*.my-animate-fading {}*/
 
 
 
