@@ -53,7 +53,7 @@
 }
 
 .my-animate-fading {animation:fading 10s infinite}
-@keyframes fading {0%{opacity:0.4}50%{opacity:1}100%{opacity:0.4}}
+@keyframes fading {0%{opacity:1}50%{opacity:1}100%{opacity:0.4}}
 /*@keyframes fading {from{opacity:0.4} to{opacity:1}}*/
 /*.my-animate-fading {}*/
 
