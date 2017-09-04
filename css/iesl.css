@@ -52,6 +52,8 @@
 	height: auto;
 }
 
+.my-animate-fading{animation:fading 1s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
 .desc {
 	text-align: justify;
 }
