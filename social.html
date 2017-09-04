@@ -279,9 +279,10 @@
         var dots = document.getElementsByClassName("demo");
 
         // update or re-shift back slideIndex
-        if (varInit) { 
+        if (varInit == true) { 
             varInit = false;
-        } else {
+        }
+        if (varInit == false) {
             slideIndex++;
             n++;
         }
