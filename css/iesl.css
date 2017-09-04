@@ -52,8 +52,8 @@
 	height: auto;
 }
 
-.my-animate-fading {animation:fading 8s infinite}
-@keyframes fading {0%{opacity:0}25%{opacity:1}100%{opacity:0}}
+/*.my-animate-fading {animation:fading 8s infinite}
+@keyframes fading {0%{opacity:0}5%{opacity:1}95%{opacity:1}100%{opacity:0}}*/
 /*@keyframes fading {from{opacity:0.4} to{opacity:1}}*/
 /*.my-animate-fading {}*/
 
@@ -227,44 +227,7 @@ footer a {
 
 
 /* Social: responsive image gallery */
-.polaroid {
-    /*width: 100%;*/
-    width: 100%;
-    /*height: 380px;*/
-    height: 380px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-right: 10px;
-}
 
-.polaroid img {
-	/*width: 100%;*/
-	position: relative;
-    float: left;
-    /*width: 380px;*/
-    width: 100%;
-
-    height: auto;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.polaroid .imgcap {
-    text-align: center;
-    padding-top: 10px;
-    /*padding: 10px 20px 0px;*/
-}
-
-.polaroid .imgcap .imgpc {
-    text-align: right;
-    font-style: italic;
-    /*padding: 10px 20px;*/
-    /*padding: 0px 20px 10px;*/
-    padding-bottom: 10px;
-    color: grey;
-}
 
 
 /* CY */
