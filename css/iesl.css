@@ -52,8 +52,9 @@
 	height: auto;
 }
 
-/*.my-animate-fading{animation:fading 2s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}*/
-.my-animate-fading{}
+/*.my-animate-fading {animation:fading 2s infinite}*/
+/*@keyframes fading {0%{opacity:0}50%{opacity:1}100%{opacity:0}}*/
+.my-animate-fading {}
 
 .desc {
 	text-align: justify;
@@ -225,7 +226,7 @@ footer a {
 /* Social: responsive image gallery */
 .polaroid {
     /*width: 100%;*/
-     width: 380px;
+    width: 380px;
     height: 380px;
     overflow: hidden;
     background-color: white;
