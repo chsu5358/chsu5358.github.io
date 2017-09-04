@@ -246,7 +246,8 @@
 
 <!-- CY: slideshow + carousel-->
 <script>
-    var slideIndex = 1; //1;
+    var shift = -1;
+    var slideIndex = 1 + shift; //1;
     // add carousel
     // carousel();
     var timer = null;
@@ -267,19 +268,25 @@
     function currentDiv(n) {
         // reset timer
         resetTimer(timer);
-        showDivs(slideIndex = n);
+        showDivs(slideIndex = n + shift);
     }
 
     function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("demo");
+
+        // update or re-shift back slideIndex
+        slideIndex++;
+
         if (n > x.length) {
             slideIndex = 1;
         }
         if (n < 1) {
             slideIndex = x.length;
         }
+
+
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
         }
@@ -291,7 +298,7 @@
         
         // add carousel
         // slideIndex += 1;
-        timer = setTimeout(showDivs(slideIndex += 1), 9000);
+        timer = setTimeout(showDivs(slideIndex), 9000);
     }
 
 // function carousel() {
