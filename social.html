@@ -34,9 +34,9 @@
         left: -50%;
         top: -50%;
         }*/
-        .my-animate-fading {animation:fading 8s infinite}
-        /*@keyframes fading {0%{opacity:0.2}10%{opacity:1}90%{opacity:1}100%{opacity:0.2}}*/
-        @keyframes fading {
+        .my-animate-fading {animation:fading 4s infinite}
+        @keyframes fading {0%{opacity:0}10%{opacity:1}90%{opacity:1}100%{opacity:0}}
+        /*@keyframes fading {
             17% {
                 opacity:1;
             }
@@ -46,7 +46,7 @@
             92% {
                 opacity:0;
             }
-        }
+        }*/
 
         /* responsive gallery */
         div.gallery {
@@ -418,7 +418,7 @@ function carousel() {
     }
     dots[slideIndex-1].className += " w3-white";
 
-    setTimeout(carousel, 5000);    
+    setTimeout(carousel, 4000);    
 }
 
 </script>
