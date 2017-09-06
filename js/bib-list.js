@@ -2577,44 +2577,55 @@ var bibtexify = (function($) {
           return itemStr;
         },
         // helper functions for formatting different types of bibtex entries
+
+        // CY: add styling for title
         inproceedings: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                entryData.title + ". In <em>" + entryData.booktitle +
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                ". In <em>" + entryData.booktitle +
                 ", pp. " + entryData.pages +
                 ((entryData.address)?", " + entryData.address:"") + ".<\/em>";
         },
         article: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                entryData.title + ". <em>" + entryData.journal + ", " + entryData.volume +
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                ". <em>" + entryData.journal + ", " + entryData.volume +
                 ((entryData.number)?"(" + entryData.number + ")":"")+ ", " +
                 "pp. " + entryData.pages + ". " +
                 ((entryData.address)?entryData.address + ".":"") + "<\/em>";
         },
         misc: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                entryData.title + ". " +
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                ". " +
                 ((entryData.howpublished)?entryData.howpublished + ". ":"") +
                 ((entryData.note)?entryData.note + ".":"");
         },
         mastersthesis: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-            entryData.title + ". " + entryData.type + ". " +
-            entryData.organization + ", " + entryData.school + ".";
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                ". " + entryData.type + ". " +
+                entryData.organization + ", " + entryData.school + ".";
         },
         techreport: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                entryData.title + ". " + entryData.institution + ". " +
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                ". " + entryData.institution + ". " +
                 entryData.number + ". " + entryData.type + ".";
         },
         book: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                " <em>" + entryData.title + "<\/em>, " +
+                " <em>" + 
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                "<\/em>, " +
                 entryData.publisher + ", " + entryData.year +
                 ((entryData.issn)?", ISBN: " + entryData.issn + ".":".");
         },
         inbook: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
-                entryData.chapter + " in <em>" + entryData.title + "<\/em>, " +
+                entryData.chapter + " in <em>" + 
+                "<span class="ieslTitle">" + entryData.title + "<\/span>" +
+                "<\/em>, " +
                 ((entryData.editor)?" Edited by " + entryData.editor + ", ":"") +
                 entryData.publisher + ", pp. " + entryData.pages + "" +
                 ((entryData.series)?", <em>" + entryData.series + "<\/em>":"") +
@@ -2622,6 +2633,54 @@ var bibtexify = (function($) {
                 ((entryData.issn)?", ISBN: " + entryData.issn + "":"") +
                 ".";
         },
+
+        // inproceedings: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //         entryData.title + ". In <em>" + entryData.booktitle +
+        //         ", pp. " + entryData.pages +
+        //         ((entryData.address)?", " + entryData.address:"") + ".<\/em>";
+        // },
+        // article: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //         entryData.title + ". <em>" + entryData.journal + ", " + entryData.volume +
+        //         ((entryData.number)?"(" + entryData.number + ")":"")+ ", " +
+        //         "pp. " + entryData.pages + ". " +
+        //         ((entryData.address)?entryData.address + ".":"") + "<\/em>";
+        // },
+        // misc: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //         entryData.title + ". " +
+        //         ((entryData.howpublished)?entryData.howpublished + ". ":"") +
+        //         ((entryData.note)?entryData.note + ".":"");
+        // },
+        // mastersthesis: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //     entryData.title + ". " + entryData.type + ". " +
+        //     entryData.organization + ", " + entryData.school + ".";
+        // },
+        // techreport: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //         entryData.title + ". " + entryData.institution + ". " +
+        //         entryData.number + ". " + entryData.type + ".";
+        // },
+        // book: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //         " <em>" + entryData.title + "<\/em>, " +
+        //         entryData.publisher + ", " + entryData.year +
+        //         ((entryData.issn)?", ISBN: " + entryData.issn + ".":".");
+        // },
+        // inbook: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
+        //         entryData.chapter + " in <em>" + entryData.title + "<\/em>, " +
+        //         ((entryData.editor)?" Edited by " + entryData.editor + ", ":"") +
+        //         entryData.publisher + ", pp. " + entryData.pages + "" +
+        //         ((entryData.series)?", <em>" + entryData.series + "<\/em>":"") +
+        //         ((entryData.volume)?", Vol. " + entryData.volume + "":"") +
+        //         ((entryData.issn)?", ISBN: " + entryData.issn + "":"") +
+        //         ".";
+        // },
+
+
         // weights of the different types of entries; used when sorting
         importance: {
             'TITLE': 9999,
