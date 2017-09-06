@@ -1,4 +1,7 @@
-span.undefined { color:red; }
+/*span.undefined { color:red; }*/
+
+span.undefined { color: orangeRed; }
+
 .bibtable {width:100%; margin: 0 auto; clear: both;}
 .bibchart { width: 100%; height: 100px; margin-bottom: 20px;}
 .clear {clear:both;}
@@ -23,7 +26,7 @@ table.display td { padding: 3px 10px; }
 table.display td.center { text-align: center; }
 table.display { margin-top: 24px; }*/
 /* CY */
-#pubTable {font-size: 12px}
+#pubTable {font-size: 13px}
 
 #pubTable.display thead th { padding: 3px 18px 3px 10px; border-bottom: 1px solid black; border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; }
 #pubTable.display tfoot th { padding: 3px 10px; border-top: 1px solid black; font-weight: bold; }
