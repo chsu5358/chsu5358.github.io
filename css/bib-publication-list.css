@@ -29,6 +29,10 @@ table.display { margin-top: 24px; }*/
 #pubTable {font-size: 14px}
 .ieslTitle {font-weight: bold; color: #881c1c;}
 
+#pubTable.display thead th:hover {
+  text-shadow: 0.5px 0.5px 0.5px #881c1c;
+}
+
 #pubTable.display thead th { padding: 3px 18px 3px 10px; border-bottom: 1px solid black; border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; }
 #pubTable.display tfoot th { padding: 3px 10px; border-top: 1px solid black; font-weight: bold; }
 #pubTable.display td { padding: 3px 10px; }
