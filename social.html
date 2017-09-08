@@ -21,7 +21,7 @@
       .carousel-inner > .item > a > img {
           width: 618px;
           height: 347px;
-
+          object-fit: cover;
           margin: auto;
       }
     </style>
@@ -33,34 +33,7 @@
     </style>
     <!-- slideshow -->
     <style>
-        .mySlides {
-            /*display:none;*/
-            width:100%; 
-            height: auto; 
-            max-width: 100%;
-            max-height: 100%; 
-            object-fit: cover;
-        }
-        .w3-left, .w3-right, .w3-badge {cursor:pointer}
-        .w3-badge {height:13px;width:13px;padding:0}
-        /*.slidesCentered {
-        position: absolute;
-        left: -50%;
-        top: -50%;
-        }*/
-        .my-animate-fading {animation:fading 3s infinite}
-        @keyframes fading {0%{opacity:0.6}10%{opacity:1}95%{opacity:1}100%{opacity:0.3}}
-        /*@keyframes fading {
-            17% {
-                opacity:1;
-            }
-            25% {
-                opacity:1;
-            }
-            92% {
-                opacity:0;
-            }
-        }*/
+        
 
         /* responsive gallery */
         div.gallery {
