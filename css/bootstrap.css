@@ -5885,7 +5885,7 @@ a.badge:hover {
   border-top: 1px solid #e5e5e5;
 }
 
-.carousel {
+/*.carousel {
   position: relative;
   margin-bottom: 20px;
   line-height: 1;
@@ -6004,7 +6004,7 @@ a.badge:hover {
 
 .carousel-caption p {
   margin-bottom: 0;
-}
+}*/
 
 .hero-unit {
   /*
