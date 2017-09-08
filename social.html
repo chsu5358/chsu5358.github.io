@@ -10,8 +10,22 @@
 
     <link href="./css/iesl.css" rel="stylesheet">
     <link href="./css/w3.css" rel="stylesheet">
-    <link href="./css/pub.css" rel="stylesheet">
+    <!-- <link href="./css/pub.css" rel="stylesheet"> -->
     <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" ">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+          width: 618px;
+          height: 347px;
+
+          margin: auto;
+      }
+    </style>
+
     <style>
         body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -198,6 +212,66 @@
     <h2 id="social-top" class="page-header span10 offset1">Social</h2>
     
     <div class="span8 offset2" > <!-- style="width: 100%; max-height: 270px; overflow: hidden; position: relative;"> -->
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="./images/iesl-group-photo-Cropped-16-9.jpg" alt="UMass IESL Group" width="100%" height="auto">
+        <div class="carousel-caption">
+          <!-- <h3>header</h3> -->
+          <p>IESL Group, 2016 Retreat</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./images/photo-campus-pc-chsu.jpg" alt="UMass CICS building" width="100%" height="auto">
+        <div class="carousel-caption">
+          <!-- <h3>header</h3> -->
+          <p>UMass CICS building, Fall 2016 <br /> Photo by Chih-Yu Hsu</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="./images/photo-csbuilding1-pc-chsu-Cropped-16-9.jpg" alt="UMass CICS building" width="100%" height="auto">
+        <div class="carousel-caption">
+          <!-- <h3>header</h3> -->
+          <p>UMass CICS building, Fall 2016 <br /> Photo by Chih-Yu Hsu</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./images/photo-csbuilding-pc-chsu-Cropped-16-9.jpg" alt="UMass CICS building" width="100%" height="auto">
+        <div class="carousel-caption">
+          <!-- <h3>header</h3> -->
+          <p>UMass CICS building, Fall 2016 <br /> Photo by Chih-Yu Hsu</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
         <div class="w3-content w3-display-container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19); margin-bottom: 5px">
             
             <div class="w3-display-container mySlides my-animate-fading">
