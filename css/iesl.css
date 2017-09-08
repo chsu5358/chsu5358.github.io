@@ -96,34 +96,6 @@ footer a {
 
 }
 
-.jumbotron
-{
-	/*
-	background: rgba(136,28,28,0.5) url(../images/seal-umass-maroon-transparent-small.png) repeat 0 0;
-	
-	background: #881c1c url(../images/pattern.png) repeat 0 0;
-	*/
-	background: #881c1c;
-	color: #fff;
-	/*width: 1100px;*/
-	width: 80%;
-	/*margin: 5px;*/
-	margin: 15px auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 8px;
-}
-
-.jumbotron h1
-{
-	text-align: center;
-	font-size: 3em;
-	font-weight: 400;
-	
-	text-shadow: 2px 2px 3px #440e0e;
-	/*color: black5;*/
-}
 
 /* Home: Group photo as modal/dialog box */
 #home-group-photo {
