@@ -1,9 +1,13 @@
 /* CY */
-.navbar-nav li {
+.navbar li {
     color: white !important;
 }
 
-.nav a {
+.navbar a {
+	color: white !important;
+}
+
+.dropdown-menu a {
     color: white !important;
 }
 
