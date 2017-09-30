@@ -1,6 +1,6 @@
 /* CY */
 .nav.navbar-nav li a {
-    color: white;
+    color: white !important;
 }
 
 .nav-collapse.collapse .nav > li {
