@@ -1,7 +1,12 @@
 /* CY */
-.nav.navbar-nav li a {
+.navbar-nav li {
     color: white !important;
 }
+
+.navbar-nav a {
+    color: white !important;
+}
+
 
 .nav-collapse.collapse .nav > li {
 	float:none; 
