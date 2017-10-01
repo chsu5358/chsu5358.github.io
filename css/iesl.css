@@ -139,7 +139,7 @@ footer a {
 	/*text-shadow: 0.5px 0.5px 0.5px #440e0e;*/ /*1px 1px 1px #440e0e;*/
 	
 	color: black;/*#881c1c;*/
-	text-shadow: 0.5px 0.5px 0.5px #881c1c;
+	text-shadow: 0.5px 0.5px 0.5px gray;/*#881c1c;*/
 	/*border-bottom: 1px solid #a8431e;*/
 
 	/*padding-top: 10px;
