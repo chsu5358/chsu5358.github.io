@@ -2935,8 +2935,8 @@ table th[class*="span"],
   color: #333333;
   white-space: nowrap;
 }
-
-.dropdown-menu li > a:hover,
+/*CY: (Sep. 2017) Modify dropdown menu bg color*/
+/*.dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   color: #ffffff;
@@ -2965,7 +2965,7 @@ table th[class*="span"],
   outline: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }
-
+*/
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
   color: #999999;
