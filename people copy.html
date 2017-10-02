@@ -24,7 +24,6 @@
           
           /*overflow:hidden;
           border-top:1px solid #ccc;*/
-          list-style: none;
           margin-left: -30px !important;
           text-align: justify;
 
@@ -55,12 +54,16 @@
 
         .iesl-people li {
             float:left;
-            width: 50%;
+            /*width: 100%;*/
             margin:0px 0px 15px 0px;
+        }
 
+        .iesl-people li a{
+            color: #881c1c;
         }
 
         .iesl-people ul {
+            list-style: none;
             margin:0px 0px 0px 0px;
             //margin-bottom:100px;
 
@@ -71,11 +74,9 @@
 
         }
 
-        /*#double { 
+        .iesl-people .double { 
             width: 50%;
-            //padding-right: 5px;
         }
-        #triple { width:33%;}*/
 
 
 
@@ -166,12 +167,26 @@
     </section>
 
     <!-- Director -->
-    <section class="row">            
-        <div class="span2 offset1">
-            <img src="./people/Andrew_in_office.zoom.jpg" />
-            Prof. <a href="http://cs.umass.edu/~mccallum">Andrew McCallum</a>
+    <section class="iesl-people">
+        <div class="span10 offset1">
+            <ul>
+                <li>
+                    <div class="media">
+                        <a class="pull-left" href="http://cs.umass.edu/~mccallum">
+                            <img class="media-object crop" src="./people/Andrew_in_office-crop.jpg">
+                        </a>
+
+                        <div class="media-body">
+                            <h4 class="media-heading" style="color: #881c1c"><a href="http://cs.umass.edu/~mccallum">Andrew McCallum</a>
+                                <small>Professor</small>
+                            </h4>
+                            <p>The main goal of my research is to dramatically increase our ability to mine actionable knowledge from unstructured text. I am especially interested in information extraction from the Web, understanding the connections between people and between organizations, expert finding, social network analysis, and mining the scientific literature & community. Toward this end my group develops and employs various methods in statistical machine learning, natural language processing, information retrieval and data mining---tending toward probabilistic approaches and graphical models.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>  
         </div>
-       
+
     </section>
 
     <div id="ppl-st-top" style="margin-top:-30px"></div>
@@ -189,10 +204,10 @@
     <!-- !!!! TEST: list structure !!!! -->
     <!-- <section class="span10 offset1"> -->
 <section class="iesl-people">
-    <div class="span10 offset1"> <!-- class="row"> -->
+    <div class="span10 offset1">
         <div >
-            <ul style="list-style: none;">
-                <li>
+            <ul>
+                <li class="double">
                     <div class="media">
                         <a class="pull-left" href="https://people.cs.umass.edu/~akobren/">
                             <img class="media-object crop" src="./people/st-AriKobren-crop.jpg">
@@ -203,84 +218,13 @@
                                 <small>PhD, started 2012</small>
                             </h4>
 
-                            <p>
-                                Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
+                            <p>Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
                             </p>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="media">
-                        <a class="pull-left" href="https://people.cs.umass.edu/~akobren/">
-                            <img class="media-object crop" src="./people/st-AriKobren-crop.jpg">
-                        </a>
-
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="https://people.cs.umass.edu/~akobren/">Ari Kobren</a>
-                                <small>PhD, started 2012</small>
-                            </h4>
-
-                            <p>
-                                Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="media">
-                        <a class="pull-left" href="https://people.cs.umass.edu/~akobren/">
-                            <img class="media-object crop" src="./people/st-AriKobren-crop.jpg">
-                        </a>
-
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="https://people.cs.umass.edu/~akobren/">Ari Kobren</a>
-                                <small>PhD, started 2012</small>
-                            </h4>
-
-                            <p>
-                                Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="media">
-                        <a class="pull-left" href="https://people.cs.umass.edu/~akobren/">
-                            <img class="media-object crop" src="./people/st-AriKobren-crop.jpg">
-                        </a>
-
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="https://people.cs.umass.edu/~akobren/">Ari Kobren</a>
-                                <small>PhD, started 2012</small>
-                            </h4>
-
-                            <p>
-                                Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="media">
-                        <a class="pull-left" href="https://people.cs.umass.edu/~akobren/">
-                            <img class="media-object crop" src="./people/st-AriKobren-crop.jpg">
-                        </a>
-
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="https://people.cs.umass.edu/~akobren/">Ari Kobren</a>
-                                <small>PhD, started 2012</small>
-                            </h4>
-
-                            <p>
-                                Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
-                            </p>
-                        </div>
-                    </div>
-                </li>
+                
 
                 
             </ul>
