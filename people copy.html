@@ -20,18 +20,24 @@
           /*width:760px;*/
           /*width: 766px;*/
           /*margin-bottom:20px;*/
-          margin: 0 auto 20px;
-          overflow:hidden;
+          /*margin: 0 auto 20px;*/
+          
+          /*overflow:hidden;
           border-top:1px solid #ccc;
-          list-style: none;
+          list-style: none;*/
         }
-        .iesl-people >li{
-          line-height:1.5em;
+        .iesl-people > li{
+          /*clear: both;*/
+          
+          /*line-height:1.5em;
           border-bottom:1px solid #ccc;
           float:left;
-          display:inline;
+          display:inline;*/
         }
-        #double { width:50%;}
+        #double { 
+            width: 40%;
+            /*padding-right: 5px;*/
+        }
         #triple { width:33%;}
 
 
@@ -147,13 +153,29 @@
 
 
     <!-- !!!! TEST: list structure !!!! -->
-    <section class="span10 offset1">
+    <!-- <section class="span10 offset1"> -->
+    <section class="span10">
         <ul class="iesl-people">
             <li id="double">
-                <img src="./people/st-AriKobren-crop.jpg" />
-                <a href="https://people.cs.umass.edu/~akobren/" style="text-align: center">Ari Kobren</a>
-                <p class="desc">PhD, started 2012</p>
+            <div class="media">
+                <img class="media-object" src="./people/st-AriKobren-crop.jpg" />
+                <div class="media-body">
+                    <a href="https://people.cs.umass.edu/~akobren/" style="text-align: center">Ari Kobren</a>
+                    <p class="desc">PhD, started 2012<br/> Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.</p>
+                </div>
+            </div>
             </li>
+
+            <li id="double">
+            <div class="media">
+                <img class="media-object" src="./people/st-AriKobren-crop.jpg" />
+                <div class="media-body">
+                    <a href="https://people.cs.umass.edu/~akobren/" style="text-align: center">Ari Kobren</a>
+                    <p class="desc">PhD, started 2012<br/> Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.</p>
+                </div>
+            </div>
+            </li>
+
             <li id="double">
                 <img src="./people/st-LukeVilnis-crop.jpg" />
             <a href="http://people.cs.umass.edu/~luke/" style="text-align: center">Luke Vilnis</a>
