@@ -296,8 +296,10 @@ footer a {
 	overflow:hidden; /* this is important */
 	position:relative; /* this is important too */
 	border:0px solid #ccc;
-	width:100px;
-	height:105px;
+	/*width:100px;
+	height:105px;*/
+	width:200px;
+	height:200px;
 }
 	/* input values to crop the image: top, right, bottom, left */
 

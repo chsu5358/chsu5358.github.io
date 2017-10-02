@@ -23,19 +23,56 @@
           /*margin: 0 auto 20px;*/
           
           /*overflow:hidden;
-          border-top:1px solid #ccc;
-          list-style: none;*/
+          border-top:1px solid #ccc;*/
+          list-style: none;
+          margin-left: -30px !important;
+
         }
+        /*.iesl-people ul {
+            margin:0px 0px 0px 0px;
+        }
+
         .iesl-people > li{
-          /*clear: both;*/
           
-          /*line-height:1.5em;
+          line-height:1.5em;
           border-bottom:1px solid #ccc;
           float:left;
-          display:inline;*/
+          display:inline;
+          float:left;
+          width: 50%;
+          margin:0px 0px 15px 0px;
+        }*/
+        
+        .iesl-people {
+            margin:0px 0px 0px 0px;
         }
+
+        .iesl-people .media-body {
+            padding-right:20px;
+
+        }
+
+
+        .iesl-people li {
+            float:left;
+            width: 50%;
+            margin:0px 0px 15px 0px;
+
+        }
+
+        .iesl-people ul {
+            margin:0px 0px 0px 0px;
+            //margin-bottom:100px;
+
+        }
+
+        .iesl-people .media-body {
+            padding-right:20px;
+
+        }
+
         #double { 
-            width: 40%;
+            width: 50%;
             /*padding-right: 5px;*/
         }
         #triple { width:33%;}
@@ -154,7 +191,35 @@
 
     <!-- !!!! TEST: list structure !!!! -->
     <!-- <section class="span10 offset1"> -->
-    <section class="span10">
+<section class="iesl-people">
+    <div class="span10 offset1"> <!-- class="row"> -->
+        <div >
+            <ul style="list-style: none;">
+                <li>
+                    <div class="media">
+                        <a class="pull-left" href="http://www.riedelcastro.org/">
+                            <img class="media-object crop" src="./people/st-AriKobren-crop.jpg">
+                        </a>
+
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="http://www.riedelcastro.org/">Ari Kobren</a>
+                                <small>PhD, started 2012</small>
+                            </h4>
+
+                            <p>
+                                Currently, I'm working on interactive data integration--or combining multiple, heterogeneous sources of data into a single, consistent knowledge base with a human in the loop.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <section class="span10 offset1 row">
         <ul class="iesl-people">
             <li id="double">
             <div class="media">
