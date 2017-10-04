@@ -18,28 +18,28 @@
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-  color: #ffffff;
+  color: #681414;/*#ffffff;*/
   text-decoration: none;
-  background-color: #222222 !important; /*#0081c2;*/
-  background-image: -moz-linear-gradient(top, #222222, #110000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#110000));
-  background-image: -webkit-linear-gradient(top, #222222, #110000);
-  background-image: -o-linear-gradient(top, #222222, #110000);
-  background-image: linear-gradient(to bottom, #222222, #110000);
+  background-color: #681414 !important; /*#0081c2;*/
+  background-image: -moz-linear-gradient(top, #681414, #5b1212);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#681414), to(#5b1212));
+  background-image: -webkit-linear-gradient(top, #681414, #5b1212);
+  background-image: -o-linear-gradient(top, #681414, #5b1212);
+  background-image: linear-gradient(to bottom, #681414, #5b1212);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff110000', GradientType=0);
 }
 
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: #ffffff;
+  color: #681414;
   text-decoration: none;
-  background-color: #222222 !important;
-  background-image: -moz-linear-gradient(top, #222222, #110000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#110000));
-  background-image: -webkit-linear-gradient(top, #222222, #110000);
-  background-image: -o-linear-gradient(top, #222222, #110000);
-  background-image: linear-gradient(to bottom, #222222, #110000);
+  background-color: #681414 !important;
+  background-image: -moz-linear-gradient(top, #681414, #5b1212);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#681414), to(#5b1212));
+  background-image: -webkit-linear-gradient(top, #681414, #5b1212);
+  background-image: -o-linear-gradient(top, #681414, #5b1212);
+  background-image: linear-gradient(to bottom, #681414, #5b1212);
   background-repeat: repeat-x;
   outline: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff110000', GradientType=0);
