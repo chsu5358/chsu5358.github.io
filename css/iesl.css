@@ -63,15 +63,15 @@
 }
 
 .navbar li {
-    color: white !important;
+    color: #e5e5e5 !important;
 }
 
 .navbar a {
-	color: white !important;
+	color: #e5e5e5 !important;
 }
 
 .dropdown-menu a {
-    color: white !important;
+    color: #e5e5e5 !important;
     background-color: #881c1c !important;
 }
 
