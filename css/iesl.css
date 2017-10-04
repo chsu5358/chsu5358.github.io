@@ -20,6 +20,7 @@
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff !important;
   background-color: #5f1313 !important;
+  font-weight: bold !important;
 }
 
 .dropdown-menu li > a:hover,
