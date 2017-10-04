@@ -23,9 +23,9 @@
   font-weight: bold !important;
 }
 
-.navbar-inverse .li > a,
-.navbar-inverse .li > a:hover,
-.navbar-inverse .li > a:focus {
+.navbar-inverse li > a,
+.navbar-inverse li > a:hover,
+.navbar-inverse li > a:focus {
   color: #ffffff !important;
   background-color: #5f1313 !important;
   font-weight: bold !important;
