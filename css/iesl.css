@@ -15,10 +15,17 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#881c1c', endColorstr='#6f2323', GradientType=0) !important;
 }
 
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #ffffff !important;
+  background-color: #5f1313 !important;
+}
+
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-  color: #5f1313 !important;/*#ffffff;*/
+  color: #ffffff;
   font-weight: bold !important;
   text-decoration: none !important;
   background-color: #5f1313 !important; /*#0081c2;*/
@@ -33,7 +40,7 @@
 
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: #5f1313;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   background-color: #5f1313 !important;
