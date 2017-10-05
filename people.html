@@ -28,13 +28,17 @@
 
         @media only screen and (max-width: 500px){
             .iesl-people {
-                margin-left: 0px !important;
+                margin: auto;
+            }
+            .iesl-people .media-body{
+                padding: auto;
+                margin: auto;
             }
         }
         
-        .iesl-people {
+        /*.iesl-people {
             margin:0px 0px 0px 0px;
-        }
+        }*/
 
         .iesl-people .media-body {
             padding-right:20px;
@@ -45,8 +49,10 @@
             float:left;
             /*width: 100%;*/
             margin:0px 0px 15px 0px;
-            overflow: scroll; 
-            overflow-x: hidden;
+            /*overflow: scroll; */
+            overflow-x: auto;
+            overflow-y: auto;
+
         }
 
         .iesl-people li a {
@@ -67,7 +73,7 @@
 
         .iesl-people .double { 
             width: 50%;
-            height: 170px;
+            height: 180px;
         }
 
         @media only screen and (max-width: 700px){
@@ -419,10 +425,11 @@
                 </ul>
             </div>
         </div>
+        <div style="clear:both"></div>
     </section>
 
     <div id="ppl-post-top" style="margin-top:-50px"></div>
-    <div style="margin-top:50px"></div>
+    <div style="margin-top:50px; clear:both"></div>
     <!-- Post Docs -->
     <section class="row" >        
         <div class="span10 offset1" style="margin-top: 60px">
@@ -453,6 +460,7 @@
                 </ul>
             </div>
         </div>
+        <div style="clear:both"></div>
     </section>
 
     <div id="ppl-staff-top" style="margin-top:-50px"></div>
@@ -514,6 +522,7 @@
                 </ul>
             </div>
         </div>
+        <div style="clear:both"></div>
     </section>
 
     <div id="ppl-alum-top" style="margin-top:-50px"></div>
@@ -1208,6 +1217,7 @@
                 </ul>
             </div>
         </div>
+        <div style="clear:both"></div>
     </section>
 
 <!-- !!! Template for adding new entry as a list item: -->
