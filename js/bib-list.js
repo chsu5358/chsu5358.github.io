@@ -2507,8 +2507,11 @@ var bibtexify = (function($) {
             if (bib.options.tweet && entryData.url) {
                 itemStr += bib2html.tweet(entryData, bib);
             }
+            // return itemStr.replace(/undefined/g,
+            //                        '<span class="undefined">missing<\/span>');
+            /* CY, 2017: remove 'missing' field */
             return itemStr.replace(/undefined/g,
-                                   '<span class="undefined">missing<\/span>');
+                                   '');
         },
         // converts the given author data into HTML
         authors2html: function(authorData) {
