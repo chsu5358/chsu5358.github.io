@@ -55,15 +55,15 @@ table.display { margin-top: 24px; }*/
 }
 
 #pubTable.display thead:nth-child(1){
-     width: 10% !important;
+     width: 5% !important;
 }
 
 #pubTable.display thead:nth-child(2){
-     width: 10% !important;
+     width: 5% !important;
 }
 
 #pubTable.display thead:nth-child(3){
-     width: 80% !important;
+     width: 90% !important;
 }
 
 #pubTable.display tfoot th { 
