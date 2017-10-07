@@ -2604,9 +2604,10 @@ var bibtexify = (function($) {
         article: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
-                ".<br\/><em>" + entryData.journal + ", " + entryData.volume +
-                ((entryData.number)?"(" + entryData.number + ")":"")+ ", " +
-                "pp. " + entryData.pages + ". " +
+                ".<br\/><em>" + ((entryData.journal)?entryData.journal + ", ":"") + 
+                ((entryData.volume)?entryData.volume:"")+
+                ((entryData.number)?"(" + entryData.number + "),":"") +
+                ((entryData.pages)?"pp. " + entryData.pages :"")+ ". " +
                 ((entryData.address)?entryData.address + ".":"") + "<\/em>";
         },
         misc: function(entryData) {
