@@ -41,6 +41,7 @@ table.display { margin-top: 24px; }*/
 #pubTable.display td { 
 	padding: 3px 10px; 
     line-height: 120%;
+    text-align: justify;
 }
 #pubTable.display td.center { text-align: center; }
 #pubTable.display { margin-top: 24px; }
