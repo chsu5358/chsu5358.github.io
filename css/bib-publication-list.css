@@ -5,9 +5,17 @@ span.undefined { color: orangeRed; }
 .bibtable {width:100%; margin: 0 auto; clear: both;}
 .bibchart { width: 100%; height: 100px; margin-bottom: 20px;}
 .clear {clear:both;}
-.year { position: relative; height: 100%; border-bottom: 1px solid black; display: inline-block;}
+.year { 
+	position: relative; 
+	height: 100%; 
+	border-bottom: 1px solid green; /*black; */
+	display: inline-block;
+}
 .yearlabel { position: absolute; bottom: -20px; text-align: center; width: 100%; font-size: smaller;}
-.pub { border: 1px solid white; background-color: #eee; }
+.pub { 
+	border: 1px solid red; /*white; */
+	background-color: #eee; 
+}
 .inproceedings { background-color: #ccf; }
 .article { background-color: #beb; }
 .inbook { background-color: #eaa; }
