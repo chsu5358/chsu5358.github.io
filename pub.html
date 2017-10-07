@@ -432,7 +432,22 @@ type = {IR},
      }
 </script>
 
-
+<script>
+jQuery("#pubTable").on("click", "a", function(e) {
+  var $n = jQuery(this),
+      text = $n.text().toUpperCase();
+  if (text === "X") { return; }
+  try { 
+    _gaq.push(['_trackEvent', "PublicationAction", text]);
+} catch(err){ }
+  if ($n.attr("href") !== "#") {
+    setTimeout(function() {
+      document.location.href = $n.attr("href");
+    }, 100);
+    return false;
+  }
+});
+</script>
 
 
 </body></html>
