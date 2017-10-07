@@ -28,7 +28,7 @@ table.display { margin-top: 24px; }*/
 /* CY */
 #pubTable {font-size: 15px}
 .ieslTitle {
-	font-weight: 500; /*bold; */
+	font-weight: 600; /*bold; */
 	/*color: #881c1c;*/
 }
 
@@ -40,7 +40,7 @@ table.display { margin-top: 24px; }*/
 #pubTable.display thead th { padding: 3px 18px 3px 10px; border-bottom: 1px solid black; border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; }
 #pubTable.display tfoot th { 
 	padding: 3px 10px; border-top: 1px solid black; 
-	font-weight: 500; /*bold;*/
+	font-weight: 600; /*bold;*/
 }
 #pubTable.display td { 
 	padding: 3px 10px; 
