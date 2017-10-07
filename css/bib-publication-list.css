@@ -54,15 +54,15 @@ table.display { margin-top: 24px; }*/
 	border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; 
 }
 
-#pubTable.display thead th:nth-child(1){
+#pubTable.display thead:nth-child(1){
      width: 10% !important;
 }
 
-#pubTable.display thead th:nth-child(2){
+#pubTable.display thead:nth-child(2){
      width: 10% !important;
 }
 
-#pubTable.display thead th:nth-child(3){
+#pubTable.display thead:nth-child(3){
      width: 80% !important;
 }
 
