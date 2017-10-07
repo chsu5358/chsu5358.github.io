@@ -2534,7 +2534,7 @@ var bibtexify = (function($) {
             // }
             /* CY, 2017: edit style */
             if (entryData.url && entryData.url.match(/.*\.pdf/)) {
-                itemStr += '[<a title="PDF-version of this article" href="' +
+                itemStr += ' [<a title="PDF-version of this article" href="' +
                             entryData.url + '">pdf<\/a>]';
             } else if (entryData.url) {
                 itemStr += ' [<a title="This article online" href="' + entryData.url +
