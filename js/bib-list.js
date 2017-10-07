@@ -2524,7 +2524,7 @@ var bibtexify = (function($) {
         },
         // adds links to the PDF or url of the item
         links: function(entryData) {
-            var itemStr = '';
+            var itemStr = '<br\/>';
             // if (entryData.url && entryData.url.match(/.*\.pdf/)) {
             //     itemStr += ' (<a title="PDF-version of this article" href="' +
             //                 entryData.url + '">pdf<\/a>)';
