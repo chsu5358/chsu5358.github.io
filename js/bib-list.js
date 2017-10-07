@@ -2644,7 +2644,7 @@ var bibtexify = (function($) {
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
                 "<\/em>,<br\/>" +
                 ((entryData.editor)?" Edited by " + entryData.editor + ", ":"") +
-                ((entryData.publisher)?entryData.publisher +
+                ((entryData.publisher)?entryData.publisher:"") +
                 ((entryData.pages)? ", pp. " + entryData.pages :"")+ "" +
                 ((entryData.series)?", <em>" + entryData.series + "<\/em>":"") +
                 ((entryData.volume)?", Vol. " + entryData.volume + "":"") +
