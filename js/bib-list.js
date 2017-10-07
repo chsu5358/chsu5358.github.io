@@ -2604,7 +2604,7 @@ var bibtexify = (function($) {
         article: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
-                "<br\/><em>" + ((entryData.journal)?entryData.journal :"") + 
+                "<em>" + ((entryData.journal)?"<br\/>" + entryData.journal :"") + 
                 ((entryData.volume || entryData.number || entryData.pages || entryData.address)? ", ":"") + 
                 ((entryData.volume)?entryData.volume:"")+
                 ((entryData.number)?"(" + entryData.number + ")":"") +
