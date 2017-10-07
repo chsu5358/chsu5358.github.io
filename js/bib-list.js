@@ -2620,21 +2620,22 @@ var bibtexify = (function($) {
         mastersthesis: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
-                ".<br\/>" + entryData.type + ". " +
-                entryData.organization + ", " + entryData.school + ".";
+                ".<br\/>" + ((entryData.type)?entryData.type + ". " :"")+
+                ((entryData.organization)?entryData.organization + ", ":"") + 
+                ((entryData.school)?entryData.school + ".":"");
         },
         techreport: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
-                ".<br\/>" + entryData.institution + ". " +
-                entryData.number + ". " + entryData.type + ".";
+                ".<br\/>" + ((entryData.institution)?entryData.institution + ". " :"")+
+                ((entryData.number)?entryData.number + ". ":"") + ((entryData.type)?entryData.type + ".":"");
         },
         book: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + "). " +
                 " <em>" + 
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
                 "<\/em>,<br\/>" +
-                entryData.publisher + ", " + entryData.year +
+                ((entryData.publisher)?entryData.publisher + ", ":"") + ((entryData.year)?entryData.year:"") +
                 ((entryData.issn)?", ISBN: " + entryData.issn + ".":".");
         },
         inbook: function(entryData) {
@@ -2643,7 +2644,8 @@ var bibtexify = (function($) {
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
                 "<\/em>,<br\/>" +
                 ((entryData.editor)?" Edited by " + entryData.editor + ", ":"") +
-                entryData.publisher + ", pp. " + entryData.pages + "" +
+                ((entryData.publisher)?entryData.publisher +
+                ((entryData.pages)? ", pp. " + entryData.pages :"")+ "" +
                 ((entryData.series)?", <em>" + entryData.series + "<\/em>":"") +
                 ((entryData.volume)?", Vol. " + entryData.volume + "":"") +
                 ((entryData.issn)?", ISBN: " + entryData.issn + "":"") +
