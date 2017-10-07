@@ -2628,7 +2628,8 @@ var bibtexify = (function($) {
         techreport: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
-                "<br\/>" + ((entryData.institution)?entryData.institution + ". " :"")+
+                ((entryData.institution || entryData.number || entryData.type)?"<br\/>":"") + 
+                ((entryData.institution)?entryData.institution + ". " :"")+
                 ((entryData.number)?entryData.number + ". ":"") + ((entryData.type)?entryData.type + ".":"");
         },
         book: function(entryData) {
