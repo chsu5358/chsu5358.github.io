@@ -28,7 +28,7 @@ table.display { margin-top: 24px; }*/
 /* CY */
 #pubTable {
 	font-size: 15px;
-	table-layout: fixed;
+	table-layout: fixed; /*test*/
 }
 .ieslTitle {
 	font-weight: 600; /*bold; */
