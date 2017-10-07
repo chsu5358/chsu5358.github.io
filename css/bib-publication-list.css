@@ -59,11 +59,11 @@ table.display { margin-top: 24px; }*/
 }
 
 #pubTable.display thead th:nth-child(2){
-     width: 15% !important;
+     width: 10% !important;
 }
 
 #pubTable.display thead th:nth-child(3){
-     width: 75% !important;
+     width: 80% !important;
 }
 
 #pubTable.display tfoot th { 
