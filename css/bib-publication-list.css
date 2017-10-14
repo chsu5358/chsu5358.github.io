@@ -56,16 +56,14 @@ table.display { margin-top: 24px; }*/
 
 #pubTable.display th:nth-child(1){
      width: 5% !important;
-     color: red;
 }
 
 #pubTable.display th:nth-child(2){
-     width: 5% !important;
+     width: 10% !important;
 }
 
 #pubTable.display th:nth-child(3){
-     width: 90% !important;
-     color: navy;
+     width: 85% !important;
 }
 
 #pubTable.display tfoot th { 
