@@ -55,7 +55,7 @@ table.display { margin-top: 24px; }*/
 }
 
 #pubTable.display th:nth-child(1){
-     width: 5% !important;
+     width: 8% !important;
 }
 
 #pubTable.display th:nth-child(2){
@@ -63,7 +63,7 @@ table.display { margin-top: 24px; }*/
 }
 
 #pubTable.display th:nth-child(3){
-     width: 85% !important;
+     width: 82% !important;
 }
 
 #pubTable.display tfoot th { 
