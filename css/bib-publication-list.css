@@ -83,6 +83,12 @@ input[type=text] {
 	margin: auto !important;
 	padding: auto !important;
     width: 130px !important;
+
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
