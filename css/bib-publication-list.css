@@ -95,12 +95,12 @@ input[type=text] {
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-    width: 500px !important;
+    width: 300px !important;
 }
 
 input[type="text"], textarea {
-outline: none !important;
-box-shadow:none !important;
+	outline: none !important;
+	box-shadow: none !important;
 }
 
 
