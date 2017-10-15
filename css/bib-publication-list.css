@@ -96,12 +96,12 @@ input[type=text] {
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
     width: 300px !important;
+    border-color: rgba(136, 28, 28, 0.8) !important;
 }
 
 input[type="text"], textarea {
 	outline: none !important;
 	box-shadow: none !important;
-	border-color: rgba(136, 28, 28, 0.8) !important;
 }
 
 /* enable absolute positioning */
