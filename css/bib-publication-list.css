@@ -81,7 +81,7 @@ table.display { margin-top: 24px; }*/
 
 input[type=text] {
 	margin: auto !important;
-	padding: : auto !important;
+	padding: auto !important;
     width: 130px !important;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
