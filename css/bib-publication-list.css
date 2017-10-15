@@ -78,6 +78,20 @@ table.display { margin-top: 24px; }*/
 #pubTable.display td.center { text-align: center; }
 #pubTable.display { margin-top: 24px; }
 
+
+input[type=text] {
+    width: 130px !important;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100% !important;
+}
+
+
+
 .sorting_asc { background: url('lib/images/sort_asc.png') no-repeat center right; }
 .sorting_desc { background: url('lib/images/sort_desc.png') no-repeat center right; }
 .sorting { background: url('lib/images/sort_both.png') no-repeat center right; }
