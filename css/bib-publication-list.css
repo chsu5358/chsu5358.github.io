@@ -120,7 +120,7 @@ input[type="text"], textarea {
 }
 
 /* style icon */
-.inner-addon .icon{
+.inner-addon .innericon {
   position: absolute;
   padding: 10px;
   pointer-events: none;
