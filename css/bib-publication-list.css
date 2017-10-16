@@ -103,6 +103,16 @@ input[type="text"], textarea {
 	outline: none !important;
 	box-shadow: none !important;
 }
+/*.glyphicons{
+	display:inline-block;
+	position:relative;
+	padding-left:48px;
+	color:#1d1d1b;
+	text-decoration:none;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle
+}*/
 
 /* enable absolute positioning */
 .inner-addon { 
@@ -117,11 +127,11 @@ input[type="text"], textarea {
 }
 
 /* align icon */
-.left-addon { left:  0px;}
+.left-addon { left: 0px;}
 .right-addon { right: 0px;}
 
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
+.left-addon input { padding-left: 30px; }
 .right-addon input { padding-right: 30px; }
 
 
