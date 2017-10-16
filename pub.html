@@ -222,11 +222,11 @@
     var init = function() {
        bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
      };
-     // if (window.addEventListener) {
-     //   window.addEventListener('load', init, false);
-     // } else if (window.attachEvent) {
-     //   window.attachEvent('onload', init);
-     // }
+     if (window.addEventListener) {
+       window.addEventListener('load', init, false);
+     } else if (window.attachEvent) {
+       window.attachEvent('onload', init);
+     }
 </script>
 
 <script>
