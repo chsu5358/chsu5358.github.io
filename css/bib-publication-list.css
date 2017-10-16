@@ -35,6 +35,7 @@ table.display td.center { text-align: center; }
 table.display { margin-top: 24px; }*/
 /* CY */
 #pubTable {
+	width: 100%; /* test, 10/16/17 */
 	font-size: 15px;
 	table-layout: fixed; /*test*/
 }
