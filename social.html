@@ -194,22 +194,22 @@
 
 <!-- CY: [slideshow w/ indicators] -->
 <!-- !!!! photo aspect ratio: *16:9* !!!!-->
-<section class="row">
+<!-- <section class="row">
     <h2 id="social-top" class="page-header span10 offset1">Social</h2>
     
-    <!-- <div class="span8 offset2" > <!-- style="width: 100%; max-height: 270px; overflow: hidden; position: relative;"> -->
+    <div class="span8 offset2" >
         
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19); margin-bottom: 5px">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19); margin-bottom: 5px"> -->
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
+        </ol> -->
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <!-- <div class="carousel-inner" role="listbox">
 
           <div class="item active">
             <img src="./images/iesl-group-photo-Cropped-16-9.jpg" alt="UMass IESL Group" width="100%" height="auto">
@@ -239,10 +239,10 @@
             </div>
           </div>
       
-        </div>
+        </div> -->
 
         <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
           <span class="icon-chevron-left icon-white w3-display-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -251,14 +251,14 @@
           <span class="sr-only">Next</span>
         </a>
         </div>
-    </div> -->
+    </div>
     
- </section>
+ </section> -->
 
 <!-- CY: [polaroids] -->
 <!-- !!!! Photo aspect ratio requirement: same in pairs !!!!-->
 <section class="row">
-
+    <h2 id="social-top" class="page-header span10 offset1">Social</h2>
     <div class="span8 offset2">
 
     <div class="responsive">
@@ -328,8 +328,8 @@
 </div>
 <!-- /container -->
 
-<script src="./js/jquery-latest.js"></script>
-<script src="./js/bootstrap.js"></script>
+<script src="js/jquery-latest.js"></script>
+<script src="js/bootstrap.js"></script>
 
 <!-- CY: add smoothScroll -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -345,93 +345,34 @@
 </script>
 
 <!-- CY: slideshow + carousel-->
-<script>
-    // var varInit = true;
-    var slideIndex = 0; //1
-    // showDivs(slideIndex);
-    // add carousel
+<!-- <script>
+    var slideIndex = 0;
     carousel();
-    // var timer = null;
-    // function resetTimer(timer) {
-    //     if (timer) {
-    //         clearTimeout(timer);
-    //         timer = null;
-    //     }
-    // }
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        // add dots control
+        var dots = document.getElementsByClassName("demo");
 
-    // function plusDivs(n) {
-    //     // reset timer
-    //     resetTimer(timer);
-    //     varInit = true;
-    //     showDivs(slideIndex += n);
-    // }
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1;
+        }
+        x[slideIndex-1].style.display = "block";
+        // add dots control
+        for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        dots[slideIndex-1].className += " w3-white";
 
-    // function currentDiv(n) {
-    //     // reset timer
-    //     resetTimer(timer);
-    //     varInit = true;
-    //     showDivs(slideIndex = n);
-    // }
-
-    // function showDivs(n) {
-    //     var i;
-    //     var x = document.getElementsByClassName("mySlides");
-    //     var dots = document.getElementsByClassName("demo");
-
-    //     // update or re-shift back slideIndex
-    //     if (varInit == false) {
-    //         slideIndex += 1;
-    //         n += 1;
-    //     }
-    //     if (varInit == true) { 
-    //         varInit = false;
-    //     }
-
-    //     if (n > x.length) {
-    //         slideIndex = 1;
-    //     }
-    //     if (n < 1) {
-    //         slideIndex = x.length;
-    //     }
-
-
-    //     for (i = 0; i < x.length; i++) {
-    //         x[i].style.display = "none";  
-    //     }
-    //     for (i = 0; i < dots.length; i++) {
-    //         dots[i].className = dots[i].className.replace(" w3-white", "");
-    //     }
-    //     x[slideIndex-1].style.display = "block";  
-    //     dots[slideIndex-1].className += " w3-white";
-        
-    //     // add carousel
-    //     timer = setTimeout(showDivs(slideIndex), 3000);
-    // }
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    // add dots control
-    var dots = document.getElementsByClassName("demo");
-
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+        setTimeout(carousel, 3000);    
     }
-    slideIndex++;
-    if (slideIndex > x.length) {
-        slideIndex = 1;
-    }
-    x[slideIndex-1].style.display = "block";
-    // add dots control
-    for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    dots[slideIndex-1].className += " w3-white";
 
-    setTimeout(carousel, 3000);    
-}
-
-</script>
+</script> -->
 
 
 
