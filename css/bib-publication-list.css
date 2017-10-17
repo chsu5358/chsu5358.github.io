@@ -104,16 +104,6 @@ input[type="text"], textarea {
 	outline: none !important;
 	box-shadow: none !important;
 }
-/*.glyphicons{
-	display:inline-block;
-	position:relative;
-	padding-left:48px;
-	color:#1d1d1b;
-	text-decoration:none;
-	*display:inline;
-	*zoom:1;
-	vertical-align:middle
-}*/
 
 /* enable absolute positioning */
 .inner-addon { 
