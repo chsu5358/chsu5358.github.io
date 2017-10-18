@@ -38,6 +38,7 @@ table.display { margin-top: 24px; }*/
 	width: 100%; /* test, 10/16/17 */
 	font-size: 15px;
 	table-layout: fixed; /*test*/
+	font-family: Helvetica;
 }
 .ieslTitle {
 	font-weight: 600; /*bold; */
@@ -153,5 +154,16 @@ div.bibinfo {
 	left:0; 
 	z-index: 20; /*20;*/
 }
-a.bibclose { background-color: #BBBBBB; border: 3px solid #FFFFFF; color: black; float: left; font-size: 20px; height: 20px; left: -25px; line-height: 20px; padding: 3px; position: relative; text-align: center; text-decoration: none; top: -25px; width: 20px; -moz-border-radius:15px; -webkit-border-radius:15px; -o-border-radius:15px; border-radius:15px; }
+a.bibclose { 
+	background-color: #BBBBBB; 
+	border: 3px solid #FFFFFF; 
+	color: black; float: left; 
+	font-size: 20px; 
+	height: 20px; left: -25px; line-height: 20px; padding: 3px; 
+	position: relative; text-align: center; text-decoration: none; 
+	top: -25px; width: 20px; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	-o-border-radius:15px; 
+	border-radius:15px; }
 div.bibinfo pre { clear:both; }
