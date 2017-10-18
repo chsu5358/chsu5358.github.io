@@ -38,7 +38,7 @@ table.display { margin-top: 24px; }*/
 	width: 100%; /* test, 10/16/17 */
 	font-size: 15px;
 	table-layout: fixed; /*test*/
-	font-family: Helvetica !important;
+	font-family: Helvetica, Sans-Serif !important;
 }
 .ieslTitle {
 	font-weight: 600; /*bold; */
