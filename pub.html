@@ -253,7 +253,8 @@
     document.addEventListener('keyup', function(e) {
         if (e.keyCode == 27) {
             // modal.style.display = "none";
-            hidebib();
+            $("#shutter").hide();
+            $(".bibinfo.open").removeClass("open").addClass("hidden");
         }
     });
 </script>
