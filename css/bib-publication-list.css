@@ -39,7 +39,7 @@ table.display { margin-top: 24px; }*/
 	font-size: 15px;
 	table-layout: fixed; /*test*/
 	font-family: Sans-Serif !important;
-	line-height: 160% !important;
+	line-height: 200% !important;
 }
 .ieslTitle {
 	font-weight: 600; /*bold; */
