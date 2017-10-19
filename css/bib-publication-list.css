@@ -87,7 +87,7 @@ input[type=text] {
     width: 130px !important;
 
     background-color: white;
-    background-image: url('searchicon.png');
+    background-image: url('../images/icon-search-doc.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
 
