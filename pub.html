@@ -250,7 +250,7 @@
     });
 
     // close modal when esc key is pressed
-    document.on('keyup', function(e) {
+    document.addEventListener('keyup', function(e) {
         if (e.keyCode == 27) {
             // modal.style.display = "none";
             hidebib();
