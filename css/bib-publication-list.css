@@ -169,7 +169,6 @@ a.bibclose {
 div.bibinfo pre { 
 	clear:both; 
 	padding: 0 3px 2px;
-	/* CY: customize font, font-size, & color */
 	/*font-family: Monaco, Menlo, Consolas, "Courier New", monospace;*/
 	font-family: verdana;
 	/*font-size: 12px;*/
