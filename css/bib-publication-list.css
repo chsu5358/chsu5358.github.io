@@ -166,4 +166,17 @@ a.bibclose {
 	-webkit-border-radius:15px; 
 	-o-border-radius:15px; 
 	border-radius:15px; }
-div.bibinfo pre { clear:both; }
+div.bibinfo pre { 
+	clear:both; 
+	padding: 0 3px 2px;
+	/* CY: customize font, font-size, & color */
+	/*font-family: Monaco, Menlo, Consolas, "Courier New", monospace;*/
+	font-family: "Courier New", Monaco, Menlo, Consolas, monospace;
+	/*font-size: 12px;*/
+	font-size: 15px;
+	/*color: #333333;*/
+	color: #000000;
+	-webkit-border-radius: 3px;
+	 -moz-border-radius: 3px;
+	      border-radius: 3px;
+}
