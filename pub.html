@@ -249,10 +249,9 @@
         }
     });
 
-    // close modal when esc key is pressed
+    // close bibtex popup when esc key is pressed
     document.addEventListener('keyup', function(e) {
         if (e.keyCode == 27) {
-            // modal.style.display = "none";
             $("#shutter").hide();
             $(".bibinfo.open").removeClass("open").addClass("hidden");
         }
