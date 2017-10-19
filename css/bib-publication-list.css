@@ -175,7 +175,8 @@ div.bibinfo pre {
 	/*font-size: 12px;*/
 	font-size: 15px !important;
 	/*color: #333333;*/
-	color: #000000 !important;
+	color: black !important;
+	background-color: #BBBBBB;
 	-webkit-border-radius: 3px;
 	 -moz-border-radius: 3px;
 	      border-radius: 3px;
