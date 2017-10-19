@@ -173,9 +173,9 @@ div.bibinfo pre {
 	/*font-family: Monaco, Menlo, Consolas, "Courier New", monospace;*/
 	font-family: "Courier New", Monaco, Menlo, Consolas, monospace;
 	/*font-size: 12px;*/
-	font-size: 15px;
+	font-size: 15px !important;
 	/*color: #333333;*/
-	color: #000000;
+	color: #000000 !important;
 	-webkit-border-radius: 3px;
 	 -moz-border-radius: 3px;
 	      border-radius: 3px;
