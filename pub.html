@@ -250,10 +250,10 @@
     });
 
     // close modal when esc key is pressed
-    jQuery("#pubTable").on('keyup', function(e) {
+    document.on('keyup', function(e) {
         if (e.keyCode == 27) {
             // modal.style.display = "none";
-            return;
+            hidebib();
         }
     });
 </script>
