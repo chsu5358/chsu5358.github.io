@@ -242,9 +242,9 @@
     document.addEventListener('keyup', function(e) {
         if (e.keyCode == 27) {
             // modal.style.display = "none";
-            return;
+            window.close();
         }
-    };
+    });
 
       try { 
         _gaq.push(['_trackEvent', "PublicationAction", text]);
