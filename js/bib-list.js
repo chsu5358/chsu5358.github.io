@@ -2556,8 +2556,11 @@ var bibtexify = (function($) {
 
         // CY, 2017: example- add additional field, e.g.: project "page" of the item
         page: function(entryData) {
-            var itemStr = '<br\/>';
+            var itemStr = '';
             /* CY, 2017: edit style */
+            if (!entryData.url) {
+                itemStr += '<br\/>';
+            }
             if (entryData.page) {
                 itemStr += ' [<a title="Project page of this article" href="' +
                             entryData.page + '">page<\/a>]';
