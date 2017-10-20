@@ -76,7 +76,7 @@ table.display { margin-top: 24px; }*/
 	padding: 3px 10px; 
     line-height: 140%; /*120%;*/
     text-align: justify;
-    font-family: verdana;
+    font-family: sans-serif;
 }
 #pubTable.display td.center { text-align: center; }
 #pubTable.display { margin-top: 24px; }
@@ -87,7 +87,7 @@ input[type=text] {
 	padding: auto !important;
     width: 130px !important;
 
-    background-color: #BBBBBB; /*white;*/
+    background-color: gray; /*white;*/
     background-image: url('../images/icon-search-doc.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
@@ -140,12 +140,11 @@ div.bibinfo {
 	/*width: 80%; */
 	width: 60%;
 	position: fixed; 
-	top: 50px; /*100px;*/ 
+	top: 60px; /*100px;*/ 
 	left: 20%; 
 	background-color: #bbb; 
 	border: 3px solid #fff; 
 	padding: 10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; border-radius:10px; 
-	/*z-index: 50;*/
 	z-index: 50;
 }
 #shutter { 
@@ -156,7 +155,7 @@ div.bibinfo {
 	position: fixed; 
 	top: 0; 
 	left:0; 
-	z-index: 20; /*20;*/
+	z-index: 20;
 }
 a.bibclose { 
 	background-color: #BBBBBB; 
