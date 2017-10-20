@@ -95,7 +95,7 @@ input[type=text] {
     background-repeat: no-repeat;
 
     box-sizing: border-box;
- 	padding: 30px 20px 12px 40px;
+ 	padding: 30px 20px 12px 40px !important;
 
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
