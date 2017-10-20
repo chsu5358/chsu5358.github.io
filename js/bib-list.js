@@ -2558,9 +2558,6 @@ var bibtexify = (function($) {
         page: function(entryData) {
             var itemStr = '';
             /* CY, 2017: edit style */
-            if (!entryData.url) {
-                itemStr += '<br\/>';
-            }
             if (entryData.page) {
                 itemStr += ' [<a title="Project page of this article" href="' +
                             entryData.page + '">page<\/a>]';
