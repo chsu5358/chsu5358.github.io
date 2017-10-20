@@ -84,7 +84,7 @@ table.display { margin-top: 24px; }*/
 
 input[type=text] {
 	margin: auto !important;
-	padding: auto !important;
+	/*padding: auto !important;*/
     width: 130px !important;
 
     background-color: gray; /*white;*/
