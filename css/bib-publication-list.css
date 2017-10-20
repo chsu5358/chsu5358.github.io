@@ -140,7 +140,8 @@ div.bibinfo {
 	/*width: 80%; */
 	width: 60%;
 	position: fixed; 
-	top: 100px; left: 20%; 
+	top: 50px; /*100px;*/ 
+	left: 20%; 
 	background-color: #bbb; 
 	border: 3px solid #fff; 
 	padding: 10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; border-radius:10px; 
