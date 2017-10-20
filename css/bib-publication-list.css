@@ -84,18 +84,16 @@ table.display { margin-top: 24px; }*/
 
 input[type=text] {
 	margin: auto !important;
-	/*padding: auto !important;*/
+	padding: auto !important;
     width: 130px !important;
 
-    background-color: gray; /*white;*/
-    /*background-image: url('../images/icon-search-doc.png');*/
+    /*background-color: gray;
     background-image: url('../images/searchicon.png');
-
     background-position: 10px 10px; 
     background-repeat: no-repeat;
 
     box-sizing: border-box;
- 	padding: 30px 20px 12px 40px !important;
+ 	padding: 30px 20px 12px 40px !important;*/
 
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
