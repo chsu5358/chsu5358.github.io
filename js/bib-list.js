@@ -2555,7 +2555,7 @@ var bibtexify = (function($) {
         },
 
         // adds project pageof the item
-        links: function(entryData) {
+        page: function(entryData) {
             var itemStr = '<br\/>';
             /* CY, 2017: edit style */
             if (entryData.page) {
