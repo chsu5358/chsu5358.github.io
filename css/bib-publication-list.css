@@ -76,6 +76,7 @@ table.display { margin-top: 24px; }*/
 	padding: 3px 10px; 
     line-height: 140%; /*120%;*/
     text-align: justify;
+    font-family: verdana;
 }
 #pubTable.display td.center { text-align: center; }
 #pubTable.display { margin-top: 24px; }
