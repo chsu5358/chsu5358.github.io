@@ -99,20 +99,18 @@
 
         <div class="span10 offset1">
 
-        <!-- CY -->
         <!-- vkaravir: bib publication list -->
-        <noscript>
-          <!-- bibtex source hidden by default, show it if JS disabled -->
+        <!-- bibtex source hidden by default, show it if JS disabled -->
+        <!-- <noscript>          
           <style>
           #bibtex { display: block;}
           </style>
-        </noscript>
+        </noscript> -->
 
-        <!-- sample bibtex from original lab website (only up to 1 paper in 2016) -->
         <table id="pubTable" class="display" style="width: 100%"></table>
-        
-        <!-- !!test!! -->
-        <!-- <pre id="bibtex" style="display:none;"> -->
+        <!-- [Option 2] load from .bib file -->
+        <pre id="bibtex" style="display:none;">
+        <!-- [Option 1] sample bibtex from original lab website (only up to 1 paper in 2016) -->
         <pre id="bibtex">
     @inproceedings{IR-1086,
     author = {Trapit Bansal and David Belanger and Andrew McCallum},
@@ -185,41 +183,26 @@
 <!-- /container -->
 <script src="./js/jquery-latest.js"></script>
 <script src="./js/bootstrap.js"></script>
-<!-- <script>
-
-    /*
-    $(function() {
-    $('.navbar li a').click(function(event) {
-    var a = $(this)
-    $('.navbar li').removeClass("active")
-    a.parent().addClass("active")
-    });
-
-    })
-    */
-
-</script> -->
 
 <!-- CY -->
 <!-- bib publication -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/bib-list.js"></script>
-<!-- <script src="js/BibTex-0.1.2.js"></script>
-<script src="js/jquery.dataTables.min.js"></script>
 
-<script src="js/bib-list-min.js"></script> -->
-
+<!-- [Option 2] with visualized stats -->
 <!-- <script >
     $(document).ready(function() {
     bibtexify("#bibtex", "pubTable", {});
     });
 </script> -->
-<!-- <script >
+
+<!-- [Option 2] no visualization -->
+<script >
     $(document).ready(function() {
     // bibtexify("pub-iesl.bib", "pubTable", {});
     bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
     });
-</script> -->
+</script>
 
 <script type="text/javascript" data-sqs-type="imageloader-bootstraper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script>
 <!-- <script>Squarespace.afterBodyLoad(Y);</script> -->
