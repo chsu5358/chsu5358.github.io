@@ -110,9 +110,7 @@
         </noscript>
 
         <!-- sample bibtex from original lab website (only up to 1 paper in 2016) -->
-        
-        <!-- !!test!! -->
-        <!-- <table id="pubTable" class="display" style="width: 100%"></table> -->
+        <table id="pubTable" class="display" style="width: 100%"></table>
         
         <!-- !!test!! -->
         <!-- <pre id="bibtex" style="display:none;"> -->
@@ -229,7 +227,9 @@
 
 <script >
     var init = function() {
-       bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
+        // !!test!!
+       // bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
+       bibtexify("#bibtex", "pubTable", {'visualization': false});
      };
      if (window.addEventListener) {
        window.addEventListener('load', init, false);
