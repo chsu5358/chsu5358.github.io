@@ -2511,7 +2511,7 @@ var bibtexify = (function($) {
             }
             var itemStr = htmlify(bib2html[type](entryData));
             itemStr += bib2html.links(entryData);
-            // !!CY: test!!
+            // CY, 2017: example- add additional field, e.g.: project "page" of the item
             itemStr += bib2html.page(entryData);
 
             itemStr += bib2html.bibtex(entryData);
@@ -2554,13 +2554,13 @@ var bibtexify = (function($) {
             return itemStr;
         },
 
-        // adds project pageof the item
+        // CY, 2017: example- add additional field, e.g.: project "page" of the item
         page: function(entryData) {
             var itemStr = '<br\/>';
             /* CY, 2017: edit style */
             if (entryData.page) {
                 itemStr += ' [<a title="Project page of this article" href="' +
-                            entryData.page + '">Page<\/a>]';
+                            entryData.page + '">page<\/a>]';
             }
             return itemStr;
         },
