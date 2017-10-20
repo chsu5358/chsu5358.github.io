@@ -88,7 +88,9 @@ input[type=text] {
     width: 130px !important;
 
     background-color: gray; /*white;*/
-    background-image: url('../images/icon-search-doc.png');
+    /*background-image: url('../images/icon-search-doc.png');*/
+    background-image: url('../images/searchicon.png');
+
     background-position: 10px 10px; 
     background-repeat: no-repeat;
 
