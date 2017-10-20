@@ -2511,6 +2511,9 @@ var bibtexify = (function($) {
             }
             var itemStr = htmlify(bib2html[type](entryData));
             itemStr += bib2html.links(entryData);
+            // !!CY: test!!
+            itemStr += bib2html.page(entryData);
+
             itemStr += bib2html.bibtex(entryData);
             if (bib.options.tweet && entryData.url) {
                 itemStr += bib2html.tweet(entryData, bib);
@@ -2550,6 +2553,18 @@ var bibtexify = (function($) {
             }
             return itemStr;
         },
+
+        // adds project pageof the item
+        links: function(entryData) {
+            var itemStr = '<br\/>';
+            /* CY, 2017: edit style */
+            if (entryData.page) {
+                itemStr += ' [<a title="Project page of this article" href="' +
+                            entryData.page + '">Page<\/a>]';
+            }
+            return itemStr;
+        },
+
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
