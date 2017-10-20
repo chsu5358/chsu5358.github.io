@@ -189,7 +189,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/bib-list.js"></script>
 
-<!-- [Option 2] with visualized stats -->
+<!-- [Option 1] -->
 <!-- <script >
     $(document).ready(function() {
     bibtexify("#bibtex", "pubTable", {});
@@ -209,9 +209,10 @@
 
 <script >
     var init = function() {
-        // !!test!!
-       // bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
-       bibtexify("#bibtex", "pubTable", {'visualization': false});
+        // [Option 2]
+        bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
+        // [Option 1]
+        // bibtexify("#bibtex", "pubTable", {'visualization': false});
      };
      if (window.addEventListener) {
        window.addEventListener('load', init, false);
