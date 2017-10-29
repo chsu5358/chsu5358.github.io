@@ -2617,13 +2617,23 @@ var bibtexify = (function($) {
         // helper functions for formatting different types of bibtex entries
 
         // CY: add styling for title
+        // inproceedings: function(entryData) {
+        //     return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
+        //         "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
+        //         "<br\/>In <em>" + entryData.booktitle +
+        //         ((entryData.pages)?", pp. " + entryData.pages:"") +
+        //         ((entryData.address)?", " + entryData.address:"") + "<\/em>";
+        // },
         inproceedings: function(entryData) {
-            return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
+            return this.authors2html((entryData.author)?entryData.author:"")+
+                " (" + entryData.year + ") " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
                 "<br\/>In <em>" + entryData.booktitle +
                 ((entryData.pages)?", pp. " + entryData.pages:"") +
                 ((entryData.address)?", " + entryData.address:"") + "<\/em>";
         },
+
+
         article: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
