@@ -2633,6 +2633,15 @@ var bibtexify = (function($) {
                 ((entryData.address)?", " + entryData.address:"") + "<\/em>";
         },
 
+        // CY: add for dblp bibtexfile- proceedings
+        proceedings: function(entryData) {
+            return this.authors2html((entryData.editor)?entryData.editor:"")+
+                " (" + entryData.year + ") " +
+                "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
+                "<br\/>In <em>" + entryData.series +
+                ((entryData.pages)?", pp. " + entryData.pages:"") +
+                ((entryData.address)?", " + entryData.address:"") + "<\/em>";
+        },
 
         article: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
