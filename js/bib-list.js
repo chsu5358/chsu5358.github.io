@@ -1134,6 +1134,11 @@ BibTex.prototype = {
             if (in_array('author', array_keys(ret)) && this._options['extractAuthors']) {
                 ret['author'] = this._extractAuthors(ret['author']);
             }
+
+            // CY: add t handle editors in proceedings
+            if (in_array('editor', array_keys(ret)) && this._options['extractAuthors']) {
+                ret['editor'] = this._extractAuthors(ret['editor']);
+            }            
         }
         return ret;
     },
