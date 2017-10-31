@@ -2585,6 +2585,7 @@ var bibtexify = (function($) {
             return itemStr;
         },
 
+
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
@@ -2650,7 +2651,7 @@ var bibtexify = (function($) {
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
                 "<br\/>In <em>" + entryData.booktitle +
                 ((entryData.pages)?", pp. " + entryData.pages:"") +
-                ((entryData.address)?", " + entryData.address:"") + "<\/em>";
+                ((entryData.address)?", " + entryData.address:"") + "<\/em><strong>"+ ((entryData.desc)?", <br\/>" + entryData.desc:"")+"<\/strong>" ;
         },
 
         // CY: add for dblp bibtexfile- proceedings
