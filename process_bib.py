@@ -51,11 +51,13 @@ for entry in valid_entries:
 	for att in entry:
 		entry[att] = entry[att].replace('@',' at ').replace('\n',' ')
 
-
 db = bibtexparser.bibdatabase.BibDatabase()
 db.entries = valid_entries
 
+print(db.entries[0])
+
 writer = bibtexparser.bwriter.BibTexWriter()
 indent = '    '
-with open('bibtex_test.bib', 'w') as bibfile:
+writer.order_entries_by = ('year', 'author', 'title', 'ENTRYTYPE')
+with open('bibtex_test_2.bib', 'w') as bibfile:
     bibfile.write(writer.write(db))
