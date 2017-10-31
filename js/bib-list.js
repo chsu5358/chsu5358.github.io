@@ -2532,10 +2532,10 @@ var bibtexify = (function($) {
         // converts the given author data into HTML
         authors2html: function(authorData) {
             var authorsStr = '';
-            var author; //test
+            var author; //CY: to handle google scholar format for authors
             for (var index = 0; index < authorData.length; index++) {
                 if (index > 0) { authorsStr += ", "; }
-                // authorsStr += authorData[index].last;    // test
+                // authorsStr += authorData[index].last;    //CY: to handle google scholar format for authors
                 author = authorData[index];
                 authorsStr += author.first 
                             + (author.von ? ' ' + author.von + ' ' : ' ')+ author.last;
