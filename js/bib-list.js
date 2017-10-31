@@ -2578,9 +2578,9 @@ var bibtexify = (function($) {
         code: function(entryData) {
             var itemStr = '';
             /* CY, 2017: edit style */
-            if (entryData.page) {
+            if (entryData.code) {
                 itemStr += ' [<a title="Source codes" href="' +
-                            entryData.page + '">code<\/a>]';
+                            entryData.ccde + '">code<\/a>]';
             }
             return itemStr;
         },
