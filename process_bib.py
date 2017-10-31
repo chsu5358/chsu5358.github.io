@@ -42,8 +42,8 @@ for entry in bib_database.entries:
 		continue
 	if len(title_d2_book[entry['title']])>1 and 'journal' in entry and entry['journal'] == 'CoRR': 
 		continue
-	if len(title_d2_book[entry['title']])==1: 
-		valid_entries.append(entry)
+	#if len(title_d2_book[entry['title']])==1: 
+	valid_entries.append(entry)
 	
 print 'number of valid entris',len(valid_entries)
 
@@ -59,5 +59,5 @@ print(db.entries[0])
 writer = bibtexparser.bwriter.BibTexWriter()
 indent = '    '
 writer.order_entries_by = ('year', 'author', 'title', 'ENTRYTYPE')
-with open('bibtex_test_2.bib', 'w') as bibfile:
+with open('bibtex_test_3.bib', 'w') as bibfile:
     bibfile.write(writer.write(db))
