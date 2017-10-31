@@ -2574,13 +2574,13 @@ var bibtexify = (function($) {
             }
             return itemStr;
         },
-
+        // 2017: add additional field: code file links "code" of the entry
         code: function(entryData) {
             var itemStr = '';
             /* CY, 2017: edit style */
             if (entryData.code) {
                 itemStr += ' [<a title="Source codes" href="' +
-                            entryData.ccde + '">code<\/a>]';
+                            entryData.code + '">code<\/a>]';
             }
             return itemStr;
         },
