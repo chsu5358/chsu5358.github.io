@@ -2518,6 +2518,7 @@ var bibtexify = (function($) {
             itemStr += bib2html.links(entryData);
             // CY, 2017: example- add additional field, e.g.: project "page" of the item
             itemStr += bib2html.page(entryData);
+            itemStr += bib2html.code(entryData);
 
             itemStr += bib2html.bibtex(entryData);
             if (bib.options.tweet && entryData.url) {
@@ -2570,6 +2571,16 @@ var bibtexify = (function($) {
             if (entryData.page) {
                 itemStr += ' [<a title="Project page of this article" href="' +
                             entryData.page + '">page<\/a>]';
+            }
+            return itemStr;
+        },
+
+        code: function(entryData) {
+            var itemStr = '';
+            /* CY, 2017: edit style */
+            if (entryData.page) {
+                itemStr += ' [<a title="Source codes" href="' +
+                            entryData.page + '">code<\/a>]';
             }
             return itemStr;
         },
