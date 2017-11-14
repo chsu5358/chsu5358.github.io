@@ -2652,7 +2652,7 @@ var bibtexify = (function($) {
                 "<br\/>In <em>" + entryData.booktitle +
                 ((entryData.pages)?", pp. " + entryData.pages:"") +
                 ((entryData.address)?", " + entryData.address:"") + "<\/em><strong>"+ 
-                ((entryData.desc)?", <br\/>" + entryData.desc:"")+"<\/strong><font size = "2">" +
+                ((entryData.desc)?", <br\/>" + entryData.desc:"")+'<\/strong><font size = "2">' +
                 ((entryData.sum)?", <br\/>(" + entryData.sum:""+") ")+"</font>";
         },
 
