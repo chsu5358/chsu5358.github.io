@@ -2673,7 +2673,9 @@ var bibtexify = (function($) {
                 ((entryData.volume)?"," + entryData.volume:"") +
                 ((entryData.number)?"(" + entryData.number + ")":"") +
                 ((entryData.pages)?", pp. " + entryData.pages :"") +
-                ((entryData.address)?". " + entryData.address + "":"") + "<\/em>";
+                ((entryData.address)?". " + entryData.address + "":"") + "<\/em><strong>"+ 
+                ((entryData.desc)?", <br\/>" + entryData.desc:"")+'<\/strong><font size = "2">' +
+                ((entryData.sum)?", <br\/>(" + entryData.sum+") ":"")+"</font>";
         },
         misc: function(entryData) {
             return this.authors2html(entryData.author) + " (" + entryData.year + ") " +
