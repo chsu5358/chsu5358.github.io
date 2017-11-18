@@ -512,7 +512,7 @@ url =
 @inproceedings{DBLP:conf/nips_ws/Mimno07,
   author    = {David Mimno and Hanna M. Wallach and Andrew McCallum},
   title     = {Community-based Link Prediction with Text},
-  journal   = {NIPS Workshop on Statistical Network Modeling (NIPS WS)},
+  booktitle   = {NIPS Workshop on Statistical Network Modeling (NIPS WS)},
   year      = {2007},
   url       = {https://people.cs.umass.edu/~mccallum/papers/mimno2007nipsws.pdf},
   sum       = {New state-of-the-art results in link-prediction using a latent-variable topic model, in which "community" variables are associated with topic distributions and author distributions. Thus the model combines the use of language/topics and co-authorships to discover communities.},
@@ -521,33 +521,163 @@ url =
 @inproceedings{DBLP:conf/nips_ws/Druck07,
   author    = {Gregory Druck and Gideon Mann and Andrew McCallum},
   title     = {Leveraging Existing Resources using Generalized Expectation Criteria},
-  journal   = {NIPS Workshop on Learning Problem Design, (NIPS WS)},
+  booktitle   = {NIPS Workshop on Learning Problem Design, (NIPS WS)},
   year      = {2007},
   url       = {https://people.cs.umass.edu/~mccallum/papers/druck07leveraging.pdf},
   sum       = {Generalized Expectation applied in situations in which there is no labeled data. All supervision is obtained form existing auxiliary resources such as lexicons. Experiments on information extraction.},
 }
 
 @inproceedings{DBLP:conf/nips_ws/Bellare07,
-  author    = {Kedar Bellare, Partha Pratim Talukdar, Giridhar Kumaran, Fernando Pereira, Mark Liberman, Andrew McCallum and Mark Dredze},
+  author    = {Kedar Bellare and Partha Pratim Talukdar and Giridhar Kumaran and Fernando Pereira and Mark Liberman and Andrew McCallum and Mark Dredze},
   title     = {Lightly-Supervised Attribute Extraction for Web Search},
-  journal   = {NIPS Workshop on Machine Learning for Web Search, (NIPS WS)},
+  booktitle   = {NIPS Workshop on Machine Learning for Web Search, (NIPS WS)},
   year      = {2007},
   url       = {https://people.cs.umass.edu/~mccallum/papers/attr_extr_nipsws.pdf},
   sum       = {Extract a large number of attributes of different entities from natural language text. Methods based on co-training and maximum entropy classifiers.},
 }
 
-Joint Group and Topic Discovery from Relations and Text. Andrew McCallum, Xuerui Wang and Natasha Mohanty, Statistical Network Analysis: Models, Issues and New Directions, Lecture Notes in Computer Science 4503, pp. 28-44, (Book chapter), 2007. (Book chapter version of NIPS 2006 conference paper. Social network analysis that simultaneously discovers groups of entities and also clusters attributes of their relations, such that clustering in each dimension in forms the other. Applied to the voting records and corresponding text of resolutions from the U.S. Senate and the U.N., showing that incorporating the votes results in more salient topic clusters, and that different groupings of legislators emerge from different topics.)
+@aritcle{DBLP:journals/book/McCallum07,
+  author    = {Andrew McCallum and Xuerui Wang and Natasha Mohanty},
+  title     = {Joint Group and Topic Discovery from Relations and Text},
+  journal   = {Statistical Network Analysis: Models, Issues and New Directions, Lecture Notes in Computer Science 4503, pp. 28-44, (Book chapter), 2007},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/gt-bookch07.pdf},
+  sum       = {Book chapter version of NIPS 2006 conference paper. Social network analysis that simultaneously discovers groups of entities and also clusters attributes of their relations, such that clustering in each dimension in forms the other. Applied to the voting records and corresponding text of resolutions from the U.S. Senate and the U.N., showing that incorporating the votes results in more salient topic clusters, and that different groupings of legislators emerge from different topics.},
+}
 
-Learning Extractors from Unlabeled Text using Relevant Databases. Kedar Bellare and Andrew McCallum. Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007. (Use conditional random fields to learn information extractors both from DB fields and from alignments of DB in free text. Uses an Alignment CRF, similar to our UAI 2005 paper.)
-Efficient Strategies for Improving Partitioning-Based Author Coreference by Incorporating Web Pages as Graph Nodes. Pallika Kanani and Andrew McCallum. Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007. (Improve entity resolution by adding web pages as new "mentions" to the graph-partitioning problem, and do so efficiently by selecting a subset of the possible queries and a subset of the returned pages.)
-Probabilistic Representations for Integrating Unreliable Data Sources. David Mimno and Andrew McCallum. Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007. (Probabilistic representation of field values used in merging and augmenting information from DBPL and research paper PDFs.)
-Author Disambiguation using Error-Driven Machine Learning With a Ranking Loss Function. Aron Culotta, Pallika Kanani, Robert Hall, Michael Wick, and Andrew McCallum. Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007. (Entity resolution of people using high-order features, made efficient with Metropolis-Hastings and SampleRank, a learning method based ranking.)
+@inproceedings{DBLP:conf/IIWeb/Bellare07,
+  author    = {Kedar Bellare and Andrew McCallum},
+  title     = {Learning Extractors from Unlabeled Text using Relevant Databases},
+  booktitle = {Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/bellare-iiweb07.pdf},
+  sum       = {Use conditional random fields to learn information extractors both from DB fields and from alignments of DB in free text. Uses an Alignment CRF, similar to our UAI 2005 paper.},
+}
 
-Transfer Learning for Enhancing Information Flow in Organizations and Social Networks. Chris Pal, Xuerui Wang and Andrew McCallum. Submitted to Conference on Email and Spam (CEAS), 2007. Technical Note. (Continuous hidden varable conditional random field for CC prediction/suggestion in email.)
+@inproceedings{DBLP:conf/IIWeb/Kanani07,
+  author    = {Pallika Kanani and Andrew McCallum},
+  title     = {Efficient Strategies for Improving Partitioning-Based Author Coreference by Incorporating Web Pages as Graph Nodes},
+  booktitle = {Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/kanani-iiweb07.pdf},
+  sum       = {Improve entity resolution by adding web pages as new "mentions" to the graph-partitioning problem, and do so efficiently by selecting a subset of the possible queries and a subset of the returned pages.},
+}
 
-Sparse Message Passing Algorithms for Weighted Maximum Satisfiability. Aron Culotta, Andrew McCallum, Bart Selman, Ashish Sabharwal. New England Student Symposium on Artificial Intelligence (NESCAI), 2007. (A new algorithm for solving weighted maximum satisfiability (WMAX-SAT) problems that divides a large problem into sub-problems, and coordinates the global solution by message passing with sparse messages. Inspired by the desire to do joint-inference in (a) large weighted logics ala Markov Logic Networks, (b) large NLP pipelines, in which there are efficient pre-existing (dynamic programming) solutions to sub-parts of the pipeline. Positive results versus WalkSAT!)
+@inproceedings{DBLP:conf/IIWeb/Mimno07,
+  author    = {David Mimno and Andrew McCallum},
+  title     = {Probabilistic Representations for Integrating Unreliable Data Sources},
+  booktitle = {Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/mimno-iiweb07.pdf},
+  sum       = {Probabilistic representation of field values used in merging and augmenting information from DBPL and research paper PDFs.},
+}
 
-Penn/UMass/CHOP BiocreativeII Systems. Kuzman Ganchev, Koby Crammer, Fernando Pereira, Gideon Mann, Kedar Bellare, Andrew McCallum, Steven Carroll, Yang Jin, and Peter White. BiocreativeII Evaluation Workshop. 2007. (Description of our high-ranking entry in the competition for extraction and linkage from bioinformatics text.
+@inproceedings{DBLP:conf/IIWeb/Culotta07,
+  author    = {Aron Culotta and Pallika Kanani and Robert Hall and Michael Wick and and Andrew McCallum},
+  title     = {Author Disambiguation using Error-Driven Machine Learning With a Ranking Loss Function},
+  booktitle = {Sixth International Workshop on Information Integration on the Web (IIWeb), collocated with AAAI, 2007},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/culotta07author.pdf},
+  sum       = {Entity resolution of people using high-order features, made efficient with Metropolis-Hastings and SampleRank, a learning method based ranking.},
+}
+
+@inproceedings{DBLP:conf/CEAS/Culotta07,
+  author    = {Chris Pal and Xuerui Wang and Andrew McCallum},
+  title     = {Transfer Learning for Enhancing Information Flow in Organizations and Social Networks},
+  booktitle = {Submitted to Conference on Email and Spam (CEAS), 2007. Technical Note},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/darts-ceas07s.pdf},
+  sum       = {Continuous hidden varable conditional random field for CC prediction/suggestion in email.},
+}
+
+@inproceedings{DBLP:conf/NESCAI/Culotta07,
+  author    = {Aron Culotta and Andrew McCallum and Bart Selman and Ashish Sabharwal},
+  title     = {Sparse Message Passing Algorithms for Weighted Maximum Satisfiability},
+  booktitle = {New England Student Symposium on Artificial Intelligence (NESCAI)},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/culotta07sparse.pdf},
+  sum       = {A new algorithm for solving weighted maximum satisfiability (WMAX-SAT) problems that divides a large problem into sub-problems, and coordinates the global solution by message passing with sparse messages. Inspired by the desire to do joint-inference in (a) large weighted logics ala Markov Logic Networks, (b) large NLP pipelines, in which there are efficient pre-existing (dynamic programming) solutions to sub-parts of the pipeline. Positive results versus WalkSAT!},
+}
+
+@inproceedings{DBLP:conf/BiocreativeII/Ganchev07,
+  author    = {Kuzman Ganchev and Koby Crammer and Fernando Pereira and Gideon Mann and Kedar Bellare and Andrew McCallum and Steven Carroll and Yang Jin and and Peter White},
+  title     = {Penn/UMass/CHOP BiocreativeII Systems},
+  booktitle = {BiocreativeII Evaluation Workshop},
+  year      = {2007},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/biocreativeII07.pdf},
+  sum       = {Description of our high-ranking entry in the competition for extraction and linkage from bioinformatics text.},
+}
+
+@inproceedings{DBLP:conf/nips_ws/Pal06,
+  author    = {Chris Pal, Michael Kelm, Xuerui Wang, Greg Druck and Andrew McCallum},
+  title     = {On Discriminative and Semi-Supervised Dimensionality Reduction},
+  booktitle = {Advances in Neural Information Processing Systems, Workshop on Novel Applications of Dimensionality Reduction, (NIPS Workshop)},
+  year      = {2006},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/umass-nips-06-odssdr.pdf},
+  sum       = {Using Multi-Conditional Learning, learn to distribute mixture components just were needed to address some discriminative task. See compelling figure on synthetic overlapping spiral data.},
+}
+
+@inproceedings{DBLP:conf/icml_ws/Culotta06,
+  author    = {Aron Culotta and Andrew McCallum},
+  title     = {Tractable Learning and Inference with Higher-Order Representations},
+  booktitle = {ICML Workshop on Open Problems in Statistical Relational Learning},
+  year      = {2006},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/tractable-icmlws06.pdf},
+  sum       = {When working with CRFs having features based on first-order logic, the "unrolled" graphical model would be far to large to fully instantiate. This paper describes a method leveraging MCMC to perform inference and learning while only partially instantiating the model. Positive results on entity resolution (of research papr authors) are described.},
+}
+
+@inproceedings{DBLP:conf/icml_ws/Pal06,
+  author    = {Chris Pal and Andrew McCallum},
+  title     = {CC Prediction with Graphical Models},
+  booktitle = {Conference on Email and Anti-Spam (CEAS)},
+  year      = {2006},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/ccpred-ceas06.pdf},
+  sum       = {Help keep an organization coordinated by suggesting who to carbon-copy on your outgoing email message.},
+}
+
+
+@inproceedings{DBLP:conf/hlt_ws/Culotta06,
+  author    = {Aron Culotta and Andrew McCallum},
+  title     = {Practical Markov Logic Containing First-order Quantifiers with Application to Identity Uncertainty},
+  booktitle = {HLT Workshop on Computationally Hard Problems and Joint Inference in Speech and Language Processing},
+  year      = {2006},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/practical-hltws06.pdf},
+  sum       = {Markov Logic Networks are Conditional Random Fields that use first-order logic to define features and parameter tying patterns. Making such models scale to non-trivial data set sizes is a challenge because the size of the full instantiation of the model is exponential in the arity of the formulae. Here we describe a method of partial instantiation that allows such models to scale to entity resolution problems millions of entity mentions. On both citation and author entity resolution problems we show that inclusing such first-order features provides increases in accuracy.},
+}
+
+@inproceedings{DBLP:conf/aaai_ws/Wang06,
+  author    = {Xuerui Wang, Wei Li, and Andrew McCallum},
+  title     = {A Continuous-Time Model of Topic Co-occurrence Trends},
+  booktitle = {AAAI Workshop on Event Detection},
+  year      = {2006},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/pamtot-aaaiws06.pdf},
+  sum       = {Capture the time distributions not only of a topics, but also of their co-occurrences. For example, notice that while NLP and ML have both been around for a long time, but their co-occurrence has been rising recently. The model is effectively a combination of the Pachinko Allocation Model (PAM) and Topics-Over-Time (TOT).},
+}
+
+@aritcle{DBLP:journals/book/Sutton06,
+  author    = {Charles Sutton and Andrew McCallum},
+  title     = {An Introduction to Conditional Random Fields for Relational Learning},
+  journal   = {Book chapter in Introduction to Statistical Relational Learning},
+  editor    = {Lise Getoor and Ben Taskar},
+  year      = {2006},
+  publisher = {MIT Press},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf},
+  sum       = {An overview and introduction to conditional random fields for beginners and experts alike---motivation, background, mathematical foundations, linear-chain form, general-structure form, inference, parameter estimation, tips and tricks, an example application to information extraction with a skip-chain structure.},
+}
+
+@aritcle{DBLP:journals/book/Sutton06,
+  author    = {Kamal Nigam, Andrew McCallum and Tom Mitchell},
+  title     = {Semi-supervised Text Classification Using EM},
+  journal   = {Book chapter in Semi-Supervised Learning},
+  editor    = {Chapelle, O., Zien, A., and Scholkopf, B.},
+  year      = {2006},
+  publisher = {MIT Press},
+  url       = {https://people.cs.umass.edu/~mccallum/papers/semisup-em.pdf},
+  sum       = {Overview, description, experiments on using expectation maximization with naive Bayes text classifiers for learning from labeled and unlabeled data. A chapter in a book about various methods of semi-supervised learning.},
+}
+
+
+
 
 
 
