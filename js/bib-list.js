@@ -1136,9 +1136,9 @@ BibTex.prototype = {
             }
 
             // CY: add t handle editors in proceedings
-            if (in_array('editor', array_keys(ret)) && this._options['extractAuthors']) {
-                ret['editor'] = this._extractAuthors(ret['editor']);
-            }            
+            //if (in_array('editor', array_keys(ret)) && this._options['extractAuthors']) {
+            //    ret['editor'] = this._extractAuthors(ret['editor']);
+            //}            
         }
         return ret;
     },
@@ -2605,7 +2605,7 @@ var bibtexify = (function($) {
                         itemStr += value[index].last;
                     }
                     itemStr += ' },\n';
-                } else if (key != 'entryType' && key != 'cite') {
+                } else if (key != 'entryType' && key != 'cite' && key != 'sum' && key != 'desc' && key != 'code') {
                     itemStr += '  ' + key + " = { " + value + " },\n";
                 }
             });
