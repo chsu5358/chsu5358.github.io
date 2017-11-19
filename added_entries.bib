@@ -676,6 +676,99 @@ url =
   sum       = {Overview, description, experiments on using expectation maximization with naive Bayes text classifiers for learning from labeled and unlabeled data. A chapter in a book about various methods of semi-supervised learning.},
 }
 
+@article{DBLP:journals/umass/Wang05,
+  author    = {Xuerui Wang and Andrew McCallum},
+  title     = {A Note on Topical N-grams},
+  journal   = {University of Massachusetts Technical Report UM-CS-2005-071},
+  year      = {2005},
+  url       = {},
+  sum       = {Discover topics like Latent Dirichlet Allocation, but model phrases in addition to single words on a per-topic basis. For example, in the Politics topic, "white house" has special meaning as a colocation, while in the RealEstate topic, modeling the individual words is sufficient. Our TNG model produces much cleaner, more interpretable topics.},
+}
+
+
+@inproceedings{DBLP:conf/nips_ws/Li05,
+  author    = {Wei Li and Andrew McCallum},
+  title     = {Pachinko allocation: A Directed Acyclic Graph for Topic Correlations},
+  booktitle = {NIPS Workshop on Nonparametric Bayesian Methods},
+  year      = {2005},
+  url       = {},
+  sum       = {Similar motivations to Blei and Lafferty's Correlated Topic Model (CTM), but uses a DAG to capture arbitrary and possibly sparse correlations among topics. Interior nodes of the DAG have a Dirichlet distribution over their children; words are in the leaves. Provides improved interpretability and classification, as well as improved held-out likelihood over CTM. See ICML 2006 paper above.},
+}
+
+@article{DBLP:journals/ciir/Metzler05,
+  author    = {Don Metzler, W. Bruce Croft and Andrew McCallum},
+  title     = {Direct Maximization of Rank-Based Metrics for Information Retrieval},
+  journal   = {CIIR Technical Report IR-429},
+  year      = {2005},
+  url       = {},
+}
+
+@inproceedings{DBLP:conf/nips_ws/Li05,
+  author    = {Aron Culotta and Andrew McCallum},
+  title     = {Learning Clusterwise Similarity with First-order Features},
+  booktitle = {NIPS Workshop on the Theoretical Foundations of Clustering},
+  year      = {2005},
+  url       = {},
+  sum       = {Discriminatively-trained graph-partitioning methods for clustering, with features over entire clusters, including existential and universal quanifiers. Efficiently instantiate these features only on demand.},
+}
+
+@article{DBLP:journals/ciir/SuttonMM05,
+  author    = {Charles Sutton and Michael Sindelar and Andrew McCallum},
+  title     = {Feature Bagging: Preventing Weight Undertraining in Structured Discriminative Learning},
+  journal   = {Center for Intelligent Information Retrieval, University of Massachusetts Technical Report IR-402},
+  year      = {2005},
+  url       = {},
+  sum       = {Avoid a common under-appreciated problem: overly heavy reliance on a few discriminative features which may not be as reliably present in the testing data. Discusses four methods of separate training and combination, and presents statistically-significant improvements---including new best results on CoNLL-2000 NP Chunking.}
+}
+
+@article{DBLP:journals/ciir/SuttonM05,
+  author    = {Charles Sutton and Andrew McCallum},
+  title     = {Fast, Piecewise Training for Discriminative Finite-state and Parsing Models},
+  journal   = {Center for Intelligent Information Retrieval Technical Report IR-403},
+  year      = {2005},
+  url       = {},
+  sum       = {Further results with "piecewise training", a method also described in a UAI'05 paper.}
+}
+
+@article{DBLP:journals/ciir/Culotta05,
+  author    = {Aron Culotta and Andrew McCallum},
+  title     = {Practical Markov Logic Containing First-order Quantifiers with Application to Identity Uncertainty},
+  journal   = {Technical Report IR-430, University of Massachusetts},
+  year      = {2005},
+  url       = {},
+  sum       = {Use existental and universal quantifiers in Markov Logic, doing so practially and efficiently by incrementally instantiating these terms as needed. Applied to object correspondence, this model combines the expressivity of BLOG with the predictive accuracy advantages of conditional probability training. Experiments on citation matching and author disambiguation.}
+}
+
+@article{DBLP:journals/umass/McCallum05,
+  author    = {Andrew McCallum and Xuerui Wang and Chris Pal},
+  title     = {Predictive Random Fields: Latent Variable Models Fit by Multiway Conditional Probability with Applications to Document Analysis},
+  journal   = {UMass Technical Report UM-CS-2005-053, version 2.1},
+  year      = {2005},
+  url       = {},
+  sum       = {Cluster structured, relational data, like Latent Dirichlet Allocation and its successors, but with undirected graphical models that are conditionally-trained. Improved results over Jebara-inspired synthetic data, and over the Harmonium as tested on an information retreival task. This is an evolving Tech Report, which needs to be updated---in particular we are now referring to this method as "Multi-Conditional Learning" or "Multi-Conditional Mixtures".}
+}
+
+@article{DBLP:journals/umass/McCallum05,
+  author    = {Aron Culotta and David Kulp and Andrew McCallum},
+  title     = {Gene Prediction with Conditional Random Fields},
+  journal   = {Technical Report UM-CS-2005-028, University of Massachusetts, Amherst},
+  year      = {2005},
+  url       = {},
+  sum       = {Use finite-state CRFs to locate introns and exons in DNA sequences. Shows the advantages of CRFs' ability to straightforwardly incorporate homology evidence from protein databases.}
+}
+
+
+@inproceedings{DBLP:conf/nips_ws/Li05,
+  author    = {Chris Pal and Charles Sutton and Andrew McCallum},
+  title     = {Constrained Kronecker Deltas for Fast Approximate Inference and Estimation},
+  booktitle = {Submitted to UAI},
+  year      = {2005},
+  url       = {},
+  sum       = {Sometimes the graph of the graphical model is not large and complex, but the cardinality of the variables is large. This paper describes a new and generalized method for beam search on graphical models, showing positive experimental results for both inference and training. Experiments on NetTalk.},
+}
+
+
+
 
 
 
