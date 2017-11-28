@@ -121,6 +121,10 @@
   /*text-decoration: underline;*/
   color: #881c1c;
 }
+.dataset ul {
+  text-align: justify;
+  margin: auto;
+}
 .row div div h3 span {
 	display: inline;
 	/*text-align: right;
