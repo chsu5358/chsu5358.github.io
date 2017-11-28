@@ -119,11 +119,8 @@
 }
 .dataset h3 { /* datatset title 
   /*text-decoration: underline;*/
+  text-align: left;
   color: #881c1c;
-}
-.dataset ul {
-  text-align: justify;
-  margin: auto;
 }
 .row div div h3 span {
 	display: inline;
