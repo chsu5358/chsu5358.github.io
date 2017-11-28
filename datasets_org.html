@@ -1,0 +1,195 @@
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>UMass IESL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="../css/iesl.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../images/logo-iesl-32x32-ico.ico" />
+    
+</head>
+
+<body>
+
+<script src="../js/holder.js"></script>
+
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!-- <a class="brand" href="https://chsu5358.github.io/">UMass IESL</a> -->
+            </div>
+
+            <!-- <div style="clear:both"></div> -->
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+            <!-- CY:hosted on https://chsu5358.github.io/ -->
+                    <li class="pull-left"><a class="brand" href="https://chsu5358.github.io/">UMass IESL</a> </li>
+                    <!-- <li><a href="https://chsu5358.github.io/index.html#index-top">Introduction</a></li> -->
+                    <li><a href="https://chsu5358.github.io/news.html">News</a></li>
+            <!-- CY: following sections: to move it to another page-->
+                    <li><a href="https://chsu5358.github.io/people.html">People</a></li>
+                    <li><a href="https://chsu5358.github.io/research.html">Research</a></li>
+                    <li><a href="https://chsu5358.github.io/projects.html">Projects</a></li>
+                    <li><a href="https://chsu5358.github.io/pub.html">Publications</a></li>
+                    <li><a href="https://chsu5358.github.io/software.html">Software</a></li>
+                    <!-- <li class="active"><a href="https://chsu5358.github.io/datasets.html">Datasets</a></li> -->
+
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="https://chsu5358.github.io/datasets.html">Datasets
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://chsu5358.github.io/datasets/umasscitationfield" class="smoothScroll">UMass Citation Field Extraction Dataset</a></li>
+                          <li><a href="https://chsu5358.github.io/datasets/wikilinks" class="smoothScroll">Wikilinks Dataset</a></li>
+                          <li><a href="https://chsu5358.github.io/datasets/bibtex" class="smoothScroll">BibTex Dataset</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://chsu5358.github.io/social.html">Social</a></li>
+                    <li><a href="https://sites.google.com/a/iesl.cs.umass.edu/wiki/">Wiki (internal)</a></li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+
+<div id="datasets-top" style="margin-top:-60px"></div>
+<div style="margin-top:60px"></div>
+
+<div class="container">
+    <section class="row">
+        <h2 id="datasets" class="page-header span10 offset1">Datasets</h2>
+
+        <div class="span10 offset1">
+
+        <div>
+            <h3><a name="umasscitationfield" href="./datasets/umasscitationfield">UMass Citation Field Extraction Dataset</a>
+            <span>[information extraction]</span></h3>
+        </div>
+        <div style="clear:both"></div>
+        <p class="desc">Citation field extraction dataset provides labels and segments for extracted citations from articles from many different academic 
+disciplines.</p>
+        
+        <div>
+            <h3><a name="wikilinks" href="./datasets/wikilinks">Wikilinks Dataset</a>
+            <span>[large-scale entity resolution, cross-document coreference]</span></h3>
+        </div>
+        <div style="clear:both"></div>
+        <p class="desc">Identifying and disambiguating a large set of mentions from the web using Wikipedia. The data contains ~40 million mentions referring to ~3 million entities, extracted from ~10 million webpages.
+        </p>
+
+        <div>
+            <h3><a name="bibtex" href="./datasets/bibtex">BibTex Dataset</a>
+            <span>[large-scale entity resolution]</span></h3>
+        </div>
+        <p class="desc">Publicly-available BibTex files that can be used for large-scale entity resolution. The dataset contains more than a million author mentions.
+        </p>
+
+        <div>
+            <h3><a name="sraa" href="http://people.cs.umass.edu/~mccallum/data/sraa.tar.gz">SRAA</a>: Simulated/Real/Aviation/Auto UseNet data
+            <span>[document classification]</span></h3>
+        </div>
+        <p class="desc">73,218 UseNet articles from four discussion groups, for simulated auto racing, simulated aviation, real autos, real aviation. I have often used this data for binary classification---separating real from simulated, and auto from aviation---making the point that the same data can be classified different ways depending on the user's needs. This is especially interesting for semi-supervised learning. This data was gathered by Andrew McCallum while at Just Research.
+        </p>
+
+        <div>
+            <h3><a name="cora-refs" href="http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz">Cora Citation Matching</a>
+            <span>[reference matching, object correspondence]</span></h3>
+        </div>
+        <p class="desc">Text of citations hand-clustered into groups referring to the same paper.
+        </p>
+
+        <div>
+            <h3><a name="cora-classify" href="http://people.cs.umass.edu/~mccallum/data/cora-classify.tar.gz">Cora Research Paper Classification</a>
+            <span>[relational document classification]</span></h3>
+        </div>
+        <p class="desc">Research papers classified into a topic hierarchy with 73 leaves. We call this a relational data set, because the citations provide relations among papers.
+        </p>
+
+        <div>
+            <h3><a name="cora-ie" href="http://people.cs.umass.edu/~mccallum/data/cora-ie.tar.gz">Cora Information Extraction</a>
+            <span>[information extraction]</span></h3>
+        </div>
+        <p class="desc">Research paper headers and citations, with labeled segments for authors, title, institutions, venue, date, page numbers and several other fields.
+        </p>
+
+        <div>
+            <h3><a name="faqdata" href="http://people.cs.umass.edu/~mccallum/data/faqdata">Frequently Asked Questions</a>
+            <span>[information extraction]</span></h3>
+        </div>
+        <p class="desc">Several UseNet FAQ's segmented into questions and answers. Data gathered and labeled by Dayne Freitag and Andrew McCallum.
+        </p>
+
+        <div>
+            <h3><a name="cmusa" href="http://people.cs.umass.edu/~mccallum/data/sa-tagged.tar.gz">CMU Seminar Announcements</a>
+            <span>[information extraction]</span></h3>
+        </div>
+        <p class="desc">48 emailed seminar announcements, with labeled segments for speaker, title, start-time, end-time. Labeled by Dayne Freitag.
+        </p>
+
+        <div>
+            <h3><a name="industrysector" href="http://people.cs.umass.edu/~mccallum/data/sector.tar.gz">Industry Sector</a>
+            <span>[document classification]</span></h3>
+        </div>
+        <p class="desc">Corporate web pages classified into a topic hierarchy with about 70 leaves.
+        </p>
+
+        <div>
+            <h3><a name="newsgroups" href="http://people.cs.umass.edu/~mccallum/data/20_newsgroups.tar.gz">20 Newsgroups</a>
+            <span>[document classification]</span></h3>
+        </div>
+        <p class="desc">About 20,000 UseNet postings from 20 newsgroups. Gathered by Ken Lang at CMU in the mid-90's. This is the original set, without various editing done by Jason Rennie and others.
+        </p>
+
+
+
+        </div>
+
+    </section>
+
+
+<hr>
+<footer>
+    <p>© UMass IESL 2017 </p>
+    <p style="margin-top:-1.0em">
+    <a href="http://www.cics.umass.edu/">College of Information and Computer Sciences</a>, <a href="http://www.umass.edu/">University of Massachusetts Amherst</a>.
+    </p>
+</footer>
+
+</div>
+
+<!-- /container -->
+<script src="./js/jquery-latest.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+
+
+</body></html>
