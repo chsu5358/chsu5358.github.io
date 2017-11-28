@@ -85,37 +85,38 @@
 <div style="margin-top:60px"></div>
 
 <div class="container">
-    <section class="row">
+    <section class="dataset">
         <h2 id="datasets" class="page-header span10 offset1">Datasets</h2>
 
         <div class="span10 offset1">
 
 
-        
         <div>
-            <h4><a name="wikilinks" href="./datasets/wikilinks">Wikilinks Dataset</a>
-            <span>[large-scale entity resolution, cross-document coreference]</span></h4>
+            <h3>Entity Resolution</h3>
+            <div>
+                <h4><a name="wikilinks" href="./datasets/wikilinks">Wikilinks Dataset</a>
+                <span>[large-scale entity resolution, cross-document coreference]</span></h4>
+            </div>
+            <div style="clear:both"></div>
+            <p class="desc">Identifying and disambiguating a large set of mentions from the web using Wikipedia. The data contains ~40 million mentions referring to ~3 million entities, extracted from ~10 million webpages.
+            </p>
+
+            <div>
+                <h4><a name="bibtex" href="./datasets/bibtex">BibTex Dataset</a>
+                <span>[large-scale entity resolution]</span></h4>
+            </div>
+            <p class="desc">Publicly-available BibTex files that can be used for large-scale entity resolution. The dataset contains more than a million author mentions.
+            </p>
+
+
+
+            <div>
+                <h4><a name="cora-refs" href="http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz">Cora Citation Matching</a>
+                <span>[reference matching, object correspondence]</span></h4>
+            </div>
+            <p class="desc">Text of citations hand-clustered into groups referring to the same paper.
+            </p>
         </div>
-        <div style="clear:both"></div>
-        <p class="desc">Identifying and disambiguating a large set of mentions from the web using Wikipedia. The data contains ~40 million mentions referring to ~3 million entities, extracted from ~10 million webpages.
-        </p>
-
-        <div>
-            <h4><a name="bibtex" href="./datasets/bibtex">BibTex Dataset</a>
-            <span>[large-scale entity resolution]</span></h4>
-        </div>
-        <p class="desc">Publicly-available BibTex files that can be used for large-scale entity resolution. The dataset contains more than a million author mentions.
-        </p>
-
-
-
-        <div>
-            <h4><a name="cora-refs" href="http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz">Cora Citation Matching</a>
-            <span>[reference matching, object correspondence]</span></h4>
-        </div>
-        <p class="desc">Text of citations hand-clustered into groups referring to the same paper.
-        </p>
-
 
 
 
@@ -143,8 +144,7 @@
         <div>
             <h3>Document Classification</h3>
             <div>
-                <h4><a name="sraa" href="http://people.cs.umass.edu/~mccallum/data/sraa.tar.gz">SRAA</a>: Simulated/Real/Aviation/Auto UseNet data
-                <span>[document classification]</span></h4>
+                <h4><a name="sraa" href="http://people.cs.umass.edu/~mccallum/data/sraa.tar.gz">SRAA</a>: Simulated/Real/Aviation/Auto UseNet data</h4>
             </div>
             <p class="desc">73,218 UseNet articles from four discussion groups, for simulated auto racing, simulated aviation, real autos, real aviation. I have often used this data for binary classification---separating real from simulated, and auto from aviation---making the point that the same data can be classified different ways depending on the user's needs. This is especially interesting for semi-supervised learning. This data was gathered by Andrew McCallum while at Just Research.
             </p>
