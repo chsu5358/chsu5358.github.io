@@ -2519,6 +2519,7 @@ var bibtexify = (function($) {
             // CY, 2017: example- add additional field, e.g.: project "page" of the item
             itemStr += bib2html.page(entryData);
             itemStr += bib2html.code(entryData);
+            itemStr += bib2html.video(entryData);
 
             itemStr += bib2html.bibtex(entryData);
             if (bib.options.tweet && entryData.url) {
@@ -2584,7 +2585,15 @@ var bibtexify = (function($) {
             }
             return itemStr;
         },
-
+        video: function(entryData) {
+            var itemStr = '';
+            /* CY, 2017: edit style */
+            if (entryData.video) {
+                itemStr += ' [<a title="Video" href="' +
+                            entryData.video + '">video<\/a>]';
+            }
+            return itemStr;
+        },
 
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
