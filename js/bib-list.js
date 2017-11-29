@@ -2195,7 +2195,7 @@ if(oSettings.sTableId!==""&&typeof oSettings.aanFeatures.f=="undefined"){nFilter
 }nFilter.className=oSettings.oClasses.sFilter;var sSpace=oSettings.oLanguage.sSearch===""?"":" ";
 // CY: edit search bar
 // nFilter.innerHTML=oSettings.oLanguage.sSearch+sSpace+'<input type="text" />';
-nFilter.innerHTML=oSettings.oLanguage.sSearch+sSpace+'</i><div><input type="text" name="search" placeholder="Search.." /><p style="text-align:right;"><a href="./bibtex_test_2.bib">Download all (*.bib)</a></p></div> ';
+nFilter.innerHTML=oSettings.oLanguage.sSearch+sSpace+'</i><div><input type="text" name="search" placeholder="Search.." /><p style="text-align:right; clear:both; float:right;"><a href="./bibtex_test_2.bib">Download all (*.bib)</a></p></div> ';
 
 var jqFilter=$("input",nFilter);
 jqFilter.val(oSettings.oPreviousSearch.sSearch.replace('"',"&quot;"));jqFilter.keyup(function(e){var n=oSettings.aanFeatures.f;
