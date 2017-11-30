@@ -2520,6 +2520,7 @@ var bibtexify = (function($) {
             itemStr += bib2html.page(entryData);
             itemStr += bib2html.code(entryData);
             itemStr += bib2html.video(entryData);
+            itemStr += bib2html.data(entryData);
 
             itemStr += bib2html.bibtex(entryData);
             if (bib.options.tweet && entryData.url) {
@@ -2591,6 +2592,16 @@ var bibtexify = (function($) {
             if (entryData.video) {
                 itemStr += ' [<a title="Video" href="' +
                             entryData.video + '">video<\/a>]';
+            }
+            return itemStr;
+        },
+
+        data: function(entryData) {
+            var itemStr = '';
+            /* CY, 2017: edit style */
+            if (entryData.data) {
+                itemStr += ' [<a title="Data" href="' +
+                            entryData.data + '">data<\/a>]';
             }
             return itemStr;
         },

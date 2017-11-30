@@ -120,7 +120,9 @@
             </p>
             
             <p class="desc">
-                Project Goals:
+                Project Goals: The major goal of the project is to build a new foundation for knowledge representation and reasoning, based on deep learning.  Automated knowledge base (KB) construction from natural language is of fundamental importance to science, business, social science, and national defense. The core of a knowledge base is its objects ("entities", such as proteins, people, organizations and locations) and its connections between these objects ("relations", such as one protein increasing production of another, or a person working for an organization). This project aims to greatly increase the accuracy with which entity-relations can be extracted from text, as well as increase the fidelity which many subtle distinctions among types of relations can be represented. The project's technical approach---which we call "universal schema"---is a departure from traditional methods, based on representing all of the input relation expressions as positions in a common multi-dimensional space, with nearby relations having similar meanings. <br />
+
+                Most previous research in relation extraction falls into one of two categories. In the first, one must define a pre-fixed schema of relation types (such as lives-in, employed-by and a handful of others), which limits expressivity and hides language ambiguities. Training machine learning models here either relies on labeled training data (which is scarce and expensive), or uses lightly-supervised self-training procedures (which are often brittle and wander farther from the truth with additional iterations). In the second category, one extracts into an ‘‘open’’ schema based on language strings themselves (lacking ability to generalize among them), or attempts to gain generalization with unsupervised clustering of these strings (suffering from clusters that fail to capture reliable synonyms, or even find the desired semantics at all). This project proposes research in relation extraction of ‘‘universal schema,’’ where we learn a generalizing model of the union of all input schemas, including multiple available pre-structured KBs as well as all the observed natural language surface forms. The approach thus embraces the diversity and ambiguity of original language surface forms (not trying to force relations into pre-defined boxes), yet also successfully generalizes by learning non-symmetric implicature among explicit and implicit relations using new extensions to the probabilistic matrix factorization and vector embedding methods that were so successful in the NetFlix prize competition. Universal schema provide for a nearly limitless diversity of relation types (due to surface forms), and support convenient semi-supervised learning through integration with existing structured data (i.e. the relation types of existing databases).
             </p>
             
             <p class="desc">
@@ -136,11 +138,13 @@
             </p>
 
             <p class="desc">
-                Software Downloads:
+                Software Downloads: <a href="https://github.com/patverga/torch-relation-extraction"> Compositional Univeral Schema</a>
             </p>
 
             <p class="desc">
-                Evaluation: https://kbpo.stanford.edu/
+                Evaluation: <br />
+                Best performance on Spanish relation extraction at <a href="https://tac.nist.gov//2016/KBP/" target="_blank">TAC 2016</a> <br />
+                (Up to 11/30/2017) Best performance on English relation extraction at <a href="https://kbpo.stanford.edu/" target="_blank">crowdsourcing based evaluation</a>. 
             </p>
 
             <p class="desc">
