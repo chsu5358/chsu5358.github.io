@@ -2876,7 +2876,7 @@ var bibtexify = (function($) {
         var table = this.$pubTable.dataTable({ 'aaData': bibentries,
                               'aaSorting': this.options.sorting,
                               'aoColumns': [ { "sTitle": "Year" },
-                                             { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
+                                             // { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
                                              { "sTitle": "Publication", "bSortable": false }],
                               'bPaginate': false
                             });
