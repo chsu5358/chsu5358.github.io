@@ -2859,6 +2859,8 @@ var bibtexify = (function($) {
               item.year = this.options.defaultYear || "To Appear";
             }
             var html = bib2html.entry2html(item, this);
+            // CY: test to remove entry type
+            // bibentries.push([item.year, bib2html.labels[item.entryType], html]);
             bibentries.push([item.year, bib2html.labels[item.entryType], html]);
             entryTypes[bib2html.labels[item.entryType]] = item.entryType;
             this.updateStats(item);
@@ -2876,6 +2878,7 @@ var bibtexify = (function($) {
         var table = this.$pubTable.dataTable({ 'aaData': bibentries,
                               'aaSorting': this.options.sorting,
                               'aoColumns': [ { "sTitle": "Year" },
+                                // CY: test to remove entry type
                                              // { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
                                              { "sTitle": "Publication", "bSortable": false }],
                               'bPaginate': false
