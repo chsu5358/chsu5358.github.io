@@ -57,12 +57,12 @@ table.display { margin-top: 24px; }*/
 }
 
 #pubTable.display th:nth-child(1){
-     width: 15% !important;
+     width: 12% !important;
      text-align: center !important;
 }
 
 #pubTable.display th:nth-child(2){
-     width: 85% !important;
+     width: 88% !important;
 }
 
 /*#pubTable.display th:nth-child(3){
