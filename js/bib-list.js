@@ -2861,7 +2861,7 @@ var bibtexify = (function($) {
             var html = bib2html.entry2html(item, this);
             // CY: test to remove entry type
             // bibentries.push([item.year, bib2html.labels[item.entryType], html]);
-            bibentries.push([item.year, bib2html.labels[item.entryType], html]);
+            bibentries.push([item.year, html]);
             entryTypes[bib2html.labels[item.entryType]] = item.entryType;
             this.updateStats(item);
         }
