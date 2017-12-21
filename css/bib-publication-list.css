@@ -61,12 +61,12 @@ table.display { margin-top: 24px; }*/
 }
 
 #pubTable.display th:nth-child(2){
-     width: 10% !important;
+     width: 90% !important;
 }
 
-#pubTable.display th:nth-child(3){
+/*#pubTable.display th:nth-child(3){
      width: 80% !important;
-}
+}*/
 
 #pubTable.display tfoot th { 
 	padding: 3px 10px; border-top: 1px solid black; 
