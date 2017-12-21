@@ -58,7 +58,6 @@ table.display { margin-top: 24px; }*/
 
 #pubTable.display th:nth-child(1){
      width: 12% !important;
-     text-align: center !important;
 }
 
 #pubTable.display th:nth-child(2){
