@@ -69,6 +69,10 @@ table.display { margin-top: 24px; }*/
      width: 80% !important;
 }*/
 
+#pubTable.display td:nth-child(1){
+    text-align: center !important;
+}
+
 #pubTable.display tfoot th { 
 	padding: 3px 10px; border-top: 1px solid black; 
 	font-weight: 600; /*bold;*/
