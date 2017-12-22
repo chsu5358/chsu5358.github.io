@@ -42,6 +42,7 @@ table.display { margin-top: 24px; }*/
 }
 .ieslTitle {
 	font-weight: 600; /*bold; */
+	font-style: italic;
 	/*color: #881c1c;*/
 }
 
