@@ -51,6 +51,7 @@ table.display { margin-top: 24px; }*/
   cursor: pointer; 
   cursor: hand; 
   text-decoration: underline;
+  color: #881c1c !important;
 }
 
 #pubTable.display thead th { 
