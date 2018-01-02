@@ -33,9 +33,9 @@
 }
 
 /*CY: maintian active highlights for shared navbar*/
-#tab-Home .body-Home, #tab-News .body-News, #tab-People .body-People, 
-#tab-Research .body-Research, #tab-Projects .body-Projects, #tab-Pub .body-Pub,
-#tab-Software .body-Software, #tab-Datasets .body-Datasets, #tab-Social .body-Social{
+#body-Home .tab-Home, #body-News .tab-News, #body-People .tab-People, 
+#body-Research .tab-Research, #body-Projects .tab-Projects, #body-Pub .tab-Pub,
+#body-Software .tab-Software, #body-Datasets .tab-Datasets, #body-Social .tab-Social{
   color: #ffffff !important;
   /*background-color: transparent !important;*/
   font-weight: 450 !important; /*400-700*/
