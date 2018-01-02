@@ -88,7 +88,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff110000', GradientType=0);
 }
 
-.navbar li {
+/*.navbar li {
     color: #e5e5e5 !important;
 }
 
@@ -99,7 +99,7 @@
 .dropdown-menu a {
     color: #e5e5e5 !important;
     background-color: #881c1c !important;
-}
+}*/
 
 
 .nav-collapse.collapse .nav > li {
