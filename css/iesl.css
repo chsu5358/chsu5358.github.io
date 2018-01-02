@@ -36,7 +36,7 @@
 #body-Home .tab-Home, #body-News .tab-News, #body-People .tab-People, 
 #body-Research .tab-Research, #body-Projects .tab-Projects, #body-Pub .tab-Pub,
 #body-Software .tab-Software, #body-Datasets .tab-Datasets, #body-Social .tab-Social{
-  color: #ffffff !important;
+  color: white !important;
   /*background-color: transparent !important;*/
   font-weight: 450 !important; /*400-700*/
   text-decoration: none !important;
