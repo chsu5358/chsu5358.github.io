@@ -26,15 +26,49 @@
 
 </head>
 
-<!-- <body> -->
-<!-- CY: to maintain nav bar code in one place -->
-<body id="body-home">
+<body>
 	
 <!-- CY: to check purpose? -->
-<!-- <script id="twitter-wjs" src="./js/widgets.js"></script><script src="./js/holder.js"></script> -->
+<script id="twitter-wjs" src="./js/widgets.js"></script><script src="./js/holder.js"></script>
 
-<!-- CY: to maintain nav bar code in one place -->
-<div id="nav-placeholder"></div>
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner" style="margin:0 auto">
+        <div class="container" style="margin:0 auto">
+            <div class="navbar-header">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!-- <a class="brand" href="https://chsu5358.github.io/index.html">UMass IESL</a> -->
+            </div>
+	    
+            <!-- <div style="clear:both"></div> -->
+
+            <div class="nav-collapse collapse">
+                <ul class="nav" style="text-align: center; float:none; margin: auto">
+                    <li class="pull-left" style="float:none; display: inline-block;"><a class="brand" href="https://chsu5358.github.io">UMass IESL</a></li>
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+		    <!-- CY:hosted on https://chsu5358.github.io/ -->
+                    <!-- <li style="float:none; display: inline-block;"><a href="#news" class="smoothScroll">News</a></li> -->
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/news.html">News</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/people.html">People</a></li>
+		            
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/research.html">Research</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/projects.html">Projects</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/pub.html">Publications</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/software.html">Software</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/datasets.html">Datasets</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://chsu5358.github.io/social.html">Social</a></li>
+                    <li style="float:none; display: inline-block;"><a href="https://sites.google.com/a/iesl.cs.umass.edu/wiki/">Wiki (internal)</a></li>
+
+                </ul>
+                
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
 
 <!-- <div style="clear:both"></div> -->
 
@@ -187,13 +221,6 @@
 
 <script src="./js/jquery-latest.js"></script>
 <script src="./js/bootstrap.js"></script>
-
-<!-- CY: load nav bar -->
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
-</script>
 
 <script type="text/javascript" data-sqs-type="imageloader-bootstraper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script>
 
