@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--
     <script type="text/javascript">
     $(function(){
       $("#nav-placeholder").load("navbar.html");
     });
         //document.getElementById("nav-placeholder").innerHTML='<object type="text/html" data="navbar.html"></object>'
     </script>
+    -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>UMass IESL</title>
@@ -35,7 +37,7 @@
 <script id="twitter-wjs" src="./js/widgets.js"></script><script src="./js/holder.js"></script>
 
 
-<div id="nav-placeholder"></div>
+<div id="nav-placeholder">{% include navbar.html %}</div>
 
 
 <div id="news" style="margin-top:-60px"></div>
