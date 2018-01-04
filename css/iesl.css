@@ -32,7 +32,12 @@
 }
 
 .dropdown .caret {
+  display: none !important;
   border-top: 4px solid #e5e5e5 !important;
+}
+#body-People .tab-People .dropdown .caret,
+#body-Datasets .tab-Datasets .dropdown .caret {
+  display: inline-block !important;
 }
 
 /* CY: add to handle smooth scroll to specific location from different page */
