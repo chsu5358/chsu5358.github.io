@@ -15,6 +15,19 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#881c1c', endColorstr='#6f2323', GradientType=0) !important;
 }
 
+.navbar li {
+    color: #e5e5e5 !important;
+}
+
+.navbar a {
+  color: #e5e5e5 !important;
+}
+
+.dropdown-menu a {
+    color: #e5e5e5 !important;
+    background-color: #881c1c !important;
+}
+
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
@@ -35,7 +48,7 @@
 
 /*CY: maintian active highlights for shared navbar*/
 /*#body-Home .tab-Home, */
-#body-News .tab-News li > a, #body-People .tab-People, 
+#body-News .tab-News, #body-People .tab-People, 
 #body-Research .tab-Research, #body-Projects .tab-Projects, #body-Pub .tab-Pub,
 #body-Software .tab-Software, #body-Datasets .tab-Datasets, #body-Social .tab-Social{
   color: white !important;
@@ -89,7 +102,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff110000', GradientType=0);
 }
 
-.navbar li {
+/*.navbar li {
     color: #e5e5e5 !important;
 }
 
@@ -100,7 +113,7 @@
 .dropdown-menu a {
     color: #e5e5e5 !important;
     background-color: #881c1c !important;
-}
+}*/
 
 
 .nav-collapse.collapse .nav > li {
