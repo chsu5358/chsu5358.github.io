@@ -34,7 +34,7 @@
 <!-- <script id="twitter-wjs" src="./js/widgets.js"></script><script src="./js/holder.js"></script> -->
 
 <!-- CY: to maintain nav bar code in one place -->
-<div id="nav-placeholder"></div>
+<div id="nav-placeholder">{% include_relative navbar.html %}</div>
 
 <!-- <div style="clear:both"></div> -->
 
@@ -189,11 +189,11 @@
 <script src="./js/bootstrap.js"></script>
 
 <!-- CY: load nav bar -->
-<script>
+<!-- <script>
 $(function(){
   $("#nav-placeholder").load("navbar.html");
 });
-</script>
+</script> -->
 
 <script type="text/javascript" data-sqs-type="imageloader-bootstraper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script>
 
