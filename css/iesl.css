@@ -45,7 +45,7 @@
 
 /*CY: maintian active highlights for shared navbar*/
 /*#body-Home .tab-Home, */
-#body-News .tab-News > a, #body-News .tab-New > a:hover, #body-People .tab-People > a:hover, #body-People .tab-People > a,
+#body-News .tab-News , #body-People .tab-People, 
 #body-Research .tab-Research, #body-Projects .tab-Projects, #body-Pub .tab-Pub,
 #body-Software .tab-Software, #body-Datasets .tab-Datasets, #body-Social .tab-Social{
   color: white !important;
@@ -81,6 +81,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff110000', GradientType=0) !important;
 }
 
+.dropdown-menu .active > a:focus,
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #ffffff !important;
