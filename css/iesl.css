@@ -63,7 +63,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff110000', GradientType=0) !important;
 }
 
-#body-News .tab-News li > a {
+#body-News .tab-News a {
   color: white !important;
 }
 
