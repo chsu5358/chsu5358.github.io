@@ -22,14 +22,14 @@
 
 /* CY: add to expand dropdown by hovering */
 .dropdown-menu {
-  display: none;
+  /*display: none;*/
   background-color: #881c1c !important;
 }
 /*.dropdown:hover .dropdown-menu {*/
-#body-People .tab-People .dropdown:hover .dropdown-menu,
+/*#body-People .tab-People .dropdown:hover .dropdown-menu,
 #body-Datasets .tab-Datasets .dropdown:hover .dropdown-menu {
   display: inline-block;
-}
+}*/
 
 .dropdown .caret {
   border-top: 4px solid #e5e5e5 !important;
