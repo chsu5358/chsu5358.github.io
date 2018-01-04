@@ -125,6 +125,7 @@
 
 .nav-collapse.collapse .nav {
 	/*display: inline-block;*/
+  display: inline-block;
 	text-align: center; 
 	float:none; 
 	margin: auto
