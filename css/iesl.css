@@ -45,7 +45,7 @@
 
 /*CY: maintian active highlights for shared navbar*/
 /*#body-Home .tab-Home, */
-#body-News .tab-News , #body-People .tab-People, 
+/*#body-News .tab-News ,*/ #body-People .tab-People, 
 #body-Research .tab-Research, #body-Projects .tab-Projects, #body-Pub .tab-Pub,
 #body-Software .tab-Software, #body-Datasets .tab-Datasets, #body-Social .tab-Social{
   color: white !important;
