@@ -28,6 +28,11 @@
   display: inline-block;
 }
 
+.dropdown .caret {
+  border-top: 4px solid #e5e5e5 !important;
+}
+
+
 .dropdown-menu a {
     color: #e5e5e5 !important;
     background-color: #881c1c !important;
