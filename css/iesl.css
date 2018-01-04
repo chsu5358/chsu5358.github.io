@@ -25,7 +25,8 @@
 }
 
 
-.navbar-inverse li > a:hover{
+.navbar-inverse li > a:hover,
+.navbar-inverse .nav .active > a:focus {
   color: #ffffff !important;
   background-color: #511010 !important;
   font-weight: 450 !important;
