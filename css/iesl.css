@@ -35,10 +35,10 @@
 
 /* CY: add to handle smooth scroll to specific location from different page */
 a .anchor {
-    display: block;
+    display: none;
     position: relative;
     top: -60px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 
