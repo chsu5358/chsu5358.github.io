@@ -20,6 +20,14 @@
   color: #e5e5e5 !important;
 }
 
+/* CY: add to expand dropdown by hovering */
+.dropdown-menu {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: inline-block;
+}
+
 .dropdown-menu a {
     color: #e5e5e5 !important;
     background-color: #881c1c !important;
@@ -125,7 +133,6 @@
 
 .nav-collapse.collapse .nav {
 	/*display: inline-block;*/
-  display: inline-block;
 	text-align: center; 
 	float:none; 
 	margin: auto
