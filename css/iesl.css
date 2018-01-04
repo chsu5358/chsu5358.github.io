@@ -15,7 +15,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#881c1c', endColorstr='#6f2323', GradientType=0) !important;
 }
 
-/*.navbar li,*/
+.navbar li,
 .navbar a {
   color: #e5e5e5 !important;
 }
