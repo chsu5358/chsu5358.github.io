@@ -130,8 +130,62 @@
 <script src="./js/holder.js"></script>
 
 
-<!-- CY: to maintain nav bar code in one place -->
-<div id="nav-placeholder">{% include_relative navbar.html %}</div>
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!-- <a class="brand" href="https://chsu5358.github.io/index">UMass IESL</a> -->
+            </div>
+
+            
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="pull-left"><a class="brand" href="https://chsu5358.github.io">UMass IESL</a></li>
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+            <!-- CY:hosted on https://chsu5358.github.io/ -->
+                    <!-- <li class="pull-left"><a href="https://chsu5358.github.io/index.html#index-top">Introduction</a></li> -->
+                    <li><a href="https://chsu5358.github.io/news.html">News</a></li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="https://chsu5358.github.io/people">People
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <!-- <li><a href="#people-top" class="smoothScroll">Director</a></li> -->
+                          <li><a href="#header-dir" class="smoothScroll">Director</a></li>
+                          <!-- <li><a href="#ppl-post-top" class="smoothScroll">Postdocs</a></li> -->
+                          <li><a href="#header-post" class="smoothScroll">Postdocs</a></li>
+                          <!-- <li><a href="#ppl-st-top"  class="smoothScroll">Students</a></li> -->
+                          <li><a href="#header-st"  class="smoothScroll">PhD Students</a></li>
+                          <li><a href="#header-st-ms"  class="smoothScroll">Masters Students</a></li>
+                          <li><a href="#header-st-u"  class="smoothScroll">Undergraduates</a></li>                          
+                          <!-- <li><a href="#ppl-staff-top" class="smoothScroll">Staff</a></li> -->
+                          <li><a href="#header-staff" class="smoothScroll">Staff</a></li>
+                          <li><a href="#header-visit" class="smoothScroll">Visiting Scholars</a></li>
+                          <!-- <li><a href="#ppl-alum-top" class="smoothScroll">Alumni</a></li> -->
+                          <li><a href="#header-alum" class="smoothScroll">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://chsu5358.github.io/research.html">Research</a></li>
+                    <li><a href="https://chsu5358.github.io/projects.html">Projects</a></li>
+                    <li><a href="https://chsu5358.github.io/pub.html">Publications</a></li>
+                    <li><a href="https://chsu5358.github.io/software.html">Software</a></li>
+                    <li><a href="https://chsu5358.github.io/datasets.html">Datasets</a></li>
+                    <li><a href="https://chsu5358.github.io/social.html">Social</a></li>
+                    <li><a href="https://sites.google.com/a/iesl.cs.umass.edu/wiki/">Wiki (internal)</a></li>
+                    
+                </ul>
+            </div>
+            
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
 
 <!-- <div id="people-top" style="margin-top:-60px"></div>
 <div style="margin-top:60px"></div> -->
