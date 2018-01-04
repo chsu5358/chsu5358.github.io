@@ -23,6 +23,7 @@
 /* CY: add to expand dropdown by hovering */
 .dropdown-menu {
   display: none;
+  background-color: #881c1c !important;
 }
 .dropdown:hover .dropdown-menu {
   display: inline-block;
