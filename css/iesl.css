@@ -165,7 +165,10 @@
 	margin: 0 auto;
 	text-align: center;
 }
-.row ul {
+
+/* CY: to make nested lists from markdown possible */
+/*.row ul {*/
+.row > ul {
 	text-align: justify;
 	margin: auto;
 }
