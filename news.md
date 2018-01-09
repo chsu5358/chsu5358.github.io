@@ -2,7 +2,7 @@
 layout: news_new
 ---
 * Information can be found on the <http://example.com> homepage.
-  * You can also mail me: <me.example@example.com>
+    * You can also mail me: <me.example@example.com>
 * This is [a link](http://rubyforge.org) to a page.
 
 
