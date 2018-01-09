@@ -8,6 +8,11 @@ layout: news_new
 
 First | Second | | Fourth |s
 </li>
+<li>
+	Information can be found on the <http://example.com> homepage.
+You can also mail me: <me.example@example.com>
+This is [a link](http://rubyforge.org) to a page.
+</li>
     <li><a href="https://arxiv.org/abs/1511.06350">Structured Prediction Energy Networks</a> [Belanger, McCallum ICML 2016] are an alternative to graphical models, leveraging deep learning to discover rich dependencies among output variables.
     </li>
     <li><a href="http://OpenReview.net">OpenReview.net</a> is hosting reviewing for ICLR 2017, as well as the upcoming UAI 2017.</li>
