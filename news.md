@@ -2,6 +2,12 @@
 layout: news_new
 ---
 <ul>
+<li>
+| First cell|Second cell|Third cell
+| First | Second | Third |
+
+First | Second | | Fourth |s
+</li>
     <li><a href="https://arxiv.org/abs/1511.06350">Structured Prediction Energy Networks</a> [Belanger, McCallum ICML 2016] are an alternative to graphical models, leveraging deep learning to discover rich dependencies among output variables.
     </li>
     <li><a href="http://OpenReview.net">OpenReview.net</a> is hosting reviewing for ICLR 2017, as well as the upcoming UAI 2017.</li>
