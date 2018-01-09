@@ -1,10 +1,6 @@
 ---
 layout: news_new
 ---
-* Information can be found on the <http://example.com> homepage.
-    * You can also mail me: <me.example@example.com>
-* This is [a link](http://rubyforge.org) to a page.
-* $$ 5 + 0.8 $$
 * [Structured Prediction Energy Networks](https://arxiv.org/abs/1511.06350) [Belanger, McCallum ICML 2016] are an alternative to graphical models, leveraging deep learning to discover rich dependencies among output variables.
 * [OpenReview.net](http://OpenReview.net) is hosting reviewing for ICLR 2017, as well as the upcoming UAI 2017.
 * [FACTORIE](http://factorie.cs.umass.edu) is a toolkit for deployable probabilistic modeling, implemented as a software library in [Scala](http://www.scala-lang.org/). It provides its users with a succinct language for creating relational factor graphs, estimating parameters and performing inference.
