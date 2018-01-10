@@ -173,7 +173,8 @@
 	margin: auto;
 }
 
-#latest-news > ul > li:nth-child(1n+3){
+/*CY: only the top 5 news shown in the latest news */
+#latest-news > ul > li:nth-child(1n+6){
   display: none;
 }
 
