@@ -172,7 +172,7 @@
 	text-align: justify;
 	margin: auto;
 }
-#body-Home #latest-news > ul {
+#body-Home #latest-news > ul li{
   display: none !important;
 }
 #body-Home #latest-news > ul li:nth-child(1),
