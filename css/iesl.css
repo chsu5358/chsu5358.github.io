@@ -172,16 +172,12 @@
 	text-align: justify;
 	margin: auto;
 }
-#body-Home #latest-news > ul {
-  text-align: justify;
-  margin: auto;
+#body-Home #latest-news > ul li {
   display: none !important;
 }
-#body-Home .row > ul li:nth-child(1),
-#body-Home .row > ul li:nth-child(2),
+#body-Home #latest-news > ul li:nth-child(1),
+#body-Home #latest-news > ul li:nth-child(2),
 #body-Home #latest-news > ul li:nth-child(3) {
-  text-align: justify;
-  margin: auto;
   display: default !important;
 }
 
