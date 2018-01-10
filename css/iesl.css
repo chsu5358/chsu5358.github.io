@@ -173,7 +173,7 @@
 	margin: auto;
 }
 
-#latest-news > ul li: nth-child(1){
+#latest-news > ul:nth-child(1){
   color: blue;
 }
 
