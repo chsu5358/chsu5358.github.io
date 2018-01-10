@@ -174,7 +174,7 @@
 }
 
 #latest-news > ul li {
-  color: blue;
+  color: blue !important;
 }
 
 
