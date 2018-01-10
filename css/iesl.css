@@ -172,14 +172,11 @@
 	text-align: justify;
 	margin: auto;
 }
-#body-Home #latest-news > ul li{
-  display: none !important;
+
+#body-Home #latest-news > ul li:nth-of-type(1n+4) {
+  display: none;
 }
-#body-Home #latest-news > ul li:nth-child(1),
-#body-Home #latest-news > ul li:nth-child(2),
-#body-Home #latest-news > ul li:nth-child(3) {
-  display: default !important;
-}
+
 
 /* mainly: datasets */
 .row div div h3 {
