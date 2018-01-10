@@ -175,14 +175,14 @@
 #body-Home #latest-news > ul {
   text-align: justify;
   margin: auto;
-  display: none;
+  display: none !important;
 }
 /*#body-Home .row > ul:nth-child(1),
 #body-Home .row > ul:nth-child(2),*/
 #body-Home #latest-news > ul:nth-child(3) {
   text-align: justify;
   margin: auto;
-  display: default;
+  display: default !important;
 }
 
 /* mainly: datasets */
