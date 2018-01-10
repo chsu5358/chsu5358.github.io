@@ -173,13 +173,9 @@
 	margin: auto;
 }
 
-#latest-news > ul li{
+#latest-news > ul li: nth-child(1n+5){
   display: none;
 }
-
-/*#latest-news > ul li: nth-child(1){
-  display: none;
-}*/
 
 
 /* mainly: datasets */
