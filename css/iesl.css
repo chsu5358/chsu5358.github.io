@@ -172,16 +172,16 @@
 	text-align: justify;
 	margin: auto;
 }
-#body-Home .row > ul {
+#body-Home #latest-news > ul {
   text-align: justify;
   margin: auto;
   display: none;
 }
 /*#body-Home .row > ul:nth-child(1),
 #body-Home .row > ul:nth-child(2),*/
-#body-Home .row > ul:nth-child(3),
-#body-Home .row > ul:nth-child(4),
-#body-Home .row > ul:nth-child(5), {
+#body-Home #latest-news > ul:nth-child(3),
+#body-Home #latest-news > ul:nth-child(4),
+#body-Home #latest-news > ul:nth-child(5) {
   text-align: justify;
   margin: auto;
   display: default;
