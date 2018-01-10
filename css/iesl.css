@@ -173,8 +173,8 @@
 	margin: auto;
 }
 
-#latest-news > ul > li:nth-child(1){
-  color: blue;
+#latest-news > ul > li:nth-child(1n+3){
+  display: none;
 }
 
 
