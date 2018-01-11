@@ -1,9 +1,10 @@
 ### Unified Information Extraction and Data Mining
-    
+
+<p class="desc" markdown="1">
 Although information extraction and data mining appear together in many applications, their interface in most current deployments would better be described as serial juxtaposition than as tight integration. Information extraction populates slots in a database by identifying relevant subsequences of text, but is usually not aware of the emerging patterns and regularities in the database. Data mining methods begin from a populated database, and are often unaware of where the data came from, or its inherent uncertainties. The result is that the accuracy of both suffers, and significant mining of complex text sources is beyond reach.
      
 We have been researching relational probabilistic models that [unify extraction and mining](http://www.cs.umass.edu/~mccallum/papers/iedatamining-ijcaiws03.pdf), so that by sharing common inference procedures, they can each overcome the weaknesses of the other. For example, data mining run on a partially-filled database can find patterns that provide "top-down" accuracy-improving constraints to information extraction. Information extraction can provide a much richer set of "bottom-up" hypotheses to data mining if the mining is able to handle additional uncertainty information from extraction.
-    
+</p>
 
 ### Conditional Random Fields for Relational Data, Approximate Inference and Learning
 
@@ -30,7 +31,7 @@ More recently we have been working on an enhanced alternative to [Google Scholar
 
 ### Social Network Analysis with Structured Topic Models
 
-Traditional social network analysis examines the connectivity of entities in a graph. However, in many cases we have data not just about the existence of a graph-edge, but also various properties of the nodes and edges---including large quantities of corresponding textual data. We have used Bayesian latent variable models, variants of "topic models" augmented with non-textual variables to (a) <a href="http://www.cs.umass.edu/%7Emccallum/papers/art-jair07.pdf">discover roles</a> of people in the sender-receiver structure of a large email collection, (b) <a href="http://www.cs.umass.edu/%7Emccallum/papers/gt-bookch07.pdf">discover groups</a> (coalitions) of U.S. senators or U.N. countries from their voting records and the topics of the bills, (c) <a href="http://www.cs.ubc.ca/%7Emurphyk/nips07NetworkWorkshop/abstracts/mimno.pdf">discover communities</a> of academic researchers from their papers and the venues in which they publish.
+Traditional social network analysis examines the connectivity of entities in a graph. However, in many cases we have data not just about the existence of a graph-edge, but also various properties of the nodes and edges---including large quantities of corresponding textual data. We have used Bayesian latent variable models, variants of "topic models" augmented with non-textual variables to (a) [discover roles](http://www.cs.umass.edu/%7Emccallum/papers/art-jair07.pdf) of people in the sender-receiver structure of a large email collection, (b) [discover groups](http://www.cs.umass.edu/%7Emccallum/papers/gt-bookch07.pdf) (coalitions) of U.S. senators or U.N. countries from their voting records and the topics of the bills, (c) [discover communities](http://www.cs.ubc.ca/%7Emurphyk/nips07NetworkWorkshop/abstracts/mimno.pdf) of academic researchers from their papers and the venues in which they publish.
 
 
 ### Semi-supervised Learning & Alignment Learning in Natural Language
