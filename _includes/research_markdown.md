@@ -17,11 +17,11 @@ The above unified processing requires large-scala joint inference that cannot be
 
 <p class="desc" markdown="1">
 Incorporating uncertainty and probabilistic inference into databases has posed many challenges, often leading to systems that sacrifice modeling power, scalability, or restrict the class of relational algebra formulae under which they are closed.  We have proposed [Wick et al, VLDB, 2009] an alternative approach in which the underlying relational database always represents a single possible world, and an external, unrestricted factor graph encodes a distribution over the set of possible worlds; Markov chain Monte Carlo (MCMC) inference is then used to recover this uncertainty to a desired level of fidelity.  Our approach allows the efficient evaluation of arbitrary SQL queries over probabilistic databases with dependencies expressed by unrestricted graphical models, (including graphical model structure that changes during inference).
-
+  
 As a result, state-of-the-art, machine-learning-based information extraction, entity resolution, schema-aligment can then be efficiently run "inside" the database.  Furthermore, rather than running in pipeline fashion, they can all interoperate in the same scalable infrastructure, imparting the increased accuracy of joint inference. This also provides a convenient any-time functionality to KB construction and query processing.
-
+  
 In addition, we advocate an approach to information integration (including knowledge-base construction by human-machine cooperation) in which the the canonical "true" entities and relations in the database are always inferred from integrated or human-entered data, never injected directly.  Even human "corrections" to the KB are merely additional pieces of evidence input as probabilistic evidence---allowing our system to reason probabilistically about provenance and trust.
-
+  
 MCMC sampling provides efficiency by hypothesizing modifications to possible worlds rather than generating entire worlds from scratch.  Queries are then run over the portions of the world that change, avoiding the onerous cost of running full queries over each sampled world.  We leverage materialzed view maintenance techniques to dramatically speed query processing.  We demonstrate system’s ability to answer relational queries with aggregation over one million tuples, and show additional scalability through use of parallelization.
 </p>
 
@@ -29,7 +29,7 @@ MCMC sampling provides efficiency by hypothesizing modifications to possible wor
 
 <p class="desc" markdown="1">
 Back in the 1997 we conceived of and lead a project at JustResearch that created Cora, one of the first domain-specific search engines over computer science research papers. You can read more about our research on Cora in our IRJ [journal paper](http://www-2.cs.cmu.edu/~mccallum/papers/cora-irj2000.ps.gz) or a [paper](https://people.cs.umass.edu/~mccallum/papers/cora-aaaiss99.ps.gz) presented at the [AAAI'99 Spring Symposium](http://www.aaai.org/Symposia/Spring/1999/sssregistration-99.html). The Cora team also included [Kamal Nigam](http://www.cs.cmu.edu/%7Eknigam), [Kristie Seymore](https://www.linkedin.com/in/kristie-seymore-148a6b/), [Jason Rennie](http://www.ai.mit.edu/%7Ejrennie), [Huan Chang](http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/c/Chang:Huan.html) and [Jason Reed](http://www-2.cs.cmu.edu/%7Ejcreed/).
-
+  
 More recently we have been working on an enhanced alternative to [Google Scholar](http://scholar.google.com), [CiteSeer](http://citeseer.ist.psu.edu/), and other digital libraries of the research literature. Our system, called Rexa, automatically extracts a de-duplicated cross-referenced database of not just papers (and references), but also people, grants, publication venues and institutions. We also perform various kinds of [topic](http://www.cs.umass.edu/%7Emccallum/papers/pam-icml06.pdf) and [bibliometric impact](http://www.cs.umass.edu/%7Emccallum/papers/impact-jcdl06.pdf) analysis on this data.
 </p>
 
@@ -43,7 +43,7 @@ Traditional social network analysis examines the connectivity of entities in a g
 
 <p class="desc" markdown="1">
 The only way to put natural language learning into the hands of the people is to reduce the burden of labeling training data. Over the years we have worked on various methods of semi-supervised learning that combines small amounts of labeled data with large amounts of unlabeled data. Our most recent work is in [Generalized Expectation](http://www.cs.umass.edu/%7Emccallum/papers/ge08note.pdf) (GE) criteria, one form of which can be understood as enabling "[feature labeling](http://www.cs.umass.edu/%7Emccallum/papers/druck08sigir.pdf)" as opposed to the traditional "instance labeling".
-
+  
 We have also removed the need for human labeled data entirely by leveraging information already in relevant databases, and learning information extractors by discovering [CRF-based alignments](http://www.cs.umass.edu/%7Emccallum/papers/crfstredit-uai05.pdf) between [database records and unstructured text](http://www.cs.umass.edu/%7Emccallum/papers/bellare-iiweb07.pdf).
 </p>
 
