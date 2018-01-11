@@ -27,7 +27,7 @@
 }
 /*.dropdown:hover .dropdown-menu {*/
 #body-People .tab-People:hover .dropdown-menu,
-#body-Datasets .tab-Datasets .dropdown:hover .dropdown-menu {
+#body-Datasets .tab-Datasets:hover .dropdown-menu {
   display: inline-block !important;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .navbar a {
-	color: #e5e5e5 !important;
+  color: #e5e5e5 !important;
 }
 
 .dropdown-menu a {
@@ -151,26 +151,26 @@
 
 
 .nav-collapse.collapse .nav > li {
-	float:none; 
-	display: inline-block;
+  float:none; 
+  display: inline-block;
 }
 
 .nav-collapse.collapse .nav {
-	/*display: inline-block;*/
-	text-align: center; 
-	float:none; 
-	margin: auto
+  /*display: inline-block;*/
+  text-align: center; 
+  float:none; 
+  margin: auto
 }
 .wrap {
-	margin: 0 auto;
-	text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* CY: to make nested lists from markdown possible */
 /*.row ul {*/
 .row > ul {
-	text-align: justify;
-	margin: auto;
+  text-align: justify;
+  margin: auto;
 }
 
 /*CY: only the top 5 news shown in the latest news */
@@ -178,21 +178,20 @@
   display: none;
 }
 
-
 /* mainly: datasets */
 .row div div h3 {
-	text-align: left;
-	display: inline;
+  text-align: left;
+  display: inline;
 }
 
-.row div h3 a { 		/* sw */
-	/*text-decoration: underline;*/
-	color: #881c1c;
+.row div h3 a {     /* sw */
+  /*text-decoration: underline;*/
+  color: #881c1c;
 }
 
 .row div div h3 a {
-	/*text-decoration: underline;*/
-	color: #881c1c;
+  /*text-decoration: underline;*/
+  color: #881c1c;
 }
 .dataset_title h3 { /* datatset title 
   /*text-decoration: underline;*/
@@ -200,19 +199,19 @@
   color: #881c1c;
 }
 .row div div h3 span {
-	display: inline;
-	/*text-align: right;
-	float: right;*/
-	font-size: 14px; 
-	font-weight: normal;
-	font-style: italic;
+  display: inline;
+  /*text-align: right;
+  float: right;*/
+  font-size: 14px; 
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* mainly: social*/
 .im-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*.my-animate-fading {animation:fading 8s infinite}
@@ -223,63 +222,63 @@
 
 
 .desc {
-	text-align: justify;
+  text-align: justify;
 }
 
 .li-desc {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 footer {
-	text-align: center;
+  text-align: center;
 }
 
 footer a {
-	color: #881c1c;	
+  color: #881c1c; 
 }
 
 /* mainly: index/home header */
 .lab-header {
-	/*color: #881c1c;*/
-	/*text-shadow: 0.5px 0.5px 0.5px #440e0e;*/ /*1px 1px 1px #440e0e;*/
-	
-	color: black;/*#881c1c;*/
-	text-shadow: 0.5px 0.5px 0.5px gray;/*#881c1c;*/
-	/*border-bottom: 1px solid #a8431e;*/
+  /*color: #881c1c;*/
+  /*text-shadow: 0.5px 0.5px 0.5px #440e0e;*/ /*1px 1px 1px #440e0e;*/
+  
+  color: black;/*#881c1c;*/
+  text-shadow: 0.5px 0.5px 0.5px gray;/*#881c1c;*/
+  /*border-bottom: 1px solid #a8431e;*/
 
-	/*padding-top: 10px;
-	padding-bottom: 10px;*/
-	/*padding: 20px 0 30px;*/
-	/*padding: 10px 0 9px;
-  	margin: 20px 0 30px;*/
-	padding: 20px 0 30px;
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+  /*padding: 20px 0 30px;*/
+  /*padding: 10px 0 9px;
+    margin: 20px 0 30px;*/
+  padding: 20px 0 30px;
 
-	text-align: center;
-	margin: auto;
+  text-align: center;
+  margin: auto;
 
 }
 
 
 /* Home: Group photo as modal/dialog box */
 #home-group-photo {
-	margin: 20px auto; 
-	width:100%; 
-	border-radius:5px;
-	cursor: pointer;
+  margin: 20px auto; 
+  width:100%; 
+  border-radius:5px;
+  cursor: pointer;
     transition: 0.3s;
 }
 
 #div-home-group-photo > #home-group-photo:hover {
-	opacity: 0.7;
-	transform: scale(1.1,1.1);
-	transition: .3s transform;
-	/*z-index: 1;*/
+  opacity: 0.7;
+  transform: scale(1.1,1.1);
+  transition: .3s transform;
+  /*z-index: 1;*/
 }
 
 
 
 /*#home-group-photo: hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }*/
 
 /* The Modal (background) */
@@ -374,44 +373,44 @@ footer a {
 }
 
 .people-list {
-	margin:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
 }
 
 .people-list li {
     float:left;
     width: 50%;
-	margin:0px 0px 15px 0px;
+  margin:0px 0px 15px 0px;
 
 }
 
 .people-list ul {
-	margin:0px 0px 0px 0px;
-	//margin-bottom:100px;
+  margin:0px 0px 0px 0px;
+  //margin-bottom:100px;
 
 }
 
 .people-list .media-body {
-	padding-right:20px;
+  padding-right:20px;
 
 }*/
 
 .crop{
-	float:left;
-	margin:0px 0px 0px 0px;
-	overflow:hidden; /* this is important */
-	position:relative; /* this is important too */
-	border:0px solid #ccc;
-	/*width:100px;
-	height:105px;*/
-	width:170px;
-	height:170px;
+  float:left;
+  margin:0px 0px 0px 0px;
+  overflow:hidden; /* this is important */
+  position:relative; /* this is important too */
+  border:0px solid #ccc;
+  /*width:100px;
+  height:105px;*/
+  width:170px;
+  height:170px;
 }
-	/* input values to crop the image: top, right, bottom, left */
+  /* input values to crop the image: top, right, bottom, left */
 
 .crop img{
-	position:absolute;
-	top:-0px;
-	left:-0px;
+  position:absolute;
+  top:-0px;
+  left:-0px;
 }
 
 

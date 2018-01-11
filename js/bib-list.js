@@ -273,6 +273,18 @@ function sizeof ( mixed_var, mode ) {
     return count( mixed_var, mode );
 }// }}}
 
+// {{{ sizeof
+function bold_parentheses ( input_string ) {
+    // Alias of count()
+    
+    if( input_string.includes("(") && input_string.includes(")") ){
+        var output_string = input_string.replace("(","<strong>(").replace(")",")</strong>");
+        return output_string;
+    }else{
+        return input_string;
+    }
+}// }}}
+
 // {{{ count
 function count( mixed_var, mode ) {
     // Count elements in an array, or properties in an object
@@ -2669,7 +2681,7 @@ var bibtexify = (function($) {
             return this.authors2html((entryData.author)?entryData.author:"")+
                 " (" + entryData.year + "), " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>, " +
-                "<br\/>In <em>" + entryData.booktitle +
+                "<br\/>In <em>" + bold_parentheses(entryData.booktitle) +
                 ((entryData.pages)?", pp. " + entryData.pages:"") +
                 ((entryData.address)?", " + entryData.address:"") + "<\/em><strong>"+ 
                 ((entryData.desc)?", <br\/>" + entryData.desc:"")+'<\/strong><font size = "2">' +
@@ -2686,11 +2698,12 @@ var bibtexify = (function($) {
         },
 
         article: function(entryData) {
+             
             return this.authors2html(entryData.author) + " (" + entryData.year + "), " +
                 "<br\/><span class=\"ieslTitle\">" + entryData.title + "<\/span>" +
-                "<em>" + ((entryData.journal)?", <br\/>" + entryData.journal :"") + 
+                "<em>" + ((entryData.journal)?", <br\/>" + bold_parentheses(entryData.journal) :"") + 
                 // ((entryData.volume || entryData.number || entryData.pages || entryData.address)? ", ":"") + 
-                ((entryData.volume)?"," + entryData.volume:"") +
+                ((entryData.volume)?", " + entryData.volume:"") +
                 ((entryData.number)?"(" + entryData.number + ")":"") +
                 ((entryData.pages)?", pp. " + entryData.pages :"") +
                 ((entryData.address)?". " + entryData.address + "":"") + "<\/em><strong>"+ 
@@ -2859,7 +2872,7 @@ var bibtexify = (function($) {
               item.year = this.options.defaultYear || "To Appear";
             }
             var html = bib2html.entry2html(item, this);
-            // CY: test to remove entry type
+            // CY: hide publication type
             // bibentries.push([item.year, bib2html.labels[item.entryType], html]);
             bibentries.push([item.year, html]);
             entryTypes[bib2html.labels[item.entryType]] = item.entryType;
@@ -2878,7 +2891,7 @@ var bibtexify = (function($) {
         var table = this.$pubTable.dataTable({ 'aaData': bibentries,
                               'aaSorting': this.options.sorting,
                               'aoColumns': [ { "sTitle": "Year" },
-                                // CY: test to remove entry type
+                                             // CY: remove entry type
                                              // { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
                                              { "sTitle": "Publication", "bSortable": false }],
                               'bPaginate': false

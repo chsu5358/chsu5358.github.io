@@ -1,0 +1,184 @@
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>UMass IESL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="../css/iesl.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../images/logo-iesl-32x32-ico.ico" />
+    
+</head>
+
+<body>
+
+<script src="../js/holder.js"></script>
+
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!-- <a class="brand" href="https://iesl.github.io/">UMass IESL</a> -->
+            </div>
+
+            <!-- <div style="clear:both"></div> -->
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="pull-left"><a class="brand" href="https://iesl.github.io/">UMass IESL</a> </li>
+                    <!-- <li><a href="https://iesl.github.io/index.html#index-top">Introduction</a></li> -->
+                    <li><a href="https://iesl.github.io/news.html">News</a></li>
+                    <li><a href="https://iesl.github.io/people.html">People</a></li>
+                    <li><a href="https://iesl.github.io/research.html">Research</a></li>
+                    <li><a href="https://iesl.github.io/projects.html">Projects</a></li>
+                    <li><a href="https://iesl.github.io/pub.html">Publications</a></li>
+                    <li><a href="https://iesl.github.io/software.html">Software</a></li>
+                    <li class="active"><a href="https://iesl.github.io/datasets.html">Datasets</a></li>
+                    <!-- <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="https://iesl.github.io/datasets">Datasets
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://iesl.github.io/datasets/umasscitationfield" class="smoothScroll">UMass Citation Field Extraction Dataset</a></li>
+                          <li><a href="https://iesl.github.io/datasets/wikilinks" class="smoothScroll">Wikilinks Dataset</a></li>
+                          <li class="active"><a href="https://iesl.github.io/datasets/bibtex" class="smoothScroll">BibTex Dataset</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="https://iesl.github.io/social.html">Social</a></li>
+                    <li><a href="https://sites.google.com/a/iesl.cs.umass.edu/wiki/">Wiki (internal)</a></li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+
+<div id="ds-bibtex-top" style="margin-top:-60px"></div>
+<div style="margin-top:60px"></div>
+
+<div class="container">
+    <section class="row">
+        <h2 class="page-header span10 offset1"><a href="../datasets" style="color:#881c1c">Datasets</a> ></h2>
+        <div class="span10 offset1">
+            <div>
+                <h3>BibTex Dataset</h3>
+            </div>
+            <div style="clear:both"></div>
+            <p class="desc">
+                This is a dataset containing a large number of BibTex files downloaded from the internet. The dataset has been used for large-scale entity resolution (see the publications below).
+            </p>
+
+
+            <div>
+                <h3 style="color:grey">Statistics</h3>
+            </div>
+            <p class="desc">
+                <ul style="list-style-position: inside">
+                    <li>Number of BibTex files:    4,387</li>
+                    <li>Number of Papers:        607,335 (correctly parsed)</li>
+                    <li>Number of Authors:     1,313,517</li>
+                </ul>
+            </p>
+
+            <div>
+                <h3 style="color:grey">Download</h3>
+            </div>
+            <p class="desc">
+                The archive files is available here: <a href="http://iesl.cs.umass.edu/downloads/bibtex/bibtex.tar.gz">bibtex.tar.gz</a> (87MB, 385MB uncompressed), MD5 
+            </p>
+            <p class="desc"> Checksum: 7dfea8b8228dc55b2d6173aa4484becd </p>
+            <p class="desc">
+                If you use this data in your papers, please use the following citation: <a href="http://aclweb.org/anthology-new/P/P12/P12-1040.bib">bib</a>
+            </p>
+
+
+            <div>
+                <h3 style="color:grey">Code</h3>
+            </div>
+            <p class="desc">
+                This dataset can be processed by any BibTex parser. The <a href="http://factorie.cs.umass.edu">Factorie</a> library contains the parser we used (<code>cc.factorie.app.bib.BibReader.loadBibTexDir*</code>), along with code to construct the variables and the model for author disambiguation.
+            </p>
+
+            <div>
+                <h3 style="color:grey">Papers</h3>
+            </div>
+            <p class="desc">
+                The following papers use this dataset. If you are using this dataset, and would like your paper to be added, let us know.
+                <ul style="padding-left: 15px">
+                    <li>
+                        <a href="http://cs.umass.edu/~mwick">Michael Wick</a>, <a href="http://cs.umass.edu/~sameer">Sameer Singh</a>, <a href="http://cs.umass.edu/~mccallum">Andrew McCallum</a>
+                    </li>
+                    <li class="li-desc">
+                        <strong><a href="http://aclweb.org/anthology-new/P/P12/P12-1040.pdf">A Discriminative Hierarchical Model for Fast Coreference at Large Scale</a></strong>
+                    </li>
+                    <li class="li-desc">
+                        Annual Meeting of Computational Linguistics (ACL), 2012
+                    </li>
+                </ul>
+
+            </p>
+
+            <div>
+                <h3 style="color:grey">Credits</h3>
+            </div>
+            <p class="desc">
+                The BibTex files were downloaded and aggregated by <a href="http://cs.umass.edu/~mwick">Michael Wick</a>. This website is maintained by <a href="http://cs.umass.edu/~mwick">Michael Wick</a> and <a href="http://sameersingh.org/">Sameer Singh</a>.
+            </p>
+        
+        </div>
+    </section>
+
+<hr>
+<footer>
+    <p>© UMass IESL 2017 </p>
+    <p style="margin-top:-1.0em">
+    <a href="http://www.cics.umass.edu/">College of Information and Computer Sciences</a>, <a href="http://www.umass.edu/">University of Massachusetts Amherst</a>.
+    </p>
+</footer>
+
+</div>
+
+<!-- /container -->
+<script src="../js/jquery-latest.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+
+    /*
+    $(function() {
+    $('.navbar li a').click(function(event) {
+    var a = $(this)
+    $('.navbar li').removeClass("active")
+    a.parent().addClass("active")
+    });
+
+    })
+    */
+
+</script>
+
+
+
+</body></html>

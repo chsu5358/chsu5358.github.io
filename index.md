@@ -1,4 +1,4 @@
 ---
-layout: index_new
+layout: p_index
 ---
-{% include_relative news_full_list_markdown.md %}
+{% include news_full_list_markdown.md %}

@@ -1,0 +1,193 @@
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>UMass IESL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:18px;font-weight:bold;text-align:center;margin:0}</style>
+    <link href="./css/iesl.css" rel="stylesheet">
+    <link href="./css/bib-publication-list.css" rel="stylesheet">
+    
+    <style>
+        body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="./images/logo-iesl-32x32-ico.ico" />
+
+</head>
+
+<!-- <body> -->
+<!-- CY: to maintain nav bar code in one place -->
+<body id="body-Pub">
+    
+<div id="nav-placeholder">{% include navbar.html %}</div>
+
+
+<div id="pub-top" style="margin-top:-60px"></div>
+<div style="margin-top:60px"></div>
+
+
+<div class="container">
+    <section class="row">
+        <h2 id="pub-top" class="page-header span10 offset1">Publications</h2>
+
+        <div class="span10 offset1">
+
+        <!-- vkaravir: bib publication list -->
+        <!-- bibtex source hidden by default, show it if JS disabled -->
+        <!-- <noscript>          
+          <style>
+          #bibtex { display: block;}
+          </style>
+        </noscript> -->
+        <table id="pubTable" class="display" style="width: 100%"></table>
+        <!-- [Option 2] load from .bib file -->
+        <pre id="bibtex" style="display:none;">
+        <!-- [Option 1] sample bibtex from original lab website (only up to 1 paper in 2016) -->
+        <!-- <pre id="bibtex"> -->
+    @inproceedings{IR-1086,
+    author = {Trapit Bansal and David Belanger and Andrew McCallum},
+    title = {Ask the GRU: Multi-Task Learning for Deep Text Recommendations},
+    year = {2016},
+    booktitle = {Proceedings of the 10th ACM Conference on Recommender Systems},
+    pages = {107--114},
+    series = {RecSys '16},
+    address = {New York, NY, USA},
+    publisher = {ACM},
+    note = {ISBN: 978-1-4503-4035-9},
+    type = {IR},
+    page = {https://iesl.github.io/},
+    desc = {test},
+    }
+
+    @inproceedings{IR-1044,
+    author = {Patrick Verga and David Belanger and Emma Strubell and Benjamin Roth and Andrew McCallum},
+    title = {Multilingual Relation Extraction using Compositional Universal Schema},
+    year = {2015},
+    booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+    pages = {886-896},
+    address = {San Diego, CA},
+    publisher = {Association for Computational Linguistics},
+    note = {ISBN: 978-1-941643-91-4; http://www.aclweb.org/anthology/N16-1103},
+    type = {IR},
+    }
+
+    @inproceedings{IR-1043,
+    author = {David Belanger and Andrew McCallum},
+    title = {Structured Prediction Energy Networks},
+    year = {2015},
+    booktitle = {Proceedings of the 33rd International Conference on Machine Learning},
+    volume = {48},
+    note = {Onliine Proceedings only. http://jmlr.org/proceedings/papers/v48/},
+    type = {IR},
+    }
+
+    @{IR-1042,
+    author = {David Belanger and Andrew McCallum},
+    title = {Scaling up Structured Multi-Label Prediction using Discriminative Mean Field Networks},
+    year = {2015},
+    type = {IR},
+    }
+
+    @inproceedings{IR-1038,
+    author = {Luke Vilnis and David Belanger and Daniel Sheldon and Andrew McCallum},
+    title = {Bethe Projections for Non-Local Inference},
+    year = {2015},
+    booktitle = {Uncertainty in Artificial Intelligence 2015},
+    type = {IR},
+    }
+
+        </pre>
+
+        </div>
+    </section>
+
+
+
+<hr>
+<footer id="footer-placeholder">{% include footer.html %}</footer>
+
+</div>
+
+<!-- /container -->
+<script src="./js/jquery-latest.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/holder.js"></script>
+<!-- CY -->
+<!-- bib publication -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/bib-list.js"></script>
+
+<!-- [Option 1] -->
+<!-- <script >
+    $(document).ready(function() {
+    bibtexify("#bibtex", "pubTable", {});
+    });
+</script> -->
+
+<!-- [Option 2] no visualization -->
+<script >
+    $(document).ready(function() {
+    // bibtexify("pub-iesl.bib", "pubTable", {});
+    // bibtexify("McCallum-Andrew-102617.bib", "pubTable", {'visualization': false});
+    bibtexify("http://www.iesl.cs.umass.edu/bibtex_paper_list/iesl_publication.bib", "pubTable", {'visualization': false});
+    //bibtexify("McCallum-Andrew-102917-standard.bib", "pubTable", {'visualization': false});
+    });
+</script>
+
+<script type="text/javascript" data-sqs-type="imageloader-bootstraper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script>
+<!-- <script>Squarespace.afterBodyLoad(Y);</script> -->
+
+<!-- <script >
+    var init = function() {
+        // [Option 2]
+        // bibtexify("pub-iesl.bib", "pubTable", {'visualization': false});
+        // [Option 1]
+        // bibtexify("#bibtex", "pubTable", {'visualization': false});
+     };
+     if (window.addEventListener) {
+       window.addEventListener('load', init, false);
+     } else if (window.attachEvent) {
+       window.attachEvent('onload', init);
+     }
+</script> -->
+
+<script>
+    jQuery("#pubTable").on("click", "a", function(e) {
+        var $n = jQuery(this),
+          text = $n.text().toUpperCase();
+        if (text === "X") { return; }
+
+        try { 
+            _gaq.push(['_trackEvent', "PublicationAction", text]);
+        } catch(err){ }
+            if ($n.attr("href") !== "#") {
+                setTimeout(function() {
+                document.location.href = $n.attr("href");
+            }, 100);
+            return false;
+        }
+    });
+
+    // close bibtex popup when esc key is pressed
+    document.addEventListener('keyup', function(e) {
+        if (e.keyCode == 27) {
+            $("#shutter").hide();
+            $(".bibinfo.open").removeClass("open").addClass("hidden");
+        }
+    });
+</script>
+
+
+</body></html>

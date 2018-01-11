@@ -1,0 +1,102 @@
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>UMass IESL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/iesl.css" rel="stylesheet">
+
+    <style>
+        body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+
+    <link rel="shortcut icon" href="./images/logo-iesl-32x32-ico.ico" />
+
+</head>
+
+<!-- <body> -->
+<!-- CY: to maintain nav bar code in one place -->
+<body id="body-News">
+    
+<div id="nav-placeholder">{% include navbar.html %}</div>
+
+
+<div id="news" style="margin-top:-60px"></div>
+<div style="margin-top:60px"></div>
+
+<div class="container">
+    <section class="row">
+        <h2 id="news" class="page-header span10 offset1">News</h2>
+
+        <div class="span6 offset1">
+            {{ content }}
+            
+        </div>
+
+        <!-- Twitter-->
+
+        <div class="span4" style="padding-top:0px">
+        <a class="twitter-follow-button"
+          href="https://twitter.com/andrewmccallum"
+          data-size="default"
+          data-show-count="default"
+          data-show-screen-name="default"
+          >Follow @andrewmccallum</a>
+        <a class="twitter-timeline" data-width="400" data-height="300" href="https://twitter.com/andrewmccallum">Tweets by andrewmccallum</a> 
+
+        <a class="twitter-follow-button"
+              href="https://twitter.com/UMassCS"
+              data-size="default"
+              data-show-screen-name="default"
+              >Follow @UMassCS</a>
+        <a class="twitter-timeline" data-lang="en" data-width="400" data-height="200" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/UMassCS">Tweets by UMassCICS</a>
+
+        <!-- <a class="twitter-follow-button"
+              href="https://twitter.com/UMassAmherst"
+              data-size="default"
+              data-show-screen-name="default"
+              >Follow @UMassAmherst</a>
+    	<a class="twitter-timeline" data-lang="en" data-width="400" data-height="200" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/UMassAmherst">Tweets by UMassAmherst</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+        <!-- <a class="twitter-timeline" data-width="400" data-height="200" href="https://twitter.com/NipsConference">Tweets by NipsConference</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+        </div>
+    </section>
+    
+
+<hr>
+<footer id="footer-placeholder">{% include footer.html %}</footer>
+
+
+</div>
+<!-- /container -->
+
+<script src="./js/jquery-latest.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/holder.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<!-- CY: add smoothScroll -->
+<!-- <script type="text/javascript" src="./js/smoothscroll.js"></script> -->
+
+<!-- CY: add active class toggle in navbar -->
+<!-- <script>
+    $(".nav li").on("click", function() {
+      $(".nav li").removeClass("active");
+      $(this).addClass("active");
+    });
+
+</script> -->
+
+
+</body>
+</html>

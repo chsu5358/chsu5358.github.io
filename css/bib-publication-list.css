@@ -68,13 +68,14 @@ table.display { margin-top: 24px; }*/
      width: 88% !important;
 }
 
+/* CY: hide publication type */
 /*#pubTable.display th:nth-child(3){
      width: 80% !important;
 }*/
-
-#pubTable.display td:nth-child(1){
+#pubTable.display td:nth-child(1) { 
     text-align: center !important;
 }
+
 
 #pubTable.display tfoot th { 
 	padding: 3px 10px; border-top: 1px solid black; 
