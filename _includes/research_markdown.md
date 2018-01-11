@@ -1,4 +1,8 @@
+<div>
+
 ### Unified Information Extraction and Data Mining
+
+</div>
     
 Although information extraction and data mining appear together in many applications, their interface in most current deployments would better be described as serial juxtaposition than as tight integration. Information extraction populates slots in a database by identifying relevant subsequences of text, but is usually not aware of the emerging patterns and regularities in the database. Data mining methods begin from a populated database, and are often unaware of where the data came from, or its inherent uncertainties. The result is that the accuracy of both suffers, and significant mining of complex text sources is beyond reach.
      
