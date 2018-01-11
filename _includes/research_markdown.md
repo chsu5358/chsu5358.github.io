@@ -1,9 +1,9 @@
-<div>
+<div markdown=1>
 
 ### Unified Information Extraction and Data Mining
 
 </div>
-    
+
 Although information extraction and data mining appear together in many applications, their interface in most current deployments would better be described as serial juxtaposition than as tight integration. Information extraction populates slots in a database by identifying relevant subsequences of text, but is usually not aware of the emerging patterns and regularities in the database. Data mining methods begin from a populated database, and are often unaware of where the data came from, or its inherent uncertainties. The result is that the accuracy of both suffers, and significant mining of complex text sources is beyond reach.
      
 We have been researching relational probabilistic models that [unify extraction and mining](http://www.cs.umass.edu/~mccallum/papers/iedatamining-ijcaiws03.pdf), so that by sharing common inference procedures, they can each overcome the weaknesses of the other. For example, data mining run on a partially-filled database can find patterns that provide "top-down" accuracy-improving constraints to information extraction. Information extraction can provide a much richer set of "bottom-up" hypotheses to data mining if the mining is able to handle additional uncertainty information from extraction.
