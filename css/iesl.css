@@ -168,7 +168,7 @@
 
 /* CY: to make nested lists from markdown possible */
 /*.row ul {*/
-.row ul {
+.row ul > li {
   text-align: justify;
   margin: auto;
   /*test*/
