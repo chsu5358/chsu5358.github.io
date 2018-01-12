@@ -171,6 +171,8 @@
 .row > ul {
   text-align: justify;
   margin: auto;
+  /*test*/
+  clolor: blue;
 }
 
 /*CY: only the top 5 news shown in the latest news */
