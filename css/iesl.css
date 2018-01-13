@@ -151,9 +151,9 @@
 
 /*CY: fix layout on smaller screen/window*/
 body {
-    padding-top: 60px;
+    padding-top: 60px !important;
   }
-@media (min-width: 980px) {
+@media (max-width: 979px) {
   body {
     padding-top: 0px !important;
   }
