@@ -150,14 +150,6 @@
 }*/
 
 /*CY: fix layout on smaller screen/window*/
-body {
-    padding-top: 60px !important;
-  }
-@media (max-width: 979px) {
-  body {
-    padding-top: 0px !important;
-  }
-}
 
 .nav-collapse.collapse .nav > li {
   float:none; 
