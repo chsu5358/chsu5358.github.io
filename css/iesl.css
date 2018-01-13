@@ -149,6 +149,15 @@
     background-color: #881c1c !important;
 }*/
 
+/*CY: fix layout on smaller screen/window*/
+body {
+    padding-top: 60px;
+  }
+@media (min-width: 980px) {
+  body {
+    padding-top: 0px !important;
+  }
+}
 
 .nav-collapse.collapse .nav > li {
   float:none; 
