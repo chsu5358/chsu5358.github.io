@@ -1,4 +1,4 @@
 ---
 layout: p_software
 ---
-{% include software_markdown.md %}
+{% include_relative _contents/software_markdown.md %}

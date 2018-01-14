@@ -1,4 +1,4 @@
 ---
 layout: p_research
 ---
-{% include research_markdown.md %}
+{% include_relative _contents/research_markdown.md %}

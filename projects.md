@@ -1,4 +1,4 @@
 ---
 layout: p_projects
 ---
-{% include projects_markdown.md %}
+{% include_relative _contents/projects_markdown.md %}

@@ -1,4 +1,4 @@
 ---
 layout: p_datasets
 ---
-{% include datasets_markdown.md %}
+{% include_relative _contents/datasets_markdown.md %}
