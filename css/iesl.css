@@ -261,6 +261,12 @@ footer a {
 
 }
 
+/* mainly: emphasis for EISL description in home page */
+.ieslEmp {
+  font-weight: bold;
+  color: #881c1c;
+}
+
 
 /* Home: Group photo as modal/dialog box */
 #home-group-photo {

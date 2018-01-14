@@ -1,39 +1,7 @@
-
-<!-- template from http://mr.cs.ucl.ac.uk/ -->
+<!-- template referenced: http://mr.cs.ucl.ac.uk/ -->
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>UMass IESL</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="./css/iesl.css" rel="stylesheet">
-    
-    <style>
-        body {
-            padding-top: 60px !important;
-          }
-        @media (max-width: 979px) {
-          body {
-            padding-top: 0px !important;
-          }
-        }
-       /* 60px to make the container go all the way to the bottom of the topbar */
-        /*body {
-        padding-top: 60px;
-        }*/
-        .ieslEmp {
-            font-weight: bold;
-            color: #881c1c;
-        }
-    </style>
-    
-
-    <link rel="shortcut icon" href="./images/logo-iesl-32x32-ico.ico" />
+    {% include header.html %}
 
 </head>
 
@@ -43,20 +11,16 @@
 
 <script src="./js/holder.js"></script>
 
-
 <!-- CY: to maintain nav bar code in one place -->
 <div id="nav-placeholder">{% include navbar.html %}</div>
 
-<!-- <div style="clear:both"></div> -->
 
 <div id="index-top" class="container" >
 <!-- CY: center contents -->
-    <!-- <div class="lab-header" > -->
-    <h1 class="lab-header"> <!-- class="lab-header"> -->
+    <h1 class="lab-header">
         <img src="./images/logo-iesl-transparent.png" style="width:62px; vertical-align:baseline; margin-right:-0px;"/> <!-- border-radius:5px;" /> -->
         Information Extraction and Synthesis Laboratory
     </h1>
-    <!-- </div> -->
 
     <div id="intro" style="margin-top:-60px"></div>
     <div style="margin-top:60px"></div>
