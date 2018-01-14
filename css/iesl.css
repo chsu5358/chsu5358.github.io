@@ -72,6 +72,10 @@
   text-shadow: 2px 2px 0px #511010 !important;
 }
 
+.navbar-inverse li > .brand:hover {
+  font-weight: normal !important;
+}
+
 /*CY: maintian active highlights for shared navbar*/
 /*#body-Home .tab-Home, */
 #body-News .tab-News , #body-People .tab-People, 
