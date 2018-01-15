@@ -1,23 +1,17 @@
 
 ### Entity Resolution
 
-#### [Wikilinks Dataset](/data/data-wiki-links)
-**[large-scale entity resolution, cross-document coreference]**
-
+#### [Wikilinks Dataset](/data/data-wiki-links)[large-scale entity resolution, cross-document coreference]
 
 Identifying and disambiguating a large set of mentions from the web using Wikipedia. The data contains ~40 million mentions referring to ~3 million entities, extracted from ~10 million webpages.
 
 
-#### [BibTex Dataset](/data/data-bibtex)
-**[large-scale entity resolution]**
-
+#### [BibTex Dataset](/data/data-bibtex)[large-scale entity resolution]
 
 Publicly-available BibTex files that can be used for large-scale entity resolution. The dataset contains more than a million author mentions.
 
 
-#### [Cora Citation Matching](http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz)
-**[reference matching, object correspondence]**
-
+#### [Cora Citation Matching](http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz)[reference matching, object correspondence]
 
 Text of citations hand-clustered into groups referring to the same paper.
 
@@ -51,8 +45,7 @@ Research paper headers and citations, with labeled segments for authors, title, 
 73,218 UseNet articles from four discussion groups, for simulated auto racing, simulated aviation, real autos, real aviation. I have often used this data for binary classification---separating real from simulated, and auto from aviation---making the point that the same data can be classified different ways depending on the user's needs. This is especially interesting for semi-supervised learning. This data was gathered by Andrew McCallum while at Just Research.
 
 
-#### [Cora Research Paper Classification](http://people.cs.umass.edu/~mccallum/data/cora-classify.tar.gz)
-**[relational document classification]**
+#### [Cora Research Paper Classification](http://people.cs.umass.edu/~mccallum/data/cora-classify.tar.gz) [relational document classification]
 
 
 Research papers classified into a topic hierarchy with 73 leaves. We call this a relational data set, because the citations provide relations among papers.
