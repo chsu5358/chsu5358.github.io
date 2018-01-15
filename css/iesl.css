@@ -237,7 +237,7 @@ p,
 }
 
 footer {
-  text-align: center;
+  text-align: center !important;
 }
 
 footer a {
