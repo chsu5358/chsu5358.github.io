@@ -1,4 +1,5 @@
 * [Structured Prediction Energy Networks](https://arxiv.org/abs/1511.06350) [Belanger, McCallum ICML 2016] are an alternative to graphical models, leveraging deep learning to discover rich dependencies among output variables.
+* Our research on universal schema is currently at the top of the [Stanford KBP leaderboard](https://kbpo.stanford.edu/)!  Congratulations to Haw-Shiuan Chang, Pat Verga, Emma Strubell, Nick Monath, and the other IESL students who worked on this.
 * [OpenReview.net](http://OpenReview.net) is hosting reviewing for ICLR 2017, as well as the upcoming UAI 2017.
 * [FACTORIE](http://factorie.cs.umass.edu) is a toolkit for deployable probabilistic modeling, implemented as a software library in [Scala](http://www.scala-lang.org/). It provides its users with a succinct language for creating relational factor graphs, estimating parameters and performing inference.
 * [Generalized Expectation](http://www.cs.umass.edu/%7Emccallum/papers/ge08note.pdf) is an accurate way to train models by [labeling features](http://www.cs.umass.edu/%7Emccallum/papers/druck08sigir.pdf).
