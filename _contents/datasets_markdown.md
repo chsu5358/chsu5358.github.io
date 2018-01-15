@@ -1,17 +1,16 @@
-
 ### Entity Resolution
 
-#### [Wikilinks Dataset](/data/data-wiki-links)[large-scale entity resolution, cross-document coreference]
+#### [Wikilinks Dataset](/data/data-wiki-links) [large-scale entity resolution, cross-document coreference]
 
 Identifying and disambiguating a large set of mentions from the web using Wikipedia. The data contains ~40 million mentions referring to ~3 million entities, extracted from ~10 million webpages.
 
 
-#### [BibTex Dataset](/data/data-bibtex)[large-scale entity resolution]
+#### [BibTex Dataset](/data/data-bibtex) [large-scale entity resolution]
 
 Publicly-available BibTex files that can be used for large-scale entity resolution. The dataset contains more than a million author mentions.
 
 
-#### [Cora Citation Matching](http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz)[reference matching, object correspondence]
+#### [Cora Citation Matching](http://people.cs.umass.edu/~mccallum/data/cora-refs.tar.gz) [reference matching, object correspondence]
 
 Text of citations hand-clustered into groups referring to the same paper.
 
