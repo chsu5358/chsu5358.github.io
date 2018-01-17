@@ -1,8 +1,8 @@
-<span class="ieslEmp" markdown="1">Information</span> A collection of facts, relations or events from which conclusions may be drawn. Knowledge that has been gathered or received.
+<span class="ieslEmp">Information</span> A collection of facts, relations or events from which conclusions may be drawn. Knowledge that has been gathered or received.
 
-<span class="ieslEmp" markdown="1">Extraction</span> Obtaining materials in concentrated, usable form from a dilluted, unusable source.
+<span class="ieslEmp">Extraction</span> Obtaining materials in concentrated, usable form from a dilluted, unusable source.
 
-<span class="ieslEmp" markdown="1">Synthesis</span> The combining of separate elements or substances to form a coherent whole. Reasoning from the general to the particular; logical deduction.
+<span class="ieslEmp">Synthesis</span> The combining of separate elements or substances to form a coherent whole. Reasoning from the general to the particular; logical deduction.
 
 <span class="ieslEmp">Laboratory</span> An organization performing scientific experimentation and research.
 \\
