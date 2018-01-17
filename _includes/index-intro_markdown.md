@@ -6,7 +6,6 @@
 
 <span class="ieslEmp" markdown="1">Laboratory</span> An organization performing scientific experimentation and research.
 
-
-
-
+<p style="margin-top: 2em" markdown="1">
 **IESL** aims to dramatically increase our ability to mine actionable knowledge from unstructured text. We are especially interested in information extraction from the Web, understanding the connections between people and between organizations, expert finding, social network analysis, and mining the scientific literature and community. We develop and employ various methods in statistical machine learning, natural language processing and information retrieval. We tend toward probabilistic approaches, graphical models, and Bayesian methods.
+</p>
