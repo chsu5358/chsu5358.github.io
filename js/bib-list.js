@@ -2894,7 +2894,7 @@ var bibtexify = (function($) {
                                              // CY: remove entry type
                                              // { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
                                              
-                                             { "sTitle": "Publication", "asSorting": [ "desc", "asc" ] }],
+                                             { "sTitle": "Publication" }],
                                              // { "sTitle": "Publication", "bSortable": false }],
                               'bPaginate': false
                             });
