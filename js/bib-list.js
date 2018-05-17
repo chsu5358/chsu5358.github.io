@@ -2893,7 +2893,9 @@ var bibtexify = (function($) {
                               'aoColumns': [ { "sTitle": "Year" },
                                              // CY: remove entry type
                                              // { "sTitle": "Type", "sType": "type-sort", "asSorting": [ "desc", "asc" ] },
-                                             { "sTitle": "Publication", "bSortable": false }],
+                                             
+                                             { "sTitle": "Publication", "asSorting": [ "desc", "asc" ] }],
+                                             // { "sTitle": "Publication", "bSortable": false }],
                               'bPaginate': false
                             });
         if (this.options.visualization) {
